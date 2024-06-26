@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.BankVerificationPage"
+                    xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+                xmlns:local1="clr-namespace:Fast_Cash.Model"
+             Title="BankVerificationPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,0">
+            <StackLayout Orientation="Horizontal">
+                <!--<ImageButton x:Name="backbut"  WidthRequest="20" HeightRequest="20" Margin="0,2,10,0" Style="{DynamicResource Backbutton}"/>-->
+                <!--<local:NavTop Header="Bank Verification"/>-->
+                <!--<Label Text="Link Card" 
+ Style="{DynamicResource headlabel3}"/>-->
+            </StackLayout>
+
+            <StackLayout Spacing="10" VerticalOptions="CenterAndExpand">
+                <Image Source="img603.png" Aspect="AspectFit"/>
+                <StackLayout Spacing="10" >
+                    <Label Text="OTP code has been sent to your phone number that you registered with bank"  Style="{DynamicResource headlabel}"/>
+                    <Label Text="OTP code" Style="{DynamicResource headlabel4}"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,10" Spacing="10" Orientation="Horizontal"  HorizontalOptions="CenterAndExpand">
+                    <Frame Style="{DynamicResource verifyF}">
+                        <local1:LineEntry x:Name="CodeEntry1" Style="{DynamicResource verifyE}"  />
+                    </Frame>
+                    <Frame Style="{DynamicResource verifyF}">
+                        <local1:LineEntry x:Name="CodeEntry2" Style="{DynamicResource verifyE}"  />
+                    </Frame>
+                    <Frame Style="{DynamicResource verifyF}">
+                        <local1:LineEntry x:Name="CodeEntry3" Style="{DynamicResource verifyE}"  />
+                    </Frame>
+                    <Frame Style="{DynamicResource verifyF}">
+                        <local1:LineEntry x:Name="CodeEntry4" Style="{DynamicResource verifyE}"  />
+                    </Frame>
+                </StackLayout>
+
+                <Label Text="get a call" FontSize="Medium"
+         TextColor="{DynamicResource TertiaryTextColor2}" 
+          HorizontalOptions="Center" Margin="0,0,0,20" >
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_GetCall"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                    <Label Text="Check" FontSize="Medium" FontAttributes="Bold"
+      TextColor="{DynamicResource TertiaryTextColor2}" 
+       HorizontalOptions="Center" Margin="0,0,0,0" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Check"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <Label Text="Cancel" FontSize="Medium" FontAttributes="Bold"
+      TextColor="{DynamicResource TertiaryTextColor2}" 
+       HorizontalOptions="Center" Margin="0,0,0,0" >
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Cancel"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </HorizontalStackLayout>
+               
+
+                <Button x:Name="LinkCards" FontSize="Medium" Text="Link Card" Clicked="LinkCard" 
+                      Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

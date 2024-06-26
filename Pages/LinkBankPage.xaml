@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.LinkBankPage"
+             NavigationPage.HasNavigationBar="False"
+               xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+                xmlns:local1="clr-namespace:Fast_Cash.Model"
+             Title="Link Bank">
+    <VerticalStackLayout Padding="20,0">
+        <local:TopNav Header="Link Bank"/>
+
+        <VerticalStackLayout Margin="0,30">
+            
+    
+        <Image Margin="0,20" Source="img603.png"/>
+        <Label Margin="0,30"
+          Text="Please, provide accurate information"
+          VerticalOptions="Center" 
+          HorizontalOptions="Center" />
+
+        <VerticalStackLayout Margin="20,20">
+            <VerticalStackLayout Margin="0,10">
+                <local1:LineEntry Placeholder="Account owner name"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="0,10">
+                <local1:LineEntry Keyboard="Numeric" Placeholder="Account number"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="0,10">
+                <local1:LineEntry Keyboard="Numeric" Placeholder="BVN" IsPassword="True"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+
+        <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Clicked="ContinuebutClicked" 
+        Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.CardLinkSuccess"
+             NavigationPage.HasNavigationBar="False"
+             Title="CardLinkSuccess">
+    <VerticalStackLayout Padding="20,0">
+     
+            
+       
+        <Label FontSize="Medium" Margin="0,20,0,0"
+            Text="Successfully Linked"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+        <VerticalStackLayout Margin="0,20">
+            <Label 
+      Text="Card has been linked"
+      VerticalOptions="Center" Style="{DynamicResource headlabel2}"
+      HorizontalOptions="Start" />
+
+        <Image Margin="0,50,0,0" Source="illustration.png"/>
+        <Label Text="Thank for using our services !" Style="{DynamicResource headlabel4}"/>
+        <Label Text="Your happiness is our pleasure" Style="{DynamicResource headlabel4}"/>
+
+        <Button x:Name="Home" FontSize="Medium" Text="Home" Clicked="Home_Clicked" 
+            Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+    </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

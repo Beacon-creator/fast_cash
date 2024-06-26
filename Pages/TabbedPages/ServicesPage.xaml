@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.TabbedPages.ServicesPage"
+                 xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+              NavigationPage.HasBackButton="False"
+ NavigationPage.HasNavigationBar="False"
+             Title="ServicesPage">
+    <VerticalStackLayout Padding="20,0">
+        <local:NavTop Header="Services"/>
+        <VerticalStackLayout >
+            <Label Margin="0,40"
+           Text="We provide top service for you and your family"
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+            <local:SearchFrame Margin="20,40"/>
+        </VerticalStackLayout>
+ 
+        <ScrollView Orientation="Vertical" VerticalScrollBarVisibility="Never">
+            <VerticalStackLayout Spacing="40">
+                
+            
+            <HorizontalStackLayout Spacing="60">
+                    <local:FunctionsCard HeightRequest="130"  WidthRequest="155" HeadText="Booking Car" BackgroundImageSource="car.svg" VerticalOptions="Center" HorizontalOptions="Center" />
+                    <local:FunctionsCard  HeightRequest="130"   WidthRequest="155" HeadText="Booking flight" BackgroundImageSource="airplane.svg"  VerticalOptions="Center" HorizontalOptions="Center" />
+               
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout Spacing="60">
+                    <local:FunctionsCard  HeightRequest="130"   WidthRequest="155"  HeadText="Booking Train" BackgroundImageSource="train.svg" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
+                    <local:FunctionsCard  HeightRequest="130"   WidthRequest="155" HeadText="Booking Bus" BackgroundImageSource="bus.svg"  VerticalOptions="Center" HorizontalOptions="Center" />
+              
+            </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="60">
+                    <local:FunctionsCard  HeightRequest="130"  WidthRequest="155" HeadText="Pay Bill" BackgroundImageSource="pay.svg"  VerticalOptions="Center" HorizontalOptions="Center" />
+                    <local:FunctionsCard  HeightRequest="130"  WidthRequest="155"  HeadText="Shopping" BackgroundImageSource="car.svg"  VerticalOptions="Center" HorizontalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

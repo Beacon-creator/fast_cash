@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.AccountPageMain"
+                 xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+               xmlns:localpage="clr-namespace:Fast_Cash.Pages"
+               xmlns:localModel="clr-namespace:Fast_Cash.ViewModels"
+               NavigationPage.HasBackButton="False"
+                NavigationPage.HasNavigationBar="False"
+             Title="Account Page">
+
+    <ContentPage.BindingContext>
+        <localModel:AccountMainViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="20,0">
+        <!--<local:TopNav Header="Link Account"/>-->
+        <ScrollView Orientation="Vertical">
+            <VerticalStackLayout Margin="0,30">
+                <Image Source="acc.png"/>
+                <Label Style="{DynamicResource headlabel}" WidthRequest="350" Text="ID code has been sent please check your phone number"/>
+               
+                <VerticalStackLayout Margin="0,30">
+                    <Label Margin="25,0" FontSize="Medium" Text="Bank account"/>
+                    <HorizontalStackLayout Spacing="5">
+                        <ImageButton Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="leftarrow.svg"/>
+
+                        <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchAVisible}">
+                            <!-- Batch A content -->
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                            </Frame>
+                            <!-- More frames -->
+                        </HorizontalStackLayout>
+         
+
+                        <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchBVisible}">
+                            <!-- Batch B content -->
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                            </Frame>
+                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
+                            </Frame>
+                            <!-- More frames -->
+                        </HorizontalStackLayout>
+
+                        <ImageButton x:Name="forwardbutton" Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="forward_arrow.svg"/>
+                    </HorizontalStackLayout>
+
+                    <Label Margin="25,0" FontSize="Medium" Text="International Card"/>
+                    <HorizontalStackLayout Margin="25,20" Spacing="42">
+                        <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="american_ex.svg"/>
+                        </Frame>
+                        <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group613.svg"/>
+                        </Frame>
+                        <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group614.svg"/>
+                        </Frame>
+                        <!-- More frames -->
+                    </HorizontalStackLayout>
+
+                    <Label Margin="25,10" FontSize="Medium" Text="Link Card later >">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding LinkCardLaterCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

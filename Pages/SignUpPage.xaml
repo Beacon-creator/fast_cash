@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:Fast_Cash.EventHandlers"
+             xmlns:local1="clr-namespace:Fast_Cash.Model"
+             xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Fast_Cash.Pages.SignUpPage">
+
+    <ContentPage.BindingContext>
+        <vm:SignUpViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto, *">
+            <StackLayout Padding="30,0" Grid.Row="0" Orientation="Horizontal" Style="{DynamicResource StackLay}" Margin="0,50,0,0">
+                <Image Style="{DynamicResource walimagered}"/>
+                <Label Text="Fanal Cash" Style="{DynamicResource fclabel}"/>
+            </StackLayout>
+
+            <StackLayout Padding="30,0" Margin="0,40,0,0" Grid.Row="1">
+                <Label Text="Sign up" Margin="0,20" Style="{DynamicResource sublabel}"/>
+
+                <StackLayout Spacing="10" Margin="0,10,0,0" Orientation="Horizontal">
+                    <Picker Title="Select Code" FontSize="Medium" Margin="0,4,0,0">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>+1</x:String>
+                                <x:String>+44</x:String>
+                                <x:String>+49</x:String>
+                                <x:String>+234</x:String>
+                                <x:String>+235</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+
+                    <StackLayout Orientation="Vertical">
+                        <Grid ColumnDefinitions="Auto,Auto">
+                            <ImageButton Grid.Column="0" WidthRequest="10" HeightRequest="10" Source="arrowdown.svg" />
+                            <local1:LineEntry Grid.Column="1" Margin="5,5" FontSize="Medium"
+                                Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="215" Placeholder="Phone No." />
+                        </Grid>
+                        <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" Margin="0,0,0,7" HeightRequest="1"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding EmailAddress}" Placeholder="Email Address"/>
+                    <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid ColumnDefinitions="Auto,Auto,*">
+                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
+                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding Password}" Placeholder="Password" IsPassword="True"
+                            x:Name="EntryPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+                        <ImageButton Margin="25,0,0,0" Grid.Column="2" Style="{DynamicResource eyebutton}" Source="closeeyes">
+                            <ImageButton.Triggers>
+                                <EventTrigger Event="Clicked">
+                                    <local:ShowPasswordTriggerActions ShowIcon="openeyes" HideIcon="closeeyes" x:Name="ShowPasswordActualTrigger"/>
+                                </EventTrigger>
+                            </ImageButton.Triggers>
+                        </ImageButton>
+                    </Grid>
+                    <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+                </StackLayout>
+
+                <StackLayout Spacing="5">
+                    <Grid ColumnDefinitions="Auto,Auto">
+                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
+                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" IsPassword="True"
+                            x:Name="EntryConfirmPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+                    </Grid>
+                    <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+                </StackLayout>
+
+                <StackLayout Margin="0,20" Orientation="Horizontal">
+                    <local1:CheckBoxEntry HorizontalOptions="StartAndExpand" HeightRequest="20" WidthRequest="20" Margin="0,0,30,0"
+                        IsChecked="{Binding TermsAccepted}" Style="{DynamicResource TandCBox}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+                                    <VisualState.Setters>
+                                        <Setter Property="Color" Value="{DynamicResource TertiaryTextColor}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="IsChecked">
+                                    <VisualState.Setters>
+                                        <Setter Property="Color" Value="{DynamicResource TertiaryTextColor}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                    </local1:CheckBoxEntry>
+
+                    <Label FontSize="Medium" x:Name="termsLabel">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="I agree to the "/>
+                                    <Span Text="terms" x:Name="Terms_Rules" TextColor="{DynamicResource TertiaryTextColor}"/>
+                                    <Span Text=" and "/>
+                                    <Span Text="privacy policy." TextColor="{DynamicResource TertiaryTextColor}" x:Name="privacy_Rules"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                        <Label.Triggers>
+                            <DataTrigger TargetType="Label" Binding="{Binding TermsAccepted}" Value="true">
+                                <Setter Property="TextColor" Value="Blue"/>
+                                <Setter Property="FontAttributes" Value="Italic, Bold"/>
+                            </DataTrigger>
+                        </Label.Triggers>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding RulesTappedCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Margin="0,10,0,0" Padding="30,0" Orientation="Vertical" Grid.Row="2">
+                <Button x:Name="Signupbut" FontSize="Large" Text="Sign up for free" Style="{DynamicResource entranceButtons}"
+                    Command="{Binding SignUpCommand}"/>
+                <StackLayout Spacing="20" Margin="0,20,0,0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                    <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
+                    <Label TextColor="{DynamicResource SecundaryTextColor2}" Text="Or sign up with" Style="{DynamicResource Titlelabel}"/>
+                    <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
+                </StackLayout>
+
+                <StackLayout Spacing="20" Orientation="Horizontal" HeightRequest="50" Margin="0,20,0,20">
+                    <Button x:Name="googlebut" ImageSource="google.svg" Style="{DynamicResource otherbuttons}"
+                        Text="Google" Command="{Binding GoogleSignUpCommand}"/>
+                    <Button x:Name="microsoftbut" ImageSource="microsoft.svg" Style="{DynamicResource otherbuttons}"
+                        Text="Microsoft" Command="{Binding MicrosoftSignUpCommand}"/>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="CenterAndExpand" Spacing="10" Orientation="Horizontal" Margin="0,0,0,50">
+                    <Label Text="Already have an account?" TextColor="{DynamicResource SecundaryTextColor}" Style="{DynamicResource Titlelabel}"/>
+                    <Label Text="Sign in" TextColor="{DynamicResource TertiaryTextColor}" FontSize="Medium" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding SignInCommand}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

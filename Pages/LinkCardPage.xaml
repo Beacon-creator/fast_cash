@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+             xmlns:local1="clr-namespace:Fast_Cash.Model"
+             x:Class="Fast_Cash.Pages.LinkCardPage"
+             NavigationPage.HasBackButton="False"
+             Title="LinkCardPage">
+    <VerticalStackLayout Padding="20,0">
+        <local:TopNav Header="Link Card"/>
+
+        <Image Margin="0,30" Source="credit_card.svg"/>
+        <Label Margin="0,20"
+            Text="CVV number is printed on your card back"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <VerticalStackLayout Spacing="5" Margin="20,15">
+            <VerticalStackLayout>
+                <local1:LineEntry Placeholder="Card holder name"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+            
+            <VerticalStackLayout>
+                <local1:LineEntry Keyboard="Numeric" Placeholder="Card number"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <local1:LineEntry Keyboard="Numeric" Placeholder="CVV" IsPassword="True"/>
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <local1:LineEntry Placeholder="MM/YY" Keyboard="Numeric" />
+                <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
+            </VerticalStackLayout>
+            
+        </VerticalStackLayout>
+
+        <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Clicked="LinkCardbut" 
+          Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

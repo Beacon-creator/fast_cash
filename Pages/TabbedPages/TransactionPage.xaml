@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fast_Cash.Pages.TabbedPages.TransactionPage"
+              xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+              NavigationPage.HasBackButton="False"   
+             NavigationPage.HasNavigationBar="False"
+             Title="TransactionPage">
+    <VerticalStackLayout Padding="20,0">
+        <local:NavTop Header="Transaction History"/>
+        <Label Style="{DynamicResource headlabel}"
+            Text="Filter" Margin="20,20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start" />
+
+        <HorizontalStackLayout Margin="20,0" Spacing="160">
+            <Label Style="{DynamicResource headlabel4}" Text="From date"/>
+            <Label Style="{DynamicResource headlabel4}" Text="To date"/>
+        </HorizontalStackLayout>
+
+        <!--<HorizontalStackLayout Spacing="150">
+            <local:CalenderFrame />
+            <local:CalenderFrame />
+        </HorizontalStackLayout>-->
+
+
+        <Button x:Name="Clear_but" Text="Next" FontSize="Medium"
+            Clicked="Clear_but_Clicked" Style="{DynamicResource entranceButtons}" Margin="20,100,20,0" />
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Fast_Cash.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Fast_Cash.Pages"
+    xmlns:local1="clr-namespace:Fast_Cash.Pages.TabbedPages"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="True"
+    Shell.TabBarBackgroundColor="{DynamicResource ProTextColor}"
+     Shell.TabBarForegroundColor="{DynamicResource PrimaryBackgroundColor}"
+    Shell.TabBarUnselectedColor="{DynamicResource TertiaryBackgroundColor}"
+    Title="Fast_Cash">
+
+    <!--<ShellContent
+        ContentTemplate="{DataTemplate local:StartPage1}"
+        Route="StartPage1"/>-->
+    <!--<ShellContent
+    ContentTemplate="{DataTemplate local:SignUpPage}"
+    Route="SignUpPage"/>-->
+    <ShellContent
+    ContentTemplate="{DataTemplate local:SignInPage}"
+    Route="SignInPage"/>
+    <ShellContent
+ ContentTemplate="{DataTemplate local:ForgotPasswordPage}"
+ Route="ForgotPasswordPage"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:ForgotPasswordVerificationPage}"
+Route="ForgotPasswordVerificationPage"/>
+    <ShellContent
+    ContentTemplate="{DataTemplate local:NewPasswordPage}"
+    Route="NewPasswordPage"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:AccountPageMain}"
+Route="AccountPageMain"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:LinkCardPage}"
+Route="LinkCardPage"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:LinkBankPage}"
+Route="LinkBankPage"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:BankVerificationPage}"
+Route="BankVerificationPage"/>
+    <ShellContent
+ContentTemplate="{DataTemplate local:CardLinkSuccess}"
+Route="CardLinkSuccess"/>
+
+    <!-- Define your TabBar -->
+
+    <TabBar  x:Name="MainTabBar" IsVisible="False">
+        <!-- Define each Tab with its respective ContentPage -->
+        <Tab  Icon="chain.svg">
+            <ShellContent  Shell.NavBarIsVisible="False" Route="AccountPage" ContentTemplate="{DataTemplate local1:AccountPage}" />
+        </Tab>
+        <Tab  Icon="home.svg">
+            <ShellContent Shell.NavBarIsVisible="False" Route="HomePage" ContentTemplate="{DataTemplate local1:HomePage}" />
+        </Tab>
+        <Tab  Icon="receipt.svg">
+            <ShellContent  Shell.NavBarIsVisible="False" Route="TransactionPage" ContentTemplate="{DataTemplate local1:TransactionPage}" />
+        </Tab>
+        <Tab Icon="seo_and_web.svg">
+            <ShellContent  Shell.NavBarIsVisible="False" Route="ServicesPage" ContentTemplate="{DataTemplate local1:ServicesPage}" />
+        </Tab>
+    </TabBar>
+
+
+</Shell>
