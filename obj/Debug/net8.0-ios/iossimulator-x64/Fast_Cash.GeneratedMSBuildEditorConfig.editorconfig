@@ -1,0 +1,197 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Fast_Cash
+build_property.ProjectDir = C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/CalenderFrame.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.CalenderFrame.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\CalenderFrame.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\CalenderFrame.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/FunctionsCard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.FunctionsCard.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\FunctionsCard.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\FunctionsCard.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/NavTop.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.NavTop.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\NavTop.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\NavTop.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/SearchFrame.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.SearchFrame.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\SearchFrame.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\SearchFrame.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/TopNav.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.TopNav.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\TopNav.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\TopNav.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/WalletsCard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.WalletsCard.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\WalletsCard.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\WalletsCard.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/AccountPageMain.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.AccountPageMain.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AccountPageMain.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AccountPageMain.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/BankVerificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.BankVerificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\BankVerificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\BankVerificationPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/CardLinkSuccess.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.CardLinkSuccess.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CardLinkSuccess.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CardLinkSuccess.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/ForgotPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ForgotPasswordPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/ForgotPasswordVerificationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.ForgotPasswordVerificationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ForgotPasswordVerificationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ForgotPasswordVerificationPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/LinkBankPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.LinkBankPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LinkBankPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LinkBankPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/LinkCardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.LinkCardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LinkCardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LinkCardPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/NewPasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.NewPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\NewPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\NewPasswordPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/Page1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.Page1.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Page1.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Page1.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/SignInPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.SignInPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SignInPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SignInPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SignUpPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/SplashScreen.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.SplashScreen.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SplashScreen.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SplashScreen.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/StartPage1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.StartPage1.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\StartPage1.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\StartPage1.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/TabbedPages/AccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.TabbedPages.AccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TabbedPages\AccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TabbedPages\AccountPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/TabbedPages/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.TabbedPages.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TabbedPages\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TabbedPages\HomePage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/TabbedPages/ServicesPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.TabbedPages.ServicesPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TabbedPages\ServicesPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TabbedPages\ServicesPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Pages/TabbedPages/TransactionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Pages.TabbedPages.TransactionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\TabbedPages\TransactionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\TabbedPages\TransactionPage.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Resources/Styles/ColorStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Resources.Styles.ColorStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\ColorStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\ColorStyles.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Resources/Styles/MainappStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Resources.Styles.MainappStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\MainappStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\MainappStyles.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

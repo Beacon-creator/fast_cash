@@ -10,7 +10,7 @@ namespace Fast_Cash.Pages
         {
             InitializeComponent();
 
-            // Resolve the ViewModel from the ServiceProviderHelper
+           
             BindingContext = ServiceProviderHelper.GetService<SignInViewModel>();
         }
     }

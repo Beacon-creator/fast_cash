@@ -8,9 +8,6 @@
     <DefaultDevice>pixel_6_-_api_33</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Custom_Render\BankCard.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
     <MauiXaml Update="Custom_Render\CalenderFrame.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
-using Fast_Cash.Pages;
 using Microsoft.Maui.Controls;
 
 namespace Fast_Cash.ViewModels
@@ -10,10 +11,12 @@ namespace Fast_Cash.ViewModels
     public partial class SignInViewModel : ObservableObject
     {
         private readonly IAlertService _alertService;
+        private readonly HttpClient _httpClient;
 
-        public SignInViewModel(IAlertService alertService)
+        public SignInViewModel(IAlertService alertService, HttpClient httpClient)
         {
             _alertService = alertService;
+            _httpClient = httpClient;
         }
 
         [ObservableProperty]
@@ -25,28 +28,22 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task SignIn()
         {
-            // Handle sign-in logic here
-            //  await Shell.Current.GoToAsync("//HomePage");
-            var appShell = (AppShell)Application.Current.MainPage;
+            var loginModel = new { Identifier = EmailOrPhone, Password = Password };
+            var response = await _httpClient.PostAsJsonAsync("api/Login", loginModel);
 
-            await appShell.NavigateToHomeScreen();
-
-            // Handle sign-in logic here
-            //bool loginSuccessful = true; // Replace with actual login logic
-
-            //if (loginSuccessful)
-            //{
-            //    // Navigate to the main page (TabBar)
-            //    var appShell = (AppShell)Application.Current.MainPage;
-            //    await appShell.NavigateToHomeScreen();
-            //}
-            //else
-            //{
-            //    // Handle login failure
-            //    await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
-            //}
+            if (response.IsSuccessStatusCode)
+            {
+                var token = await response.Content.ReadAsStringAsync();
+                // Save the token (e.g., in SecureStorage) and navigate to the home screen
+                await SecureStorage.SetAsync("auth_token", token);
+                var appShell = (AppShell)Application.Current.MainPage;
+                await appShell.NavigateToHomeScreen();
+            }
+            else
+            {
+                await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
+            }
         }
-
 
         [RelayCommand]
         private async Task NavigateToForgotPassword()
@@ -59,7 +56,7 @@ namespace Fast_Cash.ViewModels
         private async Task NavigateToSignUp()
         {
             // Navigate to the sign-up page
-            await Shell.Current.GoToAsync("//SignUpPage");
+            await Shell.Current.GoToAsync("SignUpPage");
         }
 
         [RelayCommand]

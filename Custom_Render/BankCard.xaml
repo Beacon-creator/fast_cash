@@ -5,10 +5,10 @@ git<?xml version="1.0" encoding="utf-8" ?>
     <ContentView.Content>
         <Frame x:Name="CardFrame" BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
             <Image x:Name="backgroundImage" WidthRequest="45" HeightRequest="45" Source="{Binding BackgroundImageSource}"/>
-            <!--<Frame.GestureRecognizers>
+            <Frame.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:HomePageVM}}, Path=NavigationCommand}"
                            CommandParameter="{Binding .}" />
-            </Frame.GestureRecognizers>-->
+            </Frame.GestureRecognizers>
         </Frame>
     </ContentView.Content>
 </ContentView>
