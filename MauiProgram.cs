@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
 using Fast_Cash.EventHandlers;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net.Http;
 
 namespace Fast_Cash
 {
@@ -20,7 +21,8 @@ namespace Fast_Cash
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             }).UseMauiCommunityToolkit();
 
-
+            //extensions
+            builder.Services.AddHttpClient();
 
 
             //pages

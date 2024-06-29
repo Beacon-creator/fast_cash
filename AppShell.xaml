@@ -6,21 +6,21 @@
     xmlns:local="clr-namespace:Fast_Cash.Pages"
     xmlns:local1="clr-namespace:Fast_Cash.Pages.TabbedPages"
     Shell.FlyoutBehavior="Disabled"
-    Shell.NavBarIsVisible="True"
+    Shell.NavBarIsVisible="False"
     Shell.TabBarBackgroundColor="{DynamicResource ProTextColor}"
      Shell.TabBarForegroundColor="{DynamicResource PrimaryBackgroundColor}"
     Shell.TabBarUnselectedColor="{DynamicResource TertiaryBackgroundColor}"
     Title="Fast_Cash">
 
-    <!--<ShellContent
+    <ShellContent
         ContentTemplate="{DataTemplate local:StartPage1}"
-        Route="StartPage1"/>-->
-    <!--<ShellContent
-    ContentTemplate="{DataTemplate local:SignUpPage}"
-    Route="SignUpPage"/>-->
+        Route="StartPage1"/>
     <ShellContent
     ContentTemplate="{DataTemplate local:SignInPage}"
     Route="SignInPage"/>
+    <ShellContent
+  ContentTemplate="{DataTemplate local:SignUpPage}"
+  Route="SignUpPage"/>
     <ShellContent
  ContentTemplate="{DataTemplate local:ForgotPasswordPage}"
  Route="ForgotPasswordPage"/>

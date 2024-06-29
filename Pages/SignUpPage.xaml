@@ -39,22 +39,35 @@
                         <Grid ColumnDefinitions="Auto,Auto">
                             <ImageButton Grid.Column="0" WidthRequest="10" HeightRequest="10" Source="arrowdown.svg" />
                             <local1:LineEntry Grid.Column="1" Margin="5,5" FontSize="Medium"
-                                Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="215" Placeholder="Phone No." />
+                                Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="215" Placeholder="Phone No." >
+                                <Entry.Behaviors>
+                                    <local:PhoneNumberValidationBehavior/>
+                                </Entry.Behaviors>
+                            </local1:LineEntry>
                         </Grid>
                         <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" Margin="0,0,0,7" HeightRequest="1"/>
                     </StackLayout>
                 </StackLayout>
 
                 <StackLayout>
-                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding EmailAddress}" Placeholder="Email Address"/>
+                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding EmailAddress}" Placeholder="Email Address">
+                        <Entry.Behaviors>
+                            <local:EmailValidatorBehavior/>
+                        </Entry.Behaviors>
+                    </local1:LineEntry>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Grid ColumnDefinitions="Auto,Auto,*">
                         <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
-                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding Password}" Placeholder="Password" IsPassword="True"
-                            x:Name="EntryPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding Password}" Placeholder="Password" 
+                                          IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
+                            x:Name="EntryPassword" HorizontalOptions="FillAndExpand" FontSize="Medium">
+                            <Entry.Behaviors>
+                                <local:PasswordValidationBehavior/>
+                            </Entry.Behaviors>
+                        </local1:LineEntry>
                         <ImageButton Margin="25,0,0,0" Grid.Column="2" Style="{DynamicResource eyebutton}" Source="closeeyes">
                             <ImageButton.Triggers>
                                 <EventTrigger Event="Clicked">
@@ -69,7 +82,8 @@
                 <StackLayout Spacing="5">
                     <Grid ColumnDefinitions="Auto,Auto">
                         <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
-                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" IsPassword="True"
+                        <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password"
+                                           IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
                             x:Name="EntryConfirmPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
                     </Grid>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>

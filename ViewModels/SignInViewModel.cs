@@ -17,6 +17,12 @@ namespace Fast_Cash.ViewModels
         {
             _alertService = alertService;
             _httpClient = httpClient;
+
+            // Set the base address if it is not already set
+            if (_httpClient.BaseAddress == null)
+            {
+                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
+            }
         }
 
         [ObservableProperty]
@@ -29,13 +35,18 @@ namespace Fast_Cash.ViewModels
         private async Task SignIn()
         {
             var loginModel = new { Identifier = EmailOrPhone, Password = Password };
-            var response = await _httpClient.PostAsJsonAsync("api/Login", loginModel);
+            var response = await _httpClient.PostAsJsonAsync("api/login", loginModel);
 
             if (response.IsSuccessStatusCode)
             {
                 var token = await response.Content.ReadAsStringAsync();
                 // Save the token (e.g., in SecureStorage) and navigate to the home screen
                 await SecureStorage.SetAsync("auth_token", token);
+
+                // Show a success alert
+                await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
+
+
                 var appShell = (AppShell)Application.Current.MainPage;
                 await appShell.NavigateToHomeScreen();
             }

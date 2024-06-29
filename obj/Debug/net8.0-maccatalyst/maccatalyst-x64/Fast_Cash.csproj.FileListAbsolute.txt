@@ -446,3 +446,11 @@ C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-maccataly
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Fast_Cash.pdb
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Fast_Cash.genruntimeconfig.cache
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\Fast_Cash.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Http.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Http.Polly.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Polly.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\Polly.Extensions.Http.dll

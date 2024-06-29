@@ -10,7 +10,7 @@ namespace Fast_Cash.EventHandlers
 {
     public class ShowPasswordTriggerActions : TriggerAction<ImageButton>, INotifyPropertyChanged
     {
-        public string ? ShowIcon { get; set; }
+        public string? ShowIcon { get; set; }
         public string? HideIcon { get; set; }
 
         bool _hidePassword = true;

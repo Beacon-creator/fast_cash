@@ -31,7 +31,7 @@ namespace Fast_Cash.ViewModels
         {
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("localhost:5240/api/signup")
+                BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/api/signup")
             };
         }
 
