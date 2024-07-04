@@ -64,5 +64,15 @@ Route="CardLinkSuccess"/>
         </Tab>
     </TabBar>
 
+    <TabBar Title="QR code" x:Name="QRcodeTabbar" IsVisible="False">
+        <!-- Define each Tab with its respective ContentPage -->
+        <Tab  Title="Code">
+            <ShellContent  Shell.NavBarIsVisible="False" Route="CardscanPage" ContentTemplate="{DataTemplate local1:CardscanPage}" />
+        </Tab>
+        <Tab  Title="Scan">
+            <ShellContent Shell.NavBarIsVisible="False" Route="FacescanPage" ContentTemplate="{DataTemplate local1:FacescanPage}" />
+        </Tab>
+        
+    </TabBar>
 
 </Shell>

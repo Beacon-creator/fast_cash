@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
+using Fast_Cash.EventHandlers;
+using Fast_Cash.ViewModels;
 
 namespace Fast_Cash.Pages
 {
@@ -15,12 +17,11 @@ namespace Fast_Cash.Pages
 		public NewPasswordPage ()
 		{
 			InitializeComponent ();
-		}
 
-        private void ForgotbutNext(object sender, EventArgs e)
-        {
-
+            // Resolve the ViewModel from the ServiceProviderHelper
+            BindingContext = ServiceProviderHelper.GetService<NewPasswordViewModel>();
         }
+
 
         private async void backbut_Clicked(object sender, EventArgs e)
         {

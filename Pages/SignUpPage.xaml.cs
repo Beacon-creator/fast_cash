@@ -1,5 +1,7 @@
 ﻿using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
+using Fast_Cash.ViewModels;
+using Fast_Cash.EventHandlers;
 
 namespace Fast_Cash.Pages
 {
@@ -9,6 +11,9 @@ namespace Fast_Cash.Pages
         public SignUpPage()
         {
             InitializeComponent();
+
+            // Resolve the ViewModel from the ServiceProviderHelper
+            BindingContext = ServiceProviderHelper.GetService<SignUpViewModel>();
         }
     }
 }

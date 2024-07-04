@@ -70,13 +70,29 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
+            "Emgu.CV.runtime.windows": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
@@ -102,6 +118,10 @@
               "target": "Package",
               "version": "[8.0.61, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.61, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
@@ -112,9 +132,25 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "ZXing.Net.Maui": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "ZXing.Net.Maui.Controls": {
+              "target": "Package",
+              "version": "[0.4.0, )"
             }
           },
           "imports": [
@@ -145,13 +181,29 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
+            "Emgu.CV.runtime.windows": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
@@ -177,6 +229,10 @@
               "target": "Package",
               "version": "[8.0.61, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.61, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
@@ -187,9 +243,25 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "ZXing.Net.Maui": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "ZXing.Net.Maui.Controls": {
+              "target": "Package",
+              "version": "[0.4.0, )"
             }
           },
           "imports": [
@@ -220,13 +292,29 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
+            "Emgu.CV.runtime.windows": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
@@ -252,6 +340,10 @@
               "target": "Package",
               "version": "[8.0.61, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.61, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
@@ -262,9 +354,25 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "ZXing.Net.Maui": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "ZXing.Net.Maui.Controls": {
+              "target": "Package",
+              "version": "[0.4.0, )"
             }
           },
           "imports": [
@@ -296,13 +404,29 @@
               "target": "Package",
               "version": "[9.0.1, )"
             },
+            "CommunityToolkit.Maui.Markup": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.2, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
+            "Emgu.CV.runtime.windows": {
+              "target": "Package",
+              "version": "[4.9.0.5494, )"
+            },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             },
             "Microsoft.Extensions.Http": {
               "target": "Package",
@@ -328,13 +452,33 @@
               "target": "Package",
               "version": "[8.0.61, )"
             },
+            "Microsoft.Maui.Essentials": {
+              "target": "Package",
+              "version": "[8.0.61, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20240616, )"
+            },
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "ZXing.Net.Maui": {
+              "target": "Package",
+              "version": "[0.4.0, )"
+            },
+            "ZXing.Net.Maui.Controls": {
+              "target": "Package",
+              "version": "[0.4.0, )"
             }
           },
           "imports": [

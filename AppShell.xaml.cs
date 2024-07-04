@@ -1,5 +1,6 @@
 ﻿using Fast_Cash.Pages;
 using Fast_Cash.Pages.TabbedPages;
+using Microsoft.Extensions.DependencyInjection;
 //using Fast_Cash.Pages.TabbedPages;
 
 namespace Fast_Cash
@@ -17,6 +18,9 @@ namespace Fast_Cash
             Routing.RegisterRoute("TransactionPage", typeof(Pages.TabbedPages.TransactionPage));
             Routing.RegisterRoute("ServicesPage", typeof(Pages.TabbedPages.ServicesPage));
 
+
+            Routing.RegisterRoute("CardscanPage", typeof(Pages.TabbedPages.CardscanPage));
+            Routing.RegisterRoute("FacescanPage", typeof(Pages.TabbedPages.FacescanPage));
 
             Routing.RegisterRoute(nameof(StartPage1), typeof(Pages.StartPage1));
             Routing.RegisterRoute(nameof(SignUpPage), typeof(Pages.SignUpPage));
@@ -53,6 +57,16 @@ namespace Fast_Cash
             MainTabBar.IsVisible = false;
             // Navigate to the SignInPage
             await GoToAsync(nameof(SignInPage));
+        }
+
+        public async Task NavigateToQRscreen()
+        {
+            // Set the TabBar to visible
+            QRcodeTabbar.IsVisible = true;
+
+            // Navigate to the HomePage tab
+            await Shell.Current.GoToAsync("///CardscanPage");
+
         }
     }
 }

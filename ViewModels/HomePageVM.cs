@@ -13,4 +13,11 @@ public partial class HomePageVM : ObservableObject
         await Shell.Current.GoToAsync(nameof(SignInPage));
     }
 
+
+    [RelayCommand]
+    private async Task Qrcode()
+    {
+        var appShell = (AppShell)Application.Current.MainPage;
+        await appShell.NavigateToQRscreen();
+    }
 }

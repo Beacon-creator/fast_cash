@@ -18,13 +18,13 @@
             <Label Style="{DynamicResource headlabel4}" Text="To date"/>
         </HorizontalStackLayout>
 
-        <!--<HorizontalStackLayout Spacing="150">
+        <HorizontalStackLayout  Spacing="40">
             <local:CalenderFrame />
             <local:CalenderFrame />
-        </HorizontalStackLayout>-->
+        </HorizontalStackLayout>
 
 
-        <Button x:Name="Clear_but" Text="Next" FontSize="Medium"
-            Clicked="Clear_but_Clicked" Style="{DynamicResource entranceButtons}" Margin="20,100,20,0" />
+        <!--<Button x:Name="Clear_but" Text="Next" FontSize="Medium"
+            Clicked="Clear_but_Clicked" Style="{DynamicResource entranceButtons}" Margin="20,100,20,0" />-->
     </VerticalStackLayout>
 </ContentPage>

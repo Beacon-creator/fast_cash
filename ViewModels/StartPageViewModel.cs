@@ -38,7 +38,7 @@ namespace Fast_Cash.ViewModels
         {
             // await Shell.Current.GoToAsync("//SignUpPage");
 
-            await Shell.Current.GoToAsync(nameof(SignUpPage));
+            await Shell.Current.GoToAsync(nameof(SignInPage));
         }
     }
 }

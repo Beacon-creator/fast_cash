@@ -14,5 +14,6 @@ public partial class LinkBankPage : ContentPage
        //   await Shell.Current.GoToAsync(nameof(BankVerificationPage));
 
         //  await Navigation.PushAsync(new BankVerificationPage());
+
     }
 }

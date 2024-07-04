@@ -1,40 +1,89 @@
 using Microsoft.Maui.Controls;
-using Microsoft.Maui.Controls.Compatibility;
 using System;
+using System.Collections.ObjectModel;
+using System.Globalization;
 
 namespace Fast_Cash.Custom_Render;
 
 public partial class CalenderFrame : ContentView
 {
-    private DatePicker datePicker;
+    public static readonly BindableProperty SelectedDateProperty =
+        BindableProperty.Create(nameof(SelectedDate), typeof(DateTime), typeof(CalenderFrame), DateTime.Today, propertyChanged: OnSelectedDateChanged);
+
+    public DateTime SelectedDate
+    {
+        get => (DateTime)GetValue(SelectedDateProperty);
+        set => SetValue(SelectedDateProperty, value);
+    }
+
+    private static void OnSelectedDateChanged(BindableObject bindable, object oldValue, object newValue)
+    {
+        var calendarFrame = (CalenderFrame)bindable;
+        calendarFrame.UpdateCalendar();
+        calendarFrame.OnPropertyChanged(nameof(calendarFrame.SelectedDateString));
+    }
+
+    public ObservableCollection<string> Days { get; set; } = new ObservableCollection<string>();
+
+    public string CurrentMonthYear => SelectedDate.ToString("MMMM yyyy", CultureInfo.InvariantCulture);
+
+    public string SelectedDateString => SelectedDate.ToString("MM/dd/yyyy");
 
     public CalenderFrame()
-	{
-		InitializeComponent();
-
-        InitializeDatePicker();
+    {
+        InitializeComponent();
+        BindingContext = this;
+        UpdateCalendar();
     }
 
-    private void InitializeDatePicker()
+    private void UpdateCalendar()
     {
-        datePicker = new DatePicker
+        Days.Clear();
+
+        var firstDayOfMonth = new DateTime(SelectedDate.Year, SelectedDate.Month, 1);
+        var startDayOfWeek = (int)firstDayOfMonth.DayOfWeek;
+
+        for (int i = 0; i < startDayOfWeek; i++)
         {
-            IsVisible = false
-        };
+            Days.Add(string.Empty);
+        }
 
-        datePicker.DateSelected += OnDateSelected;
+        var daysInMonth = DateTime.DaysInMonth(SelectedDate.Year, SelectedDate.Month);
+        for (int i = 1; i <= daysInMonth; i++)
+        {
+            Days.Add(i.ToString());
+        }
 
-        // Add DatePicker to the layout but keep it hidden
-        (Content as Layout<View>).Children.Add(datePicker);
+        OnPropertyChanged(nameof(CurrentMonthYear));
     }
 
-    private void OnCalendarButtonClicked(object sender, EventArgs e)
+    private void PreviousMonthClicked(object sender, EventArgs e)
     {
-        datePicker.Focus();
+        SelectedDate = SelectedDate.AddMonths(-1);
     }
 
-    private void OnDateSelected(object sender, DateChangedEventArgs e)
+    private void NextMonthClicked(object sender, EventArgs e)
     {
-        SelectedDateLabel.Text = e.NewDate.ToString("d");
+        SelectedDate = SelectedDate.AddMonths(1);
+    }
+
+    private void DayTapped(object sender, EventArgs e)
+    {
+        var frame = sender as Frame;
+        if (frame != null && frame.Content is Label label && int.TryParse(label.Text, out int day))
+        {
+            SelectedDate = new DateTime(SelectedDate.Year, SelectedDate.Month, day);
+            calendarPopup.IsVisible = false;
+        }
+    }
+
+    private void CalendarIconClicked(object sender, EventArgs e)
+    {
+        calendarPopup.IsVisible = true;
+    }
+
+    private void ClosePopupClicked(object sender, EventArgs e)
+    {
+        calendarPopup.IsVisible = false;
     }
 }

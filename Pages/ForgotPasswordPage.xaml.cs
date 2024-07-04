@@ -6,27 +6,26 @@ using System.Threading.Tasks;
 using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
+using Fast_Cash.ViewModels;
 
 namespace Fast_Cash.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ForgotPasswordPage : ContentPage
 	{
-		public ForgotPasswordPage ()
+		public ForgotPasswordPage (ForgotPasswordViewModel viewModel)
 		{
 			InitializeComponent ();
-		}
+           
+            BindingContext = viewModel;
+
+        }
 
       async private void ForgotbutNext(object sender, EventArgs e)
         {
          //   await Shell.Current.GoToAsync("///ForgotPasswordPage");
 
             await Shell.Current.GoToAsync(nameof(ForgotPasswordPage));
-        }
-
-        private async void backbut_Clicked(object sender, EventArgs e)
-        {
-            // await Navigation.PopAsync();
         }
     }
 }

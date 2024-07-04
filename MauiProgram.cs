@@ -4,9 +4,12 @@ using Fast_Cash.Pages.TabbedPages;
 using Fast_Cash.ViewModels;
 using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
 using Fast_Cash.EventHandlers;
 using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
+using ZXing.Net.Maui.Controls;
 
 namespace Fast_Cash
 {
@@ -23,6 +26,8 @@ namespace Fast_Cash
 
             //extensions
             builder.Services.AddHttpClient();
+            builder.UseMauiApp<App>();
+            builder.UseBarcodeReader();
 
 
             //pages
@@ -43,8 +48,12 @@ namespace Fast_Cash
             builder.Services.AddTransient<StartPageViewModel>();
             builder.Services.AddTransient<SignInViewModel>();
             builder.Services.AddTransient<SignUpViewModel>();
+            builder.Services.AddTransient<AccountMainViewModel>();
             builder.Services.AddTransient<AccountViewModel>();
             builder.Services.AddTransient<HomePageVM>();
+            builder.Services.AddTransient<ForgotPasswordViewModel>();
+            builder.Services.AddTransient<ForgotPasswordVerificationViewModel>();
+            builder.Services.AddTransient<NewPasswordViewModel>();
 
             //handlers
             builder.Services.AddSingleton<IAlertService, AlertService>();

@@ -31,9 +31,14 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private string? password;
 
+        [ObservableProperty]
+        private bool isBusy;
+
         [RelayCommand]
         private async Task SignIn()
         {
+            IsBusy = true; // Show the spinner
+
             var loginModel = new { Identifier = EmailOrPhone, Password = Password };
             var response = await _httpClient.PostAsJsonAsync("api/login", loginModel);
 
@@ -43,6 +48,7 @@ namespace Fast_Cash.ViewModels
                 // Save the token (e.g., in SecureStorage) and navigate to the home screen
                 await SecureStorage.SetAsync("auth_token", token);
 
+                IsBusy = false; // Hide the spinner
                 // Show a success alert
                 await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
 
@@ -52,8 +58,11 @@ namespace Fast_Cash.ViewModels
             }
             else
             {
+                IsBusy = false; // Hide the spinner
                 await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
             }
+
+            IsBusy = false; // Hide the spinner
         }
 
         [RelayCommand]
