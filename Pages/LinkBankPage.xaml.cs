@@ -1,19 +1,16 @@
-namespace Fast_Cash.Pages;
+// Pages/LinkBankPage.xaml.cs
+using Fast_Cash.EventHandlers;
+using Fast_Cash.ViewModels;
 
-public partial class LinkBankPage : ContentPage
+namespace Fast_Cash.Pages
 {
-	public LinkBankPage()
-	{
-		InitializeComponent();
-	}
-
-    private async void ContinuebutClicked(object sender, EventArgs e)
+    public partial class LinkBankPage : ContentPage
     {
-       await Shell.Current.GoToAsync("///BankVerificationPage");
-
-       //   await Shell.Current.GoToAsync(nameof(BankVerificationPage));
-
-        //  await Navigation.PushAsync(new BankVerificationPage());
-
+        public LinkBankPage()
+        {
+            InitializeComponent();
+            // Resolve the ViewModel from the ServiceProviderHelper
+            BindingContext = ServiceProviderHelper.GetService<LinkBankViewModel>();
+        }
     }
 }

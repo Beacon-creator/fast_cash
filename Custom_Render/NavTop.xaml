@@ -2,8 +2,18 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.NavTop">
-    <HorizontalStackLayout Margin="20,0" Padding="0,20">
+    <Grid Margin="20,0"  Padding="0,20">
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
    
-        <Label FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding Header}" />
-    </HorizontalStackLayout>
+        <Label Grid.Column="0" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding Header}" />
+        <Label Grid.Column="1" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding Home}">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Home_Tapped"/>
+            </Label.GestureRecognizers>
+        </Label>
+    </Grid>
 </ContentView>

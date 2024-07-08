@@ -32,7 +32,7 @@ namespace Fast_Cash.EventHandlers
         void HandleTextChanged(object sender, TextChangedEventArgs e)
         {
             IsValid = (Regex.IsMatch(e.NewTextValue, emailRegex, RegexOptions.IgnoreCase, TimeSpan.FromMilliseconds(250)));
-            ((LineEntry)sender).TextColor = IsValid ? Colors.Blue : Colors.Red;
+            ((LineEntry)sender).TextColor = IsValid ? Colors.Black : Colors.Red;
         }
 
         protected override void OnDetachingFrom(LineEntry bindable)

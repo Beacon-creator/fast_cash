@@ -1,44 +1,16 @@
+// Pages/BankVerificationPage.xaml.cs
 using CommunityToolkit.Maui.Views;
+using Fast_Cash.EventHandlers;
+using Fast_Cash.ViewModels;
 
-namespace Fast_Cash.Pages;
-
-public partial class BankVerificationPage : ContentPage
+namespace Fast_Cash.Pages
 {
-	public BankVerificationPage()
-	{
-		InitializeComponent();
-	}
-
-    private async void LinkCard(object sender, EventArgs e)
+    public partial class BankVerificationPage : ContentPage
     {
-     //   await Shell.Current.GoToAsync("///CardLinkSuccess");
-
-        await Shell.Current.GoToAsync(nameof(CardLinkSuccess));
+        public BankVerificationPage()
+        {
+            InitializeComponent();
+            BindingContext = ServiceProviderHelper.GetService<BankVerificationViewModel>();
+        }
     }
-
-    private void TapGestureRecognizer_GetCall(object sender, TappedEventArgs e)
-    {
-
-    }
-
-    private void TapGestureRecognizer_Check(object sender, TappedEventArgs e)
-    {
-
-    }
-
-    private async void TapGestureRecognizer_Cancel(object sender, TappedEventArgs e)
-    {
-        var appShell = (AppShell)Application.Current.MainPage;
-
-        await appShell.NavigateToHomeScreen();
-
-        //  await Shell.Current.GoToAsync("LinkBankPage");
-
-        // await Shell.Current.GoToAsync(nameof(LinkBankPage));
-    }
-
-    //private async void backbut_Clicked(object sender, EventArgs e)
-    //{
-    //    await Navigation.PopAsync();
-    //}
 }

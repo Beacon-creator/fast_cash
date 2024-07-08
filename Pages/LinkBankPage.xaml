@@ -37,7 +37,7 @@
 
         </VerticalStackLayout>
 
-        <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Clicked="ContinuebutClicked" 
+        <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Command="{Binding LinkBankAccountCommand}" 
         Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
         </VerticalStackLayout>
     </VerticalStackLayout>

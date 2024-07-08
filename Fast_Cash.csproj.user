@@ -14,10 +14,16 @@
     <MauiXaml Update="Custom_Render\CardScanner.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Custom_Render\ConfirmationDialog.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Custom_Render\FunctionsCard.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Custom_Render\NavTop.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Custom_Render\OptionsPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Custom_Render\SearchFrame.xaml">

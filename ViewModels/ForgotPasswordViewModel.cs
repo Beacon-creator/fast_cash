@@ -1,4 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
@@ -14,9 +17,9 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private string? email;
 
-
         [ObservableProperty]
         private bool isBusy;
+
         public ForgotPasswordViewModel(HttpClient httpClient, IAlertService alertService)
         {
             _httpClient = httpClient;
@@ -32,26 +35,49 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task RequestPasswordReset()
         {
-            IsBusy = true; // show the spinner
-            var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/send-code", Email);
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
-                await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
+                IsBusy = true; // show the spinner
 
-                IsBusy = false; // hide the spinner
+                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/send-code", Email);
 
-                // Navigate to ForgotPasswordVerificationPage with the email as a query parameter
-                await Shell.Current.GoToAsync($"//ForgotPasswordVerificationPage?email={Email}");
+                if (response.IsSuccessStatusCode)
+                {
+                    var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
 
+                    // Log the verification code
+                    System.Diagnostics.Debug.WriteLine($"Verification Code: {verificationCode}");
 
+                    await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
+
+                    // Navigate to ForgotPasswordVerificationPage with the email as a query parameter
+                    await Shell.Current.GoToAsync($"//ForgotPasswordVerificationPage?email={Email}");
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    // Log the error response
+                    System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
+
+                    await _alertService.ShowAlertAsync("Error", $"Failed to send verification code: {errorContent}", "OK");
+                }
             }
-            else
+            catch (HttpRequestException httpEx)
+            {
+                // Handle HTTP request exceptions
+                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+            }
+            finally
             {
                 IsBusy = false; // hide the spinner
-                await _alertService.ShowAlertAsync("Error", "Failed to send verification code.", "OK");
             }
-            IsBusy = false; // hide the spinner
         }
     }
 }

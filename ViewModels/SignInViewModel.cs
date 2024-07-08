@@ -37,33 +37,51 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task SignIn()
         {
-            IsBusy = true; // Show the spinner
-
-            var loginModel = new { Identifier = EmailOrPhone, Password = Password };
-            var response = await _httpClient.PostAsJsonAsync("api/login", loginModel);
-
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var token = await response.Content.ReadAsStringAsync();
-                // Save the token (e.g., in SecureStorage) and navigate to the home screen
-                await SecureStorage.SetAsync("auth_token", token);
+                IsBusy = true; // Show the spinner
 
-                IsBusy = false; // Hide the spinner
-                // Show a success alert
-                await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
+                var loginModel = new { Identifier = EmailOrPhone, Password = Password };
+                var response = await _httpClient.PostAsJsonAsync("api/login", loginModel);
 
+                if (response.IsSuccessStatusCode)
+                {
+                    var token = await response.Content.ReadAsStringAsync();
+                    // Save the token (e.g., in SecureStorage) and navigate to the home screen
+                    await SecureStorage.SetAsync("auth_token", token);
 
-                var appShell = (AppShell)Application.Current.MainPage;
-                await appShell.NavigateToHomeScreen();
+                    // Show a success alert
+                    await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
+
+                    var appShell = (AppShell)Application.Current.MainPage;
+                    await appShell.NavigateToHomeScreen();
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    // Log the error response
+                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                    await _alertService.ShowAlertAsync("Login Failed", $"Invalid credentials, please try again. {errorContent}", "OK");
+                }
             }
-            else
+            catch (HttpRequestException httpEx)
+            {
+                // Handle HTTP request exceptions
+                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Login Failed", $"A connection error occurred: {httpEx.Message}", "OK");
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Login Failed", $"An error occurred: {ex.Message}", "OK");
+            }
+            finally
             {
                 IsBusy = false; // Hide the spinner
-                await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
             }
-
-            IsBusy = false; // Hide the spinner
         }
+
 
         [RelayCommand]
         private async Task NavigateToForgotPassword()
@@ -80,15 +98,17 @@ namespace Fast_Cash.ViewModels
         }
 
         [RelayCommand]
-        private void GoogleSignIn()
+        private async Task GoogleSignIn()
         {
             // Handle Google sign-in logic here
+            await _alertService.ShowAlertAsync("Login Failed", "This service is not yet available.", "OK");
         }
 
         [RelayCommand]
-        private void MicrosoftSignIn()
+        private async Task MicrosoftSignIn()
         {
             // Handle Microsoft sign-in logic here
+            await _alertService.ShowAlertAsync("Login Failed", "This service is not yet available.", "OK");
         }
     }
 }

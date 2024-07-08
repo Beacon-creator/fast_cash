@@ -28,7 +28,7 @@ namespace Fast_Cash.EventHandlers
             if (e.NewTextValue != null)
             {
                 IsValid = Regex.IsMatch(e.NewTextValue, passwordRegex);
-                ((LineEntry)sender).TextColor = IsValid ? Colors.Blue : Colors.Red;
+                ((LineEntry)sender).TextColor = IsValid ? Colors.Black : Colors.Red;
             }
             else
             {

@@ -9,8 +9,6 @@
              NavigationPage.HasNavigationBar="False"
              Title="AccountPage">
 
-
-
     <ContentPage.BindingContext>
         <localmodel:AccountViewModel />
     </ContentPage.BindingContext>
@@ -30,13 +28,13 @@
                         <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchAVisible}">
                             <!-- Batch A content -->
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg"/>
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
                                 <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
                                 <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
@@ -50,7 +48,7 @@
                         <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchBVisible}">
                             <!-- Batch B content -->
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
                                 <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
@@ -62,7 +60,7 @@
                                 <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
                             </Frame>
                             <!-- More frames -->
                         </HorizontalStackLayout>

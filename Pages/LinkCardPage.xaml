@@ -7,7 +7,7 @@
              NavigationPage.HasBackButton="False"
              Title="LinkCardPage">
     <VerticalStackLayout Padding="20,0">
-        <local:TopNav Header="Link Card"/>
+        <local:NavTop Home="Home" Route="//HomePage" Header="Link Card"/>
 
         <Image Margin="0,30" Source="credit_card.svg"/>
         <Label Margin="0,20"
@@ -38,7 +38,7 @@
             
         </VerticalStackLayout>
 
-        <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Clicked="LinkCardbut" 
+        <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Command="{Binding LinkCardCommand}" 
           Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
 
     </VerticalStackLayout>

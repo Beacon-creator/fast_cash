@@ -18,7 +18,7 @@ namespace Fast_Cash.EventHandlers
         {
             var entry = (Entry)sender;
             bool isValid = Regex.IsMatch(e.NewTextValue, phoneRegex);
-            entry.TextColor = isValid ? Colors.Blue : Colors.Red;
+            entry.TextColor = isValid ? Colors.Black : Colors.Red;
         }
 
         protected override void OnDetachingFrom(Entry bindable)

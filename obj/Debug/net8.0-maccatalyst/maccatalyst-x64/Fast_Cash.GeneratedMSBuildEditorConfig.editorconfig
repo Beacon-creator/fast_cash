@@ -40,6 +40,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.Ca
 build_metadata.AdditionalFiles.TargetPath = Custom_Render\CardScanner.xaml
 build_metadata.AdditionalFiles.RelativePath = Custom_Render\CardScanner.xaml
 
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/ConfirmationDialog.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.ConfirmationDialog.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\ConfirmationDialog.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\ConfirmationDialog.xaml
+
 [C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/FunctionsCard.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.FunctionsCard.xaml
@@ -51,6 +57,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.NavTop.xaml
 build_metadata.AdditionalFiles.TargetPath = Custom_Render\NavTop.xaml
 build_metadata.AdditionalFiles.RelativePath = Custom_Render\NavTop.xaml
+
+[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/OptionsPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Fast_Cash.Custom_Render.OptionsPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Custom_Render\OptionsPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Custom_Render\OptionsPopup.xaml
 
 [C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/SearchFrame.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

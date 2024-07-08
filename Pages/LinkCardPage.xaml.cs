@@ -1,3 +1,6 @@
+using Fast_Cash.EventHandlers;
+using Fast_Cash.ViewModels;
+
 namespace Fast_Cash.Pages;
 
 public partial class LinkCardPage : ContentPage
@@ -5,10 +8,8 @@ public partial class LinkCardPage : ContentPage
 	public LinkCardPage()
 	{
 		InitializeComponent();
-	}
-
-    private async void LinkCardbut(object sender, EventArgs e)
-    {
-        await DisplayAlert("Success", "Card linked successfully!", "OK");
+        // Resolve the ViewModel from the ServiceProviderHelper
+        BindingContext = ServiceProviderHelper.GetService<LinkCardViewModel>();
     }
+
 }

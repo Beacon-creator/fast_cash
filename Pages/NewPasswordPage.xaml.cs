@@ -22,10 +22,5 @@ namespace Fast_Cash.Pages
             BindingContext = ServiceProviderHelper.GetService<NewPasswordViewModel>();
         }
 
-
-        private async void backbut_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
     }
 }

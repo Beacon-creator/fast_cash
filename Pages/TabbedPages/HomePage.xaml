@@ -18,7 +18,7 @@
             
             <HorizontalStackLayout Margin="50,0" Spacing="30" HorizontalOptions="EndAndExpand">
                 <ImageButton Command="{Binding QrcodeCommand}" HeightRequest="40" WidthRequest="40" Source="qr_code.svg"/>
-                <ImageButton HeightRequest="30" WidthRequest="10" Source="vertical_dots.svg"/>
+                <ImageButton Command="{Binding DotCommand}" HeightRequest="30" WidthRequest="10" Source="vertical_dots.svg"/>
             </HorizontalStackLayout>
         </HorizontalStackLayout>
 

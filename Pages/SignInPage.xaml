@@ -57,6 +57,10 @@
 
             <StackLayout Padding="30,0" Orientation="Vertical" Grid.Row="2">
                 <Button x:Name="loginbut" FontSize="Large" Text="Log in" Style="{DynamicResource entranceButtons}" Command="{Binding SignInCommand}"/>
+                <ActivityIndicator IsRunning="{Binding IsBusy}"
+                   HeightRequest="30" WidthRequest="30"
+                   IsVisible="{Binding IsBusy}" />
+                
                 <StackLayout Spacing="20" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
                     <Label TextColor="{DynamicResource SecundaryTextColor2}" Text="Or sign in with" Style="{DynamicResource Titlelabel}"/>

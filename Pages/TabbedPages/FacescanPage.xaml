@@ -4,8 +4,10 @@
               xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
              x:Class="Fast_Cash.Pages.TabbedPages.FacescanPage"
              Title="FacescanPage">
-    <VerticalStackLayout>
-        <Label Text="Please scan face for verification"/>
-      
+    <VerticalStackLayout Padding="20,20">
+        
+        <local:NavTop Header="QR code"  Home="Home" Route="//HomePage"/>
+        <Label Style="{DynamicResource headlabel2}" Text="Please scan face for payment"/>
+        <local:CardScanner Margin="0,20"/>
     </VerticalStackLayout>
 </ContentPage>

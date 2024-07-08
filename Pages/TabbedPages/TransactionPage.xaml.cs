@@ -1,14 +1,17 @@
-namespace Fast_Cash.Pages.TabbedPages;
+using Fast_Cash.EventHandlers;
+using Fast_Cash.ViewModels;
+using Microsoft.Maui.Controls;
 
-public partial class TransactionPage : ContentPage
+namespace Fast_Cash.Pages.TabbedPages
 {
-	public TransactionPage()
-	{
-		InitializeComponent();
-	}
-
-    private void Clear_but_Clicked(object sender, EventArgs e)
+    public partial class TransactionPage : ContentPage
     {
+        public TransactionPage()
+        {
+            InitializeComponent();
+
+            BindingContext = ServiceProviderHelper.GetService<TransactionPageViewModel>();
+        }
 
     }
 }

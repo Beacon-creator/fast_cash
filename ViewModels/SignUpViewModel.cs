@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
@@ -50,7 +51,6 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task SignUpAsync()
         {
-          
             try
             {
                 // Check if terms are accepted
@@ -66,14 +66,26 @@ namespace Fast_Cash.ViewModels
                     await _alertService.ShowAlertAsync("Sign Up Failed", "Passwords do not match.", "OK");
                     return;
                 }
+
                 IsBusy = true; // Show the spinner
 
                 var signUpModel = new { Email, Password, PhoneNumber };
-                var response = await _httpClient.PostAsJsonAsync("api/SignUp", signUpModel);
+
+                // Log the data being sent
+                System.Diagnostics.Debug.WriteLine($"SignUp Data: {Newtonsoft.Json.JsonConvert.SerializeObject(signUpModel)}");
+
+                var response = await _httpClient.PostAsJsonAsync("api/signUp", signUpModel);
+
+                // Log the response status code
+                System.Diagnostics.Debug.WriteLine($"Response Status Code: {response.StatusCode}");
 
                 if (response.IsSuccessStatusCode)
                 {
                     var token = await response.Content.ReadAsStringAsync();
+
+                    // Log the token received
+                    System.Diagnostics.Debug.WriteLine($"Token: {token}");
+
                     // Save the token (e.g., in SecureStorage) and navigate to the home screen
                     await SecureStorage.SetAsync("auth_token", token);
 
@@ -85,11 +97,24 @@ namespace Fast_Cash.ViewModels
                 }
                 else
                 {
-                    await _alertService.ShowAlertAsync("Sign Up Failed", "An error occurred during sign up. Please try again.", "OK");
+                    var errorContent = await response.Content.ReadAsStringAsync();
+
+                    // Log the error response
+                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                    IsBusy = false;
+                    await _alertService.ShowAlertAsync("Sign Up Failed", $"An error occurred: {errorContent}", "OK");
                 }
+            }
+            catch (HttpRequestException httpEx)
+            {
+                // Handle HTTP request exceptions
+                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Sign Up Failed", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
+                // Log the exception
+                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Sign Up Failed", $"An error occurred: {ex.Message}", "OK");
             }
             finally
@@ -97,6 +122,8 @@ namespace Fast_Cash.ViewModels
                 IsBusy = false; // Hide the spinner
             }
         }
+
+
 
         [RelayCommand]
         private async Task SignInAsync()
@@ -106,27 +133,40 @@ namespace Fast_Cash.ViewModels
         }
 
         [RelayCommand]
-        private void GoogleSignUp()
+        private async Task GoogleSignUp()
         {
             // Handle Google sign-in logic here
+            await _alertService.ShowAlertAsync("Failed", "Not avaialable yet", "OK");
         }
 
         [RelayCommand]
-        private void MicrosoftSignUp()
+        private async Task MicrosoftSignUp()
         {
             // Handle Microsoft sign-in logic here
+
+            await _alertService.ShowAlertAsync("Failed", "Not avaialable yet", "OK");
         }
 
-        [RelayCommand]
-        private void ShowPopup()
-        {
-            IsPopupVisible = true;
-        }
+        //[RelayCommand]
+        //private void ShowPopup()
+        //{
+        //    IsPopupVisible = true;
+        //}
+
+        //[RelayCommand]
+        //private void HidePopup()
+        //{
+        //    IsPopupVisible = false;
+        //}
 
         [RelayCommand]
-        private void HidePopup()
+        private async Task ShowTermsPopup()
         {
-            IsPopupVisible = false;
+            var popup = new Custom_Render.TermsAndConditionsPopup
+            {
+                BindingContext = this
+            };
+            Application.Current.MainPage.ShowPopup(popup);
         }
     }
 }

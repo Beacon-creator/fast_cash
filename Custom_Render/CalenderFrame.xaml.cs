@@ -74,16 +74,19 @@ public partial class CalenderFrame : ContentView
         {
             SelectedDate = new DateTime(SelectedDate.Year, SelectedDate.Month, day);
             calendarPopup.IsVisible = false;
+            calendericon.IsVisible = true;
         }
     }
 
     private void CalendarIconClicked(object sender, EventArgs e)
     {
         calendarPopup.IsVisible = true;
+        calendericon.IsVisible = false;
     }
 
     private void ClosePopupClicked(object sender, EventArgs e)
     {
         calendarPopup.IsVisible = false;
+        calendericon.IsVisible = true;
     }
 }

@@ -19,6 +19,7 @@
                 <Label Text="Sign up" Margin="0,20" Style="{DynamicResource sublabel}"/>
 
                 <StackLayout Spacing="10" Margin="0,10,0,0" Orientation="Horizontal">
+                    
                     <Picker Title="Select Code" FontSize="Medium" Margin="0,4,0,0">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
@@ -33,7 +34,7 @@
 
                     <StackLayout Orientation="Vertical">
                         <Grid ColumnDefinitions="Auto,Auto">
-                            <ImageButton Grid.Column="0" WidthRequest="10" HeightRequest="10" Source="arrowdown.svg" />
+                          
                             <local1:LineEntry Grid.Column="1" Margin="5,5" FontSize="Medium"
                                               Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="215" Placeholder="Phone No." >
                                 <Entry.Behaviors>
@@ -46,7 +47,7 @@
                 </StackLayout>
 
                 <StackLayout>
-                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding EmailAddress}" Placeholder="Email Address">
+                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding Email}" Placeholder="Email Address">
                         <Entry.Behaviors>
                             <local:EmailValidatorBehavior/>
                         </Entry.Behaviors>
@@ -85,8 +86,9 @@
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
                 </StackLayout>
 
-                <StackLayout Margin="0,20" Orientation="Horizontal">
-                    <local1:CheckBoxEntry x:Name="TermsandConditons" HorizontalOptions="StartAndExpand" HeightRequest="20" WidthRequest="20" Margin="0,0,30,0"
+                <StackLayout Margin="0,15" Orientation="Horizontal">
+                    <local1:CheckBoxEntry x:Name="TermsandConditons"
+                                          HorizontalOptions="StartAndExpand" HeightRequest="20" WidthRequest="20" Margin="0,0,30,0"
                         IsChecked="{Binding TermsAccepted}" Style="{DynamicResource TandCBox}">
                         <VisualStateManager.VisualStateGroups>
                             <VisualStateGroup x:Name="CommonStates">
@@ -122,15 +124,22 @@
                             </DataTrigger>
                         </Label.Triggers>
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding ShowPopupCommand}"/>
+                            <TapGestureRecognizer Command="{Binding ShowTermsPopupCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
+                <!--<local2:TermsAndConditionsPopup AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                            IsVisible="{Binding IsPopupVisible}" />-->
             </StackLayout>
 
-            <StackLayout Margin="0,10,0,0" Padding="30,0" Orientation="Vertical" Grid.Row="2">
+            <StackLayout Padding="30,0" Orientation="Vertical" Grid.Row="2">
                 <Button x:Name="Signupbut" FontSize="Large" Text="Sign up for free" Style="{DynamicResource entranceButtons}"
                     Command="{Binding SignUpCommand}"/>
+                <ActivityIndicator IsRunning="{Binding IsBusy}" AbsoluteLayout.LayoutBounds="1.5,0.5,1,1"
+                            AbsoluteLayout.LayoutFlags="PositionProportional"
+                   HeightRequest="30" WidthRequest="30"
+                   IsVisible="{Binding IsBusy}" />
                 <StackLayout Spacing="20" Margin="0,20,0,0" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
                     <Label TextColor="{DynamicResource SecundaryTextColor2}" Text="Or sign up with" Style="{DynamicResource Titlelabel}"/>
@@ -154,7 +163,7 @@
                 </StackLayout>
             </StackLayout>
             <!-- Terms and Conditions Popup -->
-            <local2:TermsAndConditionsPopup IsVisible="{Binding IsPopupVisible}" />
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

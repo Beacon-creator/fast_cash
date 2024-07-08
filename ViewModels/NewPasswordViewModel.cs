@@ -1,8 +1,13 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Controls;
 using Fast_Cash.EventHandlers;
+
 namespace Fast_Cash.ViewModels
 {
     public partial class NewPasswordViewModel : ObservableObject, IQueryAttributable
@@ -21,6 +26,9 @@ namespace Fast_Cash.ViewModels
 
         [ObservableProperty]
         private bool isBusy;
+
+        private string? token;
+
         public NewPasswordViewModel(HttpClient httpClient, IAlertService alertService)
         {
             _httpClient = httpClient;
@@ -37,34 +45,65 @@ namespace Fast_Cash.ViewModels
         {
             if (query.ContainsKey("email"))
             {
-                Email = query["email"].ToString();
+                Email = query["email"]?.ToString();
             }
+            if (query.ContainsKey("token"))
+            {
+                token = Uri.UnescapeDataString(query["token"]?.ToString());
+            }
+            System.Diagnostics.Debug.WriteLine($"Email: {Email}, Token: {token}"); // Debug output
         }
 
         [RelayCommand]
         private async Task ResetPassword()
         {
+            try
+            {
+                if (Password != ConfirmPassword)
+                {
+                    await _alertService.ShowAlertAsync("Error", "Passwords do not match.", "OK");
+                    return;
+                }
 
-            if (Password != ConfirmPassword)
-            {
-                await _alertService.ShowAlertAsync("Error", "Passwords do not match.", "OK");
-                return;
+                IsBusy = true; // show the spinner
+
+                var resetPasswordModel = new { Email, Password, Token = token };
+                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/reset-password", resetPasswordModel);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Log success response
+                    System.Diagnostics.Debug.WriteLine("Password reset successful");
+
+                    IsBusy = false; // hide the spinner
+                    await _alertService.ShowAlertAsync("Success", "Password has been reset successfully.", "OK");
+                    await Shell.Current.GoToAsync("//SignInPage");
+                }
+                else
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    // Log the error response
+                    System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
+
+                    await _alertService.ShowAlertAsync("Error", $"Failed to reset password: {errorContent}", "OK");
+                }
             }
-            IsBusy = true; // show the spinner
-            var resetPasswordModel = new { Email, Password, Code = "" }; // Add the verification code if needed
-            var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/reset-password", resetPasswordModel);
-            if (response.IsSuccessStatusCode)
+            catch (HttpRequestException httpEx)
             {
-                await _alertService.ShowAlertAsync("Success", "Password has been reset successfully.", "OK");
-                await Shell.Current.GoToAsync("//SignInPage");
+                // Handle HTTP request exceptions
+                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
-            else
+            catch (Exception ex)
+            {
+                // Log the exception
+                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+            }
+            finally
             {
                 IsBusy = false; // hide the spinner
-                await _alertService.ShowAlertAsync("Error", "Failed to reset password.", "OK");
             }
-
-            IsBusy = false; // hide the spinner
         }
     }
 }

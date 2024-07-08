@@ -3,68 +3,68 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.CalenderFrame">
     <ContentView.Content>
-        <Frame HasShadow="True" 
-                   BorderColor="{DynamicResource SecundaryTextColor}" 
-                    CornerRadius="10">
-            
-       
-        <Grid >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
+        <Frame HasShadow="True" Padding="10"
+               BorderColor="{DynamicResource SecundaryTextColor}" 
+               CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
 
-            <Label FontSize="Small" Text="{Binding SelectedDateString}" 
-                   HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0"/>
-            <ImageButton WidthRequest="20" HeightRequest="20" Source="calendar.svg" 
-                         Clicked="CalendarIconClicked" Grid.Column="1" />
+                <Label FontSize="Small" Text="{Binding SelectedDateString}" 
+                       HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0"/>
+                <ImageButton x:Name="calendericon" Margin="5,0,0,0" WidthRequest="20" HeightRequest="20" Source="calendar.svg" 
+                             Clicked="CalendarIconClicked" Grid.Column="1" />
 
-            <!-- Popup Calendar -->
-            <Frame x:Name="calendarPopup" IsVisible="False" HasShadow="True" 
-                   BorderColor="{DynamicResource SecundaryTextColor}"
-                   BackgroundColor="{DynamicResource ProTextColor}" 
-                CornerRadius="5" Padding="10" HorizontalOptions="Center" VerticalOptions="Center">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
+                <!-- Popup Calendar -->
+                <Frame x:Name="calendarPopup" IsVisible="False" HasShadow="True" 
+                       BorderColor="{DynamicResource SecundaryTextColor}"
+                       BackgroundColor="{DynamicResource ProTextColor}" 
+                       CornerRadius="5" Padding="0" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
 
-                    <Grid Grid.Row="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="35" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="35" />
+                            </Grid.ColumnDefinitions>
                             <ImageButton Source="icn_back.svg" WidthRequest="20" HeightRequest="20"
-                                     Clicked="PreviousMonthClicked" Grid.Column="0" />
-                        <Label Text="{Binding CurrentMonthYear}" 
-                               HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
-                        <ImageButton Source="front_arrow.svg" Clicked="NextMonthClicked" Grid.Column="2" />
+                                         Clicked="PreviousMonthClicked" Grid.Column="0" />
+                            <Label Text="{Binding CurrentMonthYear}" 
+                                   HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
+                            <ImageButton
+                                Source="front_arrow.svg" Clicked="NextMonthClicked" Grid.Column="2" />
+                        </Grid>
+
+                        <CollectionView Grid.Row="1" ItemsSource="{Binding Days}">
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical" Span="7" />
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate >
+                                    <Frame BorderColor="LightGray" Padding="5" Margin="1" BackgroundColor="{DynamicResource PrimaryBackgroundColor2}">
+                                        <Frame.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="DayTapped" />
+                                        </Frame.GestureRecognizers>
+                                        <Label Text="{Binding}" HorizontalOptions="Center" VerticalOptions="Center" />
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+                        <Button Text="X" Grid.Row="0" FontSize="20"
+                                TextColor="{DynamicResource PrimaryBackgroundColor}" BackgroundColor="Transparent" Clicked="ClosePopupClicked" 
+                                HorizontalOptions="End" VerticalOptions="Center"/>
                     </Grid>
-
-                    <CollectionView Grid.Row="1" ItemsSource="{Binding Days}">
-                        <CollectionView.ItemsLayout>
-                            <GridItemsLayout Orientation="Vertical" Span="7" />
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate >
-                                <Frame BorderColor="LightGray" Padding="10" Margin="1" BackgroundColor="White">
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="DayTapped" />
-                                    </Frame.GestureRecognizers>
-                                    <Label Text="{Binding}" HorizontalOptions="Center" VerticalOptions="Center" />
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-
-                    <Button Text="Close" Grid.Row="2" BackgroundColor="{DynamicResource PrimaryBackgroundColor}" Clicked="ClosePopupClicked" 
-                            HorizontalOptions="Center" VerticalOptions="Center"/>
-                </Grid>
-            </Frame>
-        </Grid>
+                </Frame>
+            </Grid>
         </Frame>
     </ContentView.Content>
 </ContentView>

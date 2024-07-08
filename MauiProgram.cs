@@ -37,11 +37,16 @@ namespace Fast_Cash
             builder.Services.AddTransient<HomePage>();
             builder.Services.AddTransient<ServicesPage>();
             builder.Services.AddTransient<TransactionPage>();
+            builder.Services.AddTransient<AccountPageMain>();
+            builder.Services.AddTransient<AccountPage>();
             builder.Services.AddTransient<BankVerificationPage>();
             builder.Services.AddTransient<LinkBankPage>();
             builder.Services.AddTransient<LinkCardPage>();
+            builder.Services.AddTransient<CardscanPage>();
+            builder.Services.AddTransient<FacescanPage>();
             builder.Services.AddTransient<ForgotPasswordPage>();
             builder.Services.AddTransient<ForgotPasswordVerificationPage>();
+            builder.Services.AddTransient<NewPasswordPage>();
             builder.Services.AddTransient<CardLinkSuccess>();
 
             //viewmodel
@@ -54,6 +59,12 @@ namespace Fast_Cash
             builder.Services.AddTransient<ForgotPasswordViewModel>();
             builder.Services.AddTransient<ForgotPasswordVerificationViewModel>();
             builder.Services.AddTransient<NewPasswordViewModel>();
+            builder.Services.AddTransient<TransactionPageViewModel>();
+            builder.Services.AddTransient<LinkBankViewModel>();
+            builder.Services.AddTransient<BankVerificationViewModel>();
+            builder.Services.AddTransient<LinkCardViewModel>();
+            builder.Services.AddTransient<ConfirmationDialogViewModel>();
+            builder.Services.AddTransient<PopupViewModel>();
 
             //handlers
             builder.Services.AddSingleton<IAlertService, AlertService>();

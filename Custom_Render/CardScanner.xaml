@@ -5,7 +5,7 @@
              x:Class="Fast_Cash.Custom_Render.CardScanner">
     <VerticalStackLayout>
         <Frame CornerRadius="10"
-            BackgroundColor="{DynamicResource ProTextColor}" WidthRequest="300" HeightRequest="200" HasShadow="True">
+            BackgroundColor="{DynamicResource ProTextColor}" WidthRequest="250" HeightRequest="200" HasShadow="True">
             <ImageButton WidthRequest="80" HeightRequest="80" Source="qr_code.svg"/>
         </Frame>
     </VerticalStackLayout>
