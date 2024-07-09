@@ -14,19 +14,32 @@ namespace Fast_Cash.ViewModels
 {
     public partial class BankVerificationViewModel : ObservableObject
     {
-
         private readonly HttpClient _httpClient;
+        private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
-
 
         [ObservableProperty]
         private string? email;
 
         [ObservableProperty]
+        private string oneCodeEntry;
+
+        [ObservableProperty]
+        private string twoCodeEntry;
+
+        [ObservableProperty]
+        private string threeCodeEntry;
+
+        [ObservableProperty]
+        private string fourCodeEntry;
+
+        [ObservableProperty]
         private bool isBusy;
-        public BankVerificationViewModel(HttpClient httpClient, IAlertService alertService)
+
+        public BankVerificationViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
             _httpClient = httpClient;
+            _httpClientService = httpClientService;
             _alertService = alertService;
 
             if (_httpClient.BaseAddress == null)

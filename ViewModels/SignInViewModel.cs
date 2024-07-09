@@ -46,6 +46,7 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     var token = await response.Content.ReadAsStringAsync();
                     // Save the token (e.g., in SecureStorage) and navigate to the home screen
                     await SecureStorage.SetAsync("auth_token", token);
@@ -58,6 +59,7 @@ namespace Fast_Cash.ViewModels
                 }
                 else
                 {
+                    IsBusy = false;
                     var errorContent = await response.Content.ReadAsStringAsync();
                     // Log the error response
                     System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
@@ -66,12 +68,14 @@ namespace Fast_Cash.ViewModels
             }
             catch (HttpRequestException httpEx)
             {
+                IsBusy = false;
                 // Handle HTTP request exceptions
                 System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Login Failed", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
+                IsBusy = false;
                 // Log the exception
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Login Failed", $"An error occurred: {ex.Message}", "OK");

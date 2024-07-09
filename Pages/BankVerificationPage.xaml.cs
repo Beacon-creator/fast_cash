@@ -12,5 +12,10 @@ namespace Fast_Cash.Pages
             InitializeComponent();
             BindingContext = ServiceProviderHelper.GetService<BankVerificationViewModel>();
         }
+
+        private void TapGestureRecognizer_GetCall(object sender, TappedEventArgs e)
+        {
+
+        }
     }
 }

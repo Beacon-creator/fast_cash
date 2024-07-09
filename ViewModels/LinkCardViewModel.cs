@@ -15,6 +15,7 @@ namespace Fast_Cash.ViewModels
     public partial class LinkCardViewModel : ObservableObject
     {
         private readonly HttpClient _httpClient;
+        private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
 
@@ -33,9 +34,10 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public LinkCardViewModel(HttpClient httpClient, IAlertService alertService)
+        public LinkCardViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
             _httpClient = httpClient;
+            _httpClientService = httpClientService;
             _alertService = alertService;
 
             // Set the base address if it is not already set

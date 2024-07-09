@@ -72,6 +72,7 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     // Log success response
                     System.Diagnostics.Debug.WriteLine("Password reset successful");
 
@@ -81,6 +82,7 @@ namespace Fast_Cash.ViewModels
                 }
                 else
                 {
+                    IsBusy = false;
                     var errorContent = await response.Content.ReadAsStringAsync();
                     // Log the error response
                     System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
@@ -90,12 +92,14 @@ namespace Fast_Cash.ViewModels
             }
             catch (HttpRequestException httpEx)
             {
+                IsBusy = false;
                 // Handle HTTP request exceptions
                 System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
+                IsBusy = false;
                 // Log the exception
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");

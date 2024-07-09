@@ -1,23 +1,29 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Fast_Cash.EventHandlers;
 using Fast_Cash.Pages;
-using System.Net.Http;
-using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 namespace Fast_Cash.ViewModels
 {
     public partial class HomePageVM : ObservableObject
     {
+        private readonly HttpClientService _httpClientService;
         private readonly HttpClient _httpClient;
+        private readonly IAlertService _alertService;
 
-        public HomePageVM()
+        public HomePageVM(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
-            _httpClient = new HttpClient
+            _httpClientService = httpClientService;
+            _httpClient = httpClient;
+            _alertService = alertService;
+
+            // Ensure BaseAddress is set only once and not modified later
+            if (_httpClient.BaseAddress == null)
             {
-                BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/")
-            };
+                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
+            }
         }
 
         [RelayCommand]
@@ -48,27 +54,25 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
-                var response = await _httpClient.PostAsync("api/Users/Logout", null);
+                var response = await _httpClientService.PostAsync("api/Users/Logout", null);
                 if (response.IsSuccessStatusCode)
                 {
-                    // Handle successful logout
                     await Shell.Current.GoToAsync(nameof(SignInPage));
                 }
                 else
                 {
-                    // Handle error
-                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to logout. Please try again later.", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to logout. Please try again later.", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
                 System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await Application.Current.MainPage.DisplayAlert("Error", $"A connection error occurred: {httpEx.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await Application.Current.MainPage.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
             }
         }
 
@@ -87,27 +91,25 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
-                var response = await _httpClient.DeleteAsync("api/Users/DeleteAccount");
+                var response = await _httpClientService.DeleteAsync("api/Users/DeleteAccount");
                 if (response.IsSuccessStatusCode)
                 {
-                    // Handle successful account deletion
                     await Shell.Current.GoToAsync(nameof(SignUpPage));
                 }
                 else
                 {
-                    // Handle error
-                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to delete account. Please try again later.", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to delete account. Please try again later.", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
                 System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await Application.Current.MainPage.DisplayAlert("Error", $"A connection error occurred: {httpEx.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await Application.Current.MainPage.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
             }
         }
     }

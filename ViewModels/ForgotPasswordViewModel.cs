@@ -13,6 +13,7 @@ namespace Fast_Cash.ViewModels
     {
         private readonly HttpClient _httpClient;
         private readonly IAlertService _alertService;
+        private readonly HttpClientService _httpClientService;
 
         [ObservableProperty]
         private string? email;
@@ -20,9 +21,10 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public ForgotPasswordViewModel(HttpClient httpClient, IAlertService alertService)
+        public ForgotPasswordViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
             _httpClient = httpClient;
+            _httpClientService = httpClientService;
             _alertService = alertService;
 
             // Set the base address if it is not already set

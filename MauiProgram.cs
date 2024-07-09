@@ -20,8 +20,8 @@ namespace Fast_Cash
             var builder = MauiApp.CreateBuilder();
             builder.UseMauiApp<App>().ConfigureFonts(fonts =>
             {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                fonts.AddFont("Lato-Regular.ttf", "LatoRegular");
+                fonts.AddFont("Lato-Bold.ttf", "LatoBold");
             }).UseMauiCommunityToolkit();
 
             //extensions
@@ -67,6 +67,8 @@ namespace Fast_Cash
             builder.Services.AddTransient<PopupViewModel>();
 
             //handlers
+            builder.Services.AddSingleton<HttpClient>();
+            builder.Services.AddSingleton<HttpClientService>();
             builder.Services.AddSingleton<IAlertService, AlertService>();
             Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("LineEntry", (handler, view) =>
             {

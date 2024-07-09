@@ -14,6 +14,7 @@ namespace Fast_Cash.ViewModels
     public partial class ForgotPasswordVerificationViewModel : ObservableObject
     {
         private readonly HttpClient _httpClient;
+         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
         [ObservableProperty]
@@ -25,9 +26,10 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public ForgotPasswordVerificationViewModel(HttpClient httpClient, IAlertService alertService)
+        public ForgotPasswordVerificationViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
             _httpClient = httpClient;
+            _httpClientService = httpClientService;
             _alertService = alertService;
 
             if (_httpClient.BaseAddress == null)
