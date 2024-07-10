@@ -1,5 +1,5 @@
-﻿using System;
-using System.Net.Http;
+﻿// ViewModels/LinkBankViewModel.cs
+using System;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -7,12 +7,12 @@ using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
 using Fast_Cash.Model;
 using Microsoft.Maui.Controls;
+using Newtonsoft.Json.Linq;
 
 namespace Fast_Cash.ViewModels
 {
     public partial class LinkBankViewModel : ObservableObject
     {
-        private readonly HttpClient _httpClient;
         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
@@ -28,17 +28,10 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public LinkBankViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
+        public LinkBankViewModel(HttpClientService httpClientService, IAlertService alertService)
         {
-            _httpClient = httpClient;
             _httpClientService = httpClientService;
             _alertService = alertService;
-
-            // Set the base address if it is not already set
-            if (_httpClient.BaseAddress == null)
-            {
-                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
-            }
         }
 
         [RelayCommand]
@@ -58,36 +51,44 @@ namespace Fast_Cash.ViewModels
 
             try
             {
-                var response = await _httpClient.PostAsJsonAsync("api/BankLinks", bankLink);
+                var response = await _httpClientService.PostAsync("api/BankLinks", JsonContent.Create(bankLink));
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Response Content: {responseContent}");
+
                 if (response.IsSuccessStatusCode)
                 {
                     await _alertService.ShowAlertAsync("Success", "Bank account linked successfully.", "OK");
 
                     // Send verification code
                     var verificationResponse = await SendVerificationCode();
+                    var verificationContent = await verificationResponse.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Verification Response Content: {verificationContent}");
+
                     if (verificationResponse.IsSuccessStatusCode)
                     {
-                        var verificationCode = await verificationResponse.Content.ReadAsStringAsync();
-                        await _alertService.ShowAlertAsync("Verification", $"Verification code sent: {verificationCode}", "OK");
+                        var verificationResult = JObject.Parse(verificationContent);
+                        var verificationCode = verificationResult["code"]?.ToString();
+
+                        await _alertService.ShowAlertAsync("Verification", $"Verification code sent successfully. Your code is: {verificationCode}", "OK");
                         await Shell.Current.GoToAsync("//BankVerificationPage");
                     }
                     else
                     {
-                        await Application.Current.MainPage.DisplayAlert("Error", "Failed to send verification code.", "OK");
+                        await _alertService.ShowAlertAsync("Error", $"Failed to send verification code. Server response: {verificationContent}", "OK");
                     }
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to link bank account.", "OK");
+                    await _alertService.ShowAlertAsync("Error", $"Failed to link bank account. Server response: {responseContent}", "OK");
                 }
             }
             catch (HttpRequestException ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Request error: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"Request error: {ex.Message}", "OK");
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
             }
             finally
             {
@@ -99,12 +100,12 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
-                var requestUri = $"api/BankLinks/sendVerificationCode?email={AccountOwnerName}";
-                return await _httpClient.PostAsync(requestUri, null);
+                var requestUri = $"api/BankLinks/sendVerificationCode";
+                return await _httpClientService.PostAsync(requestUri, null);
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Failed to send verification code: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", $"Failed to send verification code: {ex.Message}", "OK");
                 throw;
             }
         }

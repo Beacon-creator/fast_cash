@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Net.Http;
 using ZXing.Net.Maui.Controls;
 
+
 namespace Fast_Cash
 {
     public static class MauiProgram

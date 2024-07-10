@@ -3,7 +3,9 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
 using Fast_Cash.Pages;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+
 
 namespace Fast_Cash.ViewModels
 {
@@ -54,13 +56,15 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
-                var response = await _httpClientService.PostAsync("api/Users/Logout", null);
+                var response = await _httpClientService.PostAsync("api/User/Logout", null);
                 if (response.IsSuccessStatusCode)
                 {
+                    System.Diagnostics.Debug.WriteLine("Logout successful.");
                     await Shell.Current.GoToAsync(nameof(SignInPage));
                 }
                 else
                 {
+                    System.Diagnostics.Debug.WriteLine($"Logout failed with status code: {response.StatusCode}");
                     await _alertService.ShowAlertAsync("Error", "Failed to logout. Please try again later.", "OK");
                 }
             }
@@ -91,13 +95,15 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
-                var response = await _httpClientService.DeleteAsync("api/Users/DeleteAccount");
+                var response = await _httpClientService.DeleteAsync("api/User/DeleteAccount");
                 if (response.IsSuccessStatusCode)
                 {
+                    System.Diagnostics.Debug.WriteLine("Account deletion successful.");
                     await Shell.Current.GoToAsync(nameof(SignUpPage));
                 }
                 else
                 {
+                    System.Diagnostics.Debug.WriteLine($"Account deletion failed with status code: {response.StatusCode}");
                     await _alertService.ShowAlertAsync("Error", "Failed to delete account. Please try again later.", "OK");
                 }
             }
@@ -112,5 +118,9 @@ namespace Fast_Cash.ViewModels
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
             }
         }
+
+
+        public IRelayCommand OnLogoutCommand => new AsyncRelayCommand(OnLogout);
+        public IRelayCommand OnDeleteAccountCommand => new AsyncRelayCommand(OnDeleteAccount);
     }
 }

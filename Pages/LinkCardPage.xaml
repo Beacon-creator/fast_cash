@@ -32,7 +32,7 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout>
-                <local1:LineEntry Placeholder="MM/YY" Keyboard="Numeric" />
+                <local1:LineEntry Placeholder="MM/YY" Keyboard="Numeric" EnableMMYYFormatting="True" />
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
             

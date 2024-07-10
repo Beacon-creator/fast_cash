@@ -1,6 +1,5 @@
 ﻿// ViewModels/BankVerificationViewModel.cs
 using System;
-using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -14,7 +13,6 @@ namespace Fast_Cash.ViewModels
 {
     public partial class BankVerificationViewModel : ObservableObject
     {
-        private readonly HttpClient _httpClient;
         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
@@ -36,16 +34,10 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public BankVerificationViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
+        public BankVerificationViewModel(HttpClientService httpClientService, IAlertService alertService)
         {
-            _httpClient = httpClient;
             _httpClientService = httpClientService;
             _alertService = alertService;
-
-            if (_httpClient.BaseAddress == null)
-            {
-                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
-            }
         }
 
         [RelayCommand]
@@ -66,7 +58,7 @@ namespace Fast_Cash.ViewModels
 
             try
             {
-                var response = await _httpClient.PostAsJsonAsync("api/BankLinks/VerifyCode", verificationRequest);
+                var response = await _httpClientService.PostAsync("api/BankLinks/VerifyCode", JsonContent.Create(verificationRequest));
                 if (response.IsSuccessStatusCode)
                 {
                     await _alertService.ShowAlertAsync("Success", "Verification successful.", "OK");
@@ -74,7 +66,8 @@ namespace Fast_Cash.ViewModels
                 }
                 else
                 {
-                    await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
+                    var errorResponse = await response.Content.ReadAsStringAsync();
+                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code. Server response: {errorResponse}", "OK");
                 }
             }
             catch (HttpRequestException ex)
@@ -90,6 +83,7 @@ namespace Fast_Cash.ViewModels
                 IsBusy = false;
             }
         }
+    
 
         [RelayCommand]
         private async Task LinkCard()
