@@ -47,11 +47,14 @@
                 </StackLayout>
 
                 <StackLayout>
-                    <local1:LineEntry FontSize="Medium" Margin="0,5" Text="{Binding Email}" Placeholder="Email Address">
-                        <Entry.Behaviors>
-                            <local:EmailValidatorBehavior/>
-                        </Entry.Behaviors>
-                    </local1:LineEntry>
+                    <Grid ColumnDefinitions="Auto,Auto">
+                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="mailicon.png" />
+                        <local1:LineEntry Grid.Column="1" FontSize="Medium" Margin="10,5" Text="{Binding Email}" Placeholder="Email Address">
+                            <Entry.Behaviors>
+                                <local:EmailValidatorBehavior/>
+                            </Entry.Behaviors>
+                        </local1:LineEntry>
+                    </Grid>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
                 </StackLayout>
 

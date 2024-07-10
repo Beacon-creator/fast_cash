@@ -30,15 +30,11 @@
                         <local1:LineEntry x:Name="FourCodeEntry" Text="{Binding FourCodeEntry}" Style="{DynamicResource verifyE}" />
                     </Frame>
                 </StackLayout>
-                <Label Text="get a call" FontSize="Medium" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,20">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_GetCall"/>
-                    </Label.GestureRecognizers>
-                </Label>
+              
                 <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
-                    <Label Text="Check" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,0">
+                    <Label Text="get a call" FontSize="Medium" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,20">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding VerifyCodeCommand}"/>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_GetCall"/>
                         </Label.GestureRecognizers>
                     </Label>
                     <Label Text="Cancel" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,0">
@@ -47,7 +43,7 @@
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>
-                <Button Text="Link Card" Command="{Binding LinkCardCommand}" Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+                <Button Text="Link Card" Command="{Binding VerifyCodeCommand}" Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

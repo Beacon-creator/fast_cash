@@ -56,10 +56,17 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
+                // Close the popup
+                CloseCurrentPopup();
+
+
                 var response = await _httpClientService.PostAsync("api/User/Logout", null);
                 if (response.IsSuccessStatusCode)
                 {
                     System.Diagnostics.Debug.WriteLine("Logout successful.");
+
+                   
+
                     await Shell.Current.GoToAsync(nameof(SignInPage));
                 }
                 else
@@ -95,10 +102,18 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
+
+                // Close the popup
+                CloseCurrentPopup();
+
                 var response = await _httpClientService.DeleteAsync("api/User/DeleteAccount");
                 if (response.IsSuccessStatusCode)
                 {
                     System.Diagnostics.Debug.WriteLine("Account deletion successful.");
+
+                   
+
+
                     await Shell.Current.GoToAsync(nameof(SignUpPage));
                 }
                 else
@@ -117,6 +132,15 @@ namespace Fast_Cash.ViewModels
                 System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
             }
+        }
+
+
+        private void CloseCurrentPopup()
+        {
+            // Assuming the popup is stored in MainPage's PopupStack
+            var popupStack = Application.Current.MainPage.Navigation.ModalStack;
+            var popup = popupStack.OfType<Custom_Render.OptionsPopup>().FirstOrDefault();
+            popup?.Close();
         }
 
 

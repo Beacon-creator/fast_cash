@@ -23,7 +23,7 @@
                 <Label Text="Log in" Margin="0,20" Style="{DynamicResource sublabel}"/>
                 <StackLayout>
                     <Grid ColumnDefinitions="Auto,*">
-                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
+                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="mailicon.png" />
                         <local1:LineEntry x:Name="EmailandPhone" Grid.Column="1" FontSize="Medium" Margin="10,5" Placeholder="Email" Text="{Binding EmailOrPhone}" />
                     </Grid>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>

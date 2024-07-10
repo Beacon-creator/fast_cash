@@ -15,7 +15,7 @@ namespace Fast_Cash.ViewModels
         
         public string? Text2 { get; set; }
 
-        public Color? IndicatorColor { get; set; } // Add this property
+        public Color? IndicatorColor { get; set; } 
      
     }
 

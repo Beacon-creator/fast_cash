@@ -1,7 +1,4 @@
-﻿// ViewModels/BankVerificationViewModel.cs
-using System;
-using System.Net.Http.Json;
-using System.Text.Json;
+﻿using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -15,6 +12,8 @@ namespace Fast_Cash.ViewModels
     {
         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
+        private readonly JwtService _jwtService;
+        private readonly TokenService _tokenService;
 
         [ObservableProperty]
         private string? email;
@@ -34,10 +33,20 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
-        public BankVerificationViewModel(HttpClientService httpClientService, IAlertService alertService)
+        public BankVerificationViewModel(HttpClientService httpClientService, IAlertService alertService, JwtService jwtService, TokenService tokenService)
         {
             _httpClientService = httpClientService;
             _alertService = alertService;
+            _jwtService = jwtService;
+            _tokenService = tokenService;
+
+            // Retrieve the token
+            var token = _tokenService.GetToken();
+            Console.WriteLine($"token: {token}");
+            if (!string.IsNullOrEmpty(token))
+            {
+                Email = _jwtService.GetEmailFromToken(token);
+            }
         }
 
         [RelayCommand]
@@ -50,9 +59,11 @@ namespace Fast_Cash.ViewModels
 
             var verificationCode = OneCodeEntry + TwoCodeEntry + ThreeCodeEntry + FourCodeEntry;
 
+            // Log the format of the verification code
+            Console.WriteLine($"Verification Code: {verificationCode}");
+
             var verificationRequest = new VerificationRequest
             {
-                Email = Email,
                 Code = verificationCode
             };
 
@@ -61,13 +72,13 @@ namespace Fast_Cash.ViewModels
                 var response = await _httpClientService.PostAsync("api/BankLinks/VerifyCode", JsonContent.Create(verificationRequest));
                 if (response.IsSuccessStatusCode)
                 {
-                    await _alertService.ShowAlertAsync("Success", "Verification successful.", "OK");
-                    await Shell.Current.GoToAsync("///HomePage");
+                    await _alertService.ShowAlertAsync("Success", $"Verification successful: {verificationCode}.", "OK");
+                    await Shell.Current.GoToAsync("CardLinkSuccess");
                 }
                 else
                 {
                     var errorResponse = await response.Content.ReadAsStringAsync();
-                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code. Server response: {errorResponse}", "OK");
+                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code {verificationCode}. Server response: {errorResponse}", "OK");
                 }
             }
             catch (HttpRequestException ex)
@@ -83,13 +94,7 @@ namespace Fast_Cash.ViewModels
                 IsBusy = false;
             }
         }
-    
 
-        [RelayCommand]
-        private async Task LinkCard()
-        {
-            await Shell.Current.GoToAsync("CardLinkSuccess");
-        }
 
         [RelayCommand]
         private async Task Cancel()

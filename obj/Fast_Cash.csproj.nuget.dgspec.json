@@ -100,11 +100,11 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[8.6.0, )"
+              "version": "[8.7.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -114,17 +114,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Essentials": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -143,6 +147,10 @@
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.3, )"
             },
             "Tesseract": {
               "target": "Package",
@@ -215,11 +223,11 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[8.6.0, )"
+              "version": "[8.7.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -229,17 +237,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Essentials": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -258,6 +270,10 @@
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.3, )"
             },
             "Tesseract": {
               "target": "Package",
@@ -330,11 +346,11 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[8.6.0, )"
+              "version": "[8.7.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -344,17 +360,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Essentials": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
@@ -373,6 +393,10 @@
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.3, )"
             },
             "Tesseract": {
               "target": "Package",
@@ -446,11 +470,11 @@
             },
             "Microsoft.Extensions.Http.Polly": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Extensions.Http.Resilience": {
               "target": "Package",
-              "version": "[8.6.0, )"
+              "version": "[8.7.0, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -460,17 +484,21 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.IdentityModel.JsonWebTokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Microsoft.Maui.Essentials": {
               "target": "Package",
-              "version": "[8.0.61, )"
+              "version": "[8.0.70, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -483,6 +511,10 @@
             "Polly": {
               "target": "Package",
               "version": "[8.4.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.6.3, )"
             },
             "Tesseract": {
               "target": "Package",

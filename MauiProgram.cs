@@ -71,6 +71,8 @@ namespace Fast_Cash
             builder.Services.AddSingleton<HttpClient>();
             builder.Services.AddSingleton<HttpClientService>();
             builder.Services.AddSingleton<IAlertService, AlertService>();
+            builder.Services.AddSingleton<JwtService>();
+            builder.Services.AddSingleton<TokenService>();
             Microsoft.Maui.Handlers.EntryHandler.Mapper.AppendToMapping("LineEntry", (handler, view) =>
             {
                 if (view is LineEntry)
