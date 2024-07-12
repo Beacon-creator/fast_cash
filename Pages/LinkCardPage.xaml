@@ -38,8 +38,15 @@
             
         </VerticalStackLayout>
 
-        <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Command="{Binding LinkCardCommand}" 
+        <VerticalStackLayout>
+            <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Command="{Binding LinkCardCommand}" 
           Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}"
+HeightRequest="30" WidthRequest="30"
+IsVisible="{Binding IsBusy}" />
+        </VerticalStackLayout>
+        
 
     </VerticalStackLayout>
 </ContentPage>

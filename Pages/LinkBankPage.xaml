@@ -37,8 +37,15 @@
 
         </VerticalStackLayout>
 
-        <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Command="{Binding LinkBankAccountCommand}" 
-        Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+     
+            <VerticalStackLayout>
+                <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Command="{Binding LinkBankAccountCommand}" 
+   Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+
+                <ActivityIndicator IsRunning="{Binding IsBusy}"
+HeightRequest="30" WidthRequest="30"
+IsVisible="{Binding IsBusy}" />
+            </VerticalStackLayout>
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

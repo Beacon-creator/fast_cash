@@ -1,11 +1,12 @@
 ﻿using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Fast_Cash.Custom_Render;
 using Fast_Cash.EventHandlers;
 using Fast_Cash.Pages;
-using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
-
+using System.Linq;
 
 namespace Fast_Cash.ViewModels
 {
@@ -14,6 +15,9 @@ namespace Fast_Cash.ViewModels
         private readonly HttpClientService _httpClientService;
         private readonly HttpClient _httpClient;
         private readonly IAlertService _alertService;
+
+        [ObservableProperty]
+        private bool isBusy;
 
         public HomePageVM(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
         {
@@ -54,36 +58,32 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task OnLogout()
         {
+            IsBusy = true;
             try
             {
-                // Close the popup
-                CloseCurrentPopup();
-
-
                 var response = await _httpClientService.PostAsync("api/User/Logout", null);
                 if (response.IsSuccessStatusCode)
                 {
                     System.Diagnostics.Debug.WriteLine("Logout successful.");
-
-                   
-
-                    await Shell.Current.GoToAsync(nameof(SignInPage));
+                    await ClosePopup(); // Close the popup
+                    await Shell.Current.GoToAsync("//LoginPage"); // Use absolute URI to clear the navigation stack
                 }
                 else
                 {
-                    System.Diagnostics.Debug.WriteLine($"Logout failed with status code: {response.StatusCode}");
                     await _alertService.ShowAlertAsync("Error", "Failed to logout. Please try again later.", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 
@@ -100,49 +100,41 @@ namespace Fast_Cash.ViewModels
 
         internal async Task ConfirmDeleteAccount()
         {
+            IsBusy = true;
             try
             {
-
-                // Close the popup
-                CloseCurrentPopup();
-
                 var response = await _httpClientService.DeleteAsync("api/User/DeleteAccount");
                 if (response.IsSuccessStatusCode)
                 {
                     System.Diagnostics.Debug.WriteLine("Account deletion successful.");
-
-                   
-
-
-                    await Shell.Current.GoToAsync(nameof(SignUpPage));
+                    await ClosePopup(); // Close the popup
+                    await Shell.Current.GoToAsync("//SignupPage");
                 }
                 else
                 {
-                    System.Diagnostics.Debug.WriteLine($"Account deletion failed with status code: {response.StatusCode}");
                     await _alertService.ShowAlertAsync("Error", "Failed to delete account. Please try again later.", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 
-
-        private void CloseCurrentPopup()
+        [RelayCommand]
+        private async Task ClosePopup()
         {
-            // Assuming the popup is stored in MainPage's PopupStack
-            var popupStack = Application.Current.MainPage.Navigation.ModalStack;
-            var popup = popupStack.OfType<Custom_Render.OptionsPopup>().FirstOrDefault();
+            var popup = Shell.Current.Navigation.ModalStack.OfType<OptionsPopup>().FirstOrDefault();
             popup?.Close();
         }
-
 
         public IRelayCommand OnLogoutCommand => new AsyncRelayCommand(OnLogout);
         public IRelayCommand OnDeleteAccountCommand => new AsyncRelayCommand(OnDeleteAccount);

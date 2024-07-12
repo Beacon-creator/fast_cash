@@ -51,14 +51,25 @@ namespace Fast_Cash.ViewModels
             {
                 token = Uri.UnescapeDataString(query["token"]?.ToString());
             }
-            System.Diagnostics.Debug.WriteLine($"Email: {Email}, Token: {token}"); // Debug output
+       //     System.Diagnostics.Debug.WriteLine($"Email: {Email}, Token: {token}"); // Debug output
         }
 
         [RelayCommand]
         private async Task ResetPassword()
         {
+            if (IsBusy)
+                return;
+
             try
             {
+                // Check if required fields are filled
+                if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password) || string.IsNullOrEmpty(ConfirmPassword))
+                {
+                    await _alertService.ShowAlertAsync("Error", "Please fill in all details.", "OK");
+                    return;
+                }
+
+                // Check if passwords match
                 if (Password != ConfirmPassword)
                 {
                     await _alertService.ShowAlertAsync("Error", "Passwords do not match.", "OK");
@@ -72,37 +83,32 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
-                    IsBusy = false;
                     // Log success response
-                    System.Diagnostics.Debug.WriteLine("Password reset successful");
+                //    System.Diagnostics.Debug.WriteLine("Password reset successful");
 
-                    IsBusy = false; // hide the spinner
                     await _alertService.ShowAlertAsync("Success", "Password has been reset successfully.", "OK");
                     await Shell.Current.GoToAsync("//SignInPage");
                 }
                 else
                 {
-                    IsBusy = false;
                     var errorContent = await response.Content.ReadAsStringAsync();
                     // Log the error response
-                    System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
+               //     System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
 
-                    await _alertService.ShowAlertAsync("Error", $"Failed to reset password: {errorContent}", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to reset password", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
-                IsBusy = false;
                 // Handle HTTP request exceptions
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
+             //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Error", "A connection error occurred", "OK");
             }
             catch (Exception ex)
             {
-                IsBusy = false;
                 // Log the exception
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+             //   System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", "An error occurred", "OK");
             }
             finally
             {

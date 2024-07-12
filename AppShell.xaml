@@ -80,4 +80,11 @@ Route="CardLinkSuccess"/>
         
     </TabBar>
 
+
+    <!-- Define the login route as a global route -->
+    <ShellContent 
+        Route="LoginPage" ContentTemplate="{DataTemplate local:SignInPage}" />
+
+    <ShellContent 
+    Route="LogupPage" ContentTemplate="{DataTemplate local:SignUpPage}" />
 </Shell>

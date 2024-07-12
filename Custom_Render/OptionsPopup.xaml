@@ -6,5 +6,12 @@
     <VerticalStackLayout Padding="20" Spacing="15">
         <Button Text="Logout" Command="{Binding OnLogoutCommand}" />
         <Button Text="Delete Account" Command="{Binding OnDeleteAccountCommand}" />
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="X" WidthRequest="30" HeightRequest="30" Padding="0"
+         BackgroundColor="{DynamicResource PrimaryBackgroundColor}" Command="{Binding ClosePopupCommand}" />
+            <ActivityIndicator IsRunning="{Binding IsBusy}" WidthRequest="20" HeightRequest="20"
+                    IsVisible="{Binding IsBusy}" />
+        </StackLayout> 
+       
     </VerticalStackLayout>
 </toolkit:Popup>

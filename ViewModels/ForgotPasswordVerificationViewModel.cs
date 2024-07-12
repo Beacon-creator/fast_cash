@@ -14,7 +14,7 @@ namespace Fast_Cash.ViewModels
     public partial class ForgotPasswordVerificationViewModel : ObservableObject
     {
         private readonly HttpClient _httpClient;
-         private readonly HttpClientService _httpClientService;
+        private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
         [ObservableProperty]
@@ -41,6 +41,13 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task VerifyCode()
         {
+
+            if (string.IsNullOrWhiteSpace(VerificationCode))
+            {
+                await _alertService.ShowAlertAsync("Error", "Verification code cannot be empty.", "OK");
+                return;
+            }
+
             try
             {
                 IsBusy = true; // Show the spinner
@@ -93,6 +100,12 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task ResendCode()
         {
+            if (string.IsNullOrWhiteSpace(Email))
+            {
+                await _alertService.ShowAlertAsync("Error", "Email cannot be empty.", "OK");
+                return;
+            }
+
             try
             {
                 IsBusy = true; // Show the spinner

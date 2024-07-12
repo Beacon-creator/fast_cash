@@ -51,6 +51,9 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task SignUpAsync()
         {
+            if (IsBusy)
+                return;
+
             try
             {
                 // Check if terms are accepted
@@ -71,27 +74,18 @@ namespace Fast_Cash.ViewModels
 
                 var signUpModel = new { Email, Password, PhoneNumber };
 
-                // Log the data being sent
-                System.Diagnostics.Debug.WriteLine($"SignUp Data: {Newtonsoft.Json.JsonConvert.SerializeObject(signUpModel)}");
-
                 var response = await _httpClient.PostAsJsonAsync("api/signUp", signUpModel);
-
-                // Log the response status code
-                System.Diagnostics.Debug.WriteLine($"Response Status Code: {response.StatusCode}");
 
                 if (response.IsSuccessStatusCode)
                 {
                     IsBusy = false;
                     var token = await response.Content.ReadAsStringAsync();
 
-                    // Log the token received
-                    System.Diagnostics.Debug.WriteLine($"Token: {token}");
-
                     // Save the token (e.g., in SecureStorage) and navigate to the home screen
                     await SecureStorage.SetAsync("auth_token", token);
 
                     // Show a success alert
-                    await _alertService.ShowAlertAsync("Sign Up Successful", "You have successfully signed up.", "OK");
+                    await _alertService.ShowAlertAsync("Successful", "You have successfully signed up.", "OK");
 
                     var appShell = (AppShell)Application.Current.MainPage;
                     await appShell.NavigateToHomeScreen();
@@ -99,34 +93,25 @@ namespace Fast_Cash.ViewModels
                 else
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
-
-                    // Log the error response
-                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
                     IsBusy = false;
-                    await _alertService.ShowAlertAsync("Sign Up Failed", $"An error occurred: {errorContent}", "OK");
+                    await _alertService.ShowAlertAsync("Sign Up Failed", $"Try again later. Server response: {errorContent}", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
                 IsBusy = false;
-                // Handle HTTP request exceptions
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Sign Up Failed", $"A connection error occurred: {httpEx.Message}", "OK");
+                await _alertService.ShowAlertAsync("Connection Error", $"Try again later. Error: {httpEx.Message}", "OK");
             }
             catch (Exception ex)
             {
                 IsBusy = false;
-                // Log the exception
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Sign Up Failed", $"An error occurred: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Sign Up Failed", $"Try again later. Error: {ex.Message}", "OK");
             }
             finally
             {
                 IsBusy = false; // Hide the spinner
             }
         }
-
-
 
         [RelayCommand]
         private async Task SignInAsync()
@@ -139,28 +124,15 @@ namespace Fast_Cash.ViewModels
         private async Task GoogleSignUp()
         {
             // Handle Google sign-in logic here
-            await _alertService.ShowAlertAsync("Failed", "Not avaialable yet", "OK");
+            await _alertService.ShowAlertAsync("Failed", "Not available yet", "OK");
         }
 
         [RelayCommand]
         private async Task MicrosoftSignUp()
         {
             // Handle Microsoft sign-in logic here
-
-            await _alertService.ShowAlertAsync("Failed", "Not avaialable yet", "OK");
+            await _alertService.ShowAlertAsync("Failed", "Not available yet", "OK");
         }
-
-        //[RelayCommand]
-        //private void ShowPopup()
-        //{
-        //    IsPopupVisible = true;
-        //}
-
-        //[RelayCommand]
-        //private void HidePopup()
-        //{
-        //    IsPopupVisible = false;
-        //}
 
         [RelayCommand]
         private async Task ShowTermsPopup()

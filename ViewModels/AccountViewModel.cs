@@ -27,13 +27,13 @@ namespace Fast_Cash.ViewModels
             BatchBVisible = !BatchBVisible;
         }
 
-        [RelayCommand]
-        public async Task LinkCardLater()
-        {
-            var appShell = (AppShell)Application.Current.MainPage;
+        //[RelayCommand]
+        //public async Task LinkCardLater()
+        //{
+        //    var appShell = (AppShell)Application.Current.MainPage;
 
-            await appShell.NavigateToHomeScreen();
-        }
+        //    await appShell.NavigateToHomeScreen();
+        //}
 
         [RelayCommand]
         public async Task BankOneClicked()

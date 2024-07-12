@@ -81,11 +81,7 @@
                         <!-- More frames -->
                     </HorizontalStackLayout>
 
-                    <Label Margin="25,10" FontSize="Medium" Text="Link Card later >">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding LinkCardLaterCommand}"/>
-                        </Label.GestureRecognizers>
-                    </Label>
+                    
                 </VerticalStackLayout>
             </VerticalStackLayout>
         </ScrollView>

@@ -44,11 +44,6 @@ namespace Fast_Cash
 
             // Navigate to the HomePage tab
               await Shell.Current.GoToAsync("///HomePage");
-
-            //    await Shell.Current.GoToAsync(nameof(HomePage));
-
-          //  await GoToAsync(nameof(HomePage));
-
         }
 
         public async Task NavigateToLoginPage()

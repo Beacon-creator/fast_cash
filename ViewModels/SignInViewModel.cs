@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -37,8 +38,18 @@ namespace Fast_Cash.ViewModels
         [RelayCommand]
         private async Task SignIn()
         {
+            if (IsBusy)
+                return;
+
             try
             {
+                // Check if required fields are filled
+                if (string.IsNullOrEmpty(EmailOrPhone) || string.IsNullOrEmpty(Password))
+                {
+                    await _alertService.ShowAlertAsync("Failed", "Please fill in all details.", "OK");
+                    return;
+                }
+
                 IsBusy = true; // Show the spinner
 
                 var loginModel = new { Identifier = EmailOrPhone, Password = Password };
@@ -46,7 +57,6 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
-                    IsBusy = false;
                     var token = await response.Content.ReadAsStringAsync();
                     // Save the token (e.g., in SecureStorage) and navigate to the home screen
                     await SecureStorage.SetAsync("auth_token", token);
@@ -59,33 +69,29 @@ namespace Fast_Cash.ViewModels
                 }
                 else
                 {
-                    IsBusy = false;
                     var errorContent = await response.Content.ReadAsStringAsync();
                     // Log the error response
-                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
-                    await _alertService.ShowAlertAsync("Login Failed", $"Invalid credentials, please try again. {errorContent}", "OK");
+                    // System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                    await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
-                IsBusy = false;
                 // Handle HTTP request exceptions
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Login Failed", $"A connection error occurred: {httpEx.Message}", "OK");
+                // System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Login Failed", "A connection error occurred", "OK");
             }
             catch (Exception ex)
             {
-                IsBusy = false;
                 // Log the exception
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Login Failed", $"An error occurred: {ex.Message}", "OK");
+                // System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Login Failed", "Try again later", "OK");
             }
             finally
             {
                 IsBusy = false; // Hide the spinner
             }
         }
-
 
         [RelayCommand]
         private async Task NavigateToForgotPassword()

@@ -32,9 +32,9 @@
                 </StackLayout>
               
                 <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
-                    <Label Text="get a call" FontSize="Medium" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,20">
+                    <Label Text="Resend" FontSize="Medium" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,20">
                         <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_GetCall"/>
+                            <TapGestureRecognizer Command="{Binding ResendCommand}"/>
                         </Label.GestureRecognizers>
                     </Label>
                     <Label Text="Cancel" FontSize="Medium" FontAttributes="Bold" TextColor="{DynamicResource TertiaryTextColor2}" HorizontalOptions="Center" Margin="0,0,0,0">
@@ -44,6 +44,9 @@
                     </Label>
                 </HorizontalStackLayout>
                 <Button Text="Link Card" Command="{Binding VerifyCodeCommand}" Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+                <ActivityIndicator IsRunning="{Binding IsBusy}"
+HeightRequest="30" WidthRequest="30"
+IsVisible="{Binding IsBusy}" />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

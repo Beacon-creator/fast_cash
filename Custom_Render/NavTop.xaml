@@ -4,7 +4,7 @@
              x:Class="Fast_Cash.Custom_Render.NavTop">
     <Grid Margin="20,0"  Padding="0,20">
         <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="280" />
         <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 

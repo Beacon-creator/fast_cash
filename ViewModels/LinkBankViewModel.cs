@@ -1,5 +1,4 @@
-﻿// ViewModels/LinkBankViewModel.cs
-using System;
+﻿using System;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
@@ -17,13 +16,13 @@ namespace Fast_Cash.ViewModels
         private readonly IAlertService _alertService;
 
         [ObservableProperty]
-        private string accountOwnerName;
+        private string? accountOwnerName;
 
         [ObservableProperty]
-        private string accountNumber;
+        private string? accountNumber;
 
         [ObservableProperty]
-        private string bvnNumber;
+        private string? bvnNumber;
 
         [ObservableProperty]
         private bool isBusy;
@@ -40,17 +39,24 @@ namespace Fast_Cash.ViewModels
             if (IsBusy)
                 return;
 
-            IsBusy = true;
-
-            var bankLink = new BankLink
-            {
-                AccountOwnerName = AccountOwnerName,
-                AccountNumber = AccountNumber,
-                BVN = BvnNumber
-            };
-
             try
             {
+                // Validate required fields
+                if (string.IsNullOrEmpty(AccountOwnerName) || string.IsNullOrEmpty(AccountNumber) || string.IsNullOrEmpty(BvnNumber))
+                {
+                    await _alertService.ShowAlertAsync("Failed", "Please fill in all details.", "OK");
+                    return;
+                }
+
+                IsBusy = true;
+
+                var bankLink = new BankLink
+                {
+                    AccountOwnerName = AccountOwnerName,
+                    AccountNumber = AccountNumber,
+                    BVN = BvnNumber
+                };
+
                 var response = await _httpClientService.PostAsync("api/BankLinks", JsonContent.Create(bankLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"Response Content: {responseContent}");

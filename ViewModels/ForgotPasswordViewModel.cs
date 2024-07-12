@@ -39,6 +39,11 @@ namespace Fast_Cash.ViewModels
         {
             try
             {
+                if (string.IsNullOrEmpty(Email))
+                {
+                    await _alertService.ShowAlertAsync("Failed", "Please input your registered email address.", "OK");
+                    return;
+                }
                 IsBusy = true; // show the spinner
 
                 var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/send-code", Email);
@@ -48,7 +53,7 @@ namespace Fast_Cash.ViewModels
                     var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
 
                     // Log the verification code
-                    System.Diagnostics.Debug.WriteLine($"Verification Code: {verificationCode}");
+                //   System.Diagnostics.Debug.WriteLine($"Verification Code: {verificationCode}");
 
                     await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
 
@@ -59,22 +64,22 @@ namespace Fast_Cash.ViewModels
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
                     // Log the error response
-                    System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
+                  //  System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
 
-                    await _alertService.ShowAlertAsync("Error", $"Failed to send verification code: {errorContent}", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
                 // Handle HTTP request exceptions
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
+             //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Error", "A connection error occurred", "OK");
             }
             catch (Exception ex)
             {
                 // Log the exception
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+              //  System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", "An error occurred", "OK");
             }
             finally
             {

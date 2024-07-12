@@ -42,7 +42,7 @@ namespace Fast_Cash.ViewModels
 
             // Retrieve the token
             var token = _tokenService.GetToken();
-            Console.WriteLine($"token: {token}");
+           // Console.WriteLine($"token: {token}");
             if (!string.IsNullOrEmpty(token))
             {
                 Email = _jwtService.GetEmailFromToken(token);
@@ -57,10 +57,15 @@ namespace Fast_Cash.ViewModels
 
             IsBusy = true;
 
-            var verificationCode = OneCodeEntry + TwoCodeEntry + ThreeCodeEntry + FourCodeEntry;
+            // Check if all fields are filled
+            if (string.IsNullOrEmpty(OneCodeEntry) || string.IsNullOrEmpty(TwoCodeEntry) || string.IsNullOrEmpty(ThreeCodeEntry) || string.IsNullOrEmpty(FourCodeEntry))
+            {
+                await _alertService.ShowAlertAsync("Failed", "Please complete the code.", "OK");
+                IsBusy = false;
+                return;
+            }
 
-            // Log the format of the verification code
-            Console.WriteLine($"Verification Code: {verificationCode}");
+            var verificationCode = OneCodeEntry + TwoCodeEntry + ThreeCodeEntry + FourCodeEntry;
 
             var verificationRequest = new VerificationRequest
             {
@@ -78,7 +83,7 @@ namespace Fast_Cash.ViewModels
                 else
                 {
                     var errorResponse = await response.Content.ReadAsStringAsync();
-                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code {verificationCode}. Server response: {errorResponse}", "OK");
+                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code. Server response: {errorResponse}", "OK");
                 }
             }
             catch (HttpRequestException ex)
@@ -94,6 +99,33 @@ namespace Fast_Cash.ViewModels
                 IsBusy = false;
             }
         }
+
+
+        [RelayCommand]
+        private async Task Resend()
+        {
+            try
+            {
+                var requestUri = $"api/BankLinks/sendVerificationCode";
+                var response = await _httpClientService.PostAsync(requestUri, null);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var verificationCode = await response.Content.ReadAsStringAsync();
+                    await _alertService.ShowAlertAsync("Success", $"Verification code resent: {verificationCode}", "OK");
+                }
+                else
+                {
+                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await _alertService.ShowAlertAsync("Error", $"Failed to send verification code: {ex.Message}", "OK");
+                throw;
+            }
+        }
+
 
 
         [RelayCommand]
