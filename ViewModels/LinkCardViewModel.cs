@@ -8,9 +8,9 @@ using Fast_Cash.Model;
 using Microsoft.Maui.Controls;
 
 namespace Fast_Cash.ViewModels
-{
-    public partial class LinkCardViewModel : ObservableObject
     {
+    public partial class LinkCardViewModel : ObservableObject
+        {
         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
 
@@ -30,63 +30,62 @@ namespace Fast_Cash.ViewModels
         private bool isBusy;
 
         public LinkCardViewModel(HttpClientService httpClientService, IAlertService alertService)
-        {
+            {
             _httpClientService = httpClientService;
             _alertService = alertService;
-        }
+            }
 
         [RelayCommand]
         private async Task LinkCard()
-        {
+            {
             if (IsBusy)
                 return;
 
             try
-            {
-                // Validate required fields
-                if (string.IsNullOrEmpty(CardHolderName) || string.IsNullOrEmpty(CardNumber) || string.IsNullOrEmpty(CvvNumber) || string.IsNullOrEmpty(ExpiryDate))
                 {
-                    await _alertService.ShowAlertAsync("Failed", "Please fill in all details.", "OK");
-                    return;
-                }
-
+          
                 IsBusy = true;
 
                 var cardLink = new CardLink
-                {
+                    {
                     CardHolderName = CardHolderName,
                     CardNumber = CardNumber,
                     CVV = CvvNumber,
                     ExpiryDate = ExpiryDate
-                };
+                    };
 
                 var response = await _httpClientService.PostAsync("api/CardLinks", JsonContent.Create(cardLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Response Status Code: {response.StatusCode}");
-                Console.WriteLine($"Response Content: {responseContent}");
+            //    Console.WriteLine($"Response Status Code: {response.StatusCode}");
+             //   Console.WriteLine($"Response Content: {responseContent}");
 
                 if (response.IsSuccessStatusCode)
-                {
+                    {
+                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Success", "Card linked successfully.", "OK");
                     await Shell.Current.GoToAsync("//CardLinkSuccess");
-                }
+                    }
                 else
-                {
+                    {
                     await _alertService.ShowAlertAsync("Error", $"Failed to link card. Server response: {responseContent}", "OK");
+                    }
                 }
-            }
             catch (HttpRequestException ex)
-            {
-                await _alertService.ShowAlertAsync("Error", $"Request error: {ex.Message}", "OK");
-            }
+                {
+                //   Console.WriteLine($"Error : {ex.Message}");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+
+                }
             catch (Exception ex)
-            {
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
-            }
+                {
+                //   Console.WriteLine($"Error : {ex.Message}");
+             
+                await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
+                }
             finally
-            {
+                {
                 IsBusy = false;
+                }
             }
         }
     }
-}

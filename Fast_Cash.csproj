@@ -24,7 +24,7 @@
 		<ApplicationTitle>Cashnal</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.Fanal_Beacon.Cashnal</ApplicationId>
+		<ApplicationId>com.Fanal-Beacon.Cashnal</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -36,17 +36,17 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<Title>Cashnal</Title>
-		<Description>maximizing cash</Description>
+		<Title></Title>
+		<Description>...maximizing cash</Description>
 		<Copyright>copyright@2024</Copyright>
-		<PackageIcon>fastlogo.svg</PackageIcon>
+		<PackageIcon></PackageIcon>
 		<RepositoryUrl>https://github.com/Beacon-creator/fast_cash</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
-		 <MauiIcon Include="Resources\AppIcon\fastlogo.svg" ForegroundFile="Resources\AppIcon\fastlogo.svg" Color="#FF6E6A" />
+		 <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FF6E6A" />
 		 <MauiSplashScreen Include="Resources\AppIcon\fastlogo.svg">
 		   <Resize>True</Resize>
 		   <Color>#FF6E6A</Color>
@@ -57,10 +57,11 @@
 
 		<!-- Splash Screen -->
 		<!--	<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" /> -->
-		<MauiSplashScreen Include="Resources\Splash\fastlogo.svg" Color="#FF6E6A" Resize="True" BaseSize="100,100" />
+		<MauiSplashScreen Include="Resources\Splash\fastlogo.svg" Color="#FF6E6A" Resize="True" />
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+		<MauiImage Update="Resources\Splash\fastlogo.svg" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -72,15 +73,16 @@
 	<ItemGroup>
 	  <Compile Remove="Custom_Render\BankCard.xaml.cs" />
 	  <Compile Remove="Custom_Render\Facescanner.xaml.cs" />
+	  <Compile Remove="Custom_Render\OptionsPopup.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Remove="Custom_Render\BankCard.xaml" />
 	  <MauiXaml Remove="Custom_Render\Facescanner.xaml" />
+	  <MauiXaml Remove="Custom_Render\OptionsPopup.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\AppIcon\fastlogo.svg" />
 	  <None Remove="Resources\Fonts\Lato-Black.ttf" />
 	  <None Remove="Resources\Fonts\Lato-BlackItalic.ttf" />
 	  <None Remove="Resources\Fonts\Lato-Bold.ttf" />
@@ -199,9 +201,6 @@
 	  <MauiXaml Update="Custom_Render\NavTop.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Custom_Render\OptionsPopup.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Custom_Render\SearchFrame.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -280,6 +279,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Update="Resources\AppIcon\fastlogo.svg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	  <None Update="Resources\Splash\fastlogo.svg">
 	    <Pack>True</Pack>
 	    <PackagePath>\</PackagePath>

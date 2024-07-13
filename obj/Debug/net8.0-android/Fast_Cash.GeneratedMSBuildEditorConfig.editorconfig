@@ -58,12 +58,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = Cashnal.Custom_Render.NavT
 build_metadata.AdditionalFiles.TargetPath = Custom_Render\NavTop.xaml
 build_metadata.AdditionalFiles.RelativePath = Custom_Render\NavTop.xaml
 
-[C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/OptionsPopup.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Cashnal.Custom_Render.OptionsPopup.xaml
-build_metadata.AdditionalFiles.TargetPath = Custom_Render\OptionsPopup.xaml
-build_metadata.AdditionalFiles.RelativePath = Custom_Render\OptionsPopup.xaml
-
 [C:/Users/user/OneDrive/Documents/MobileApps/Fast_Cash/Custom_Render/SearchFrame.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Cashnal.Custom_Render.SearchFrame.xaml

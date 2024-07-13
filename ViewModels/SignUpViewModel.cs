@@ -7,6 +7,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
 using Microsoft.Maui.Controls;
+using Newtonsoft.Json.Serialization;
 
 namespace Fast_Cash.ViewModels
 {
@@ -94,18 +95,21 @@ namespace Fast_Cash.ViewModels
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
                     IsBusy = false;
-                    await _alertService.ShowAlertAsync("Sign Up Failed", $"Try again later. Server response: {errorContent}", "OK");
+                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                    await _alertService.ShowAlertAsync("Sign Up Failed", "Check details and try again", "OK");
                 }
             }
             catch (HttpRequestException httpEx)
             {
                 IsBusy = false;
-                await _alertService.ShowAlertAsync("Connection Error", $"Try again later. Error: {httpEx.Message}", "OK");
+
+                await _alertService.ShowAlertAsync("Connection Error", "Try again later.", "OK");
             }
             catch (Exception ex)
             {
                 IsBusy = false;
-                await _alertService.ShowAlertAsync("Sign Up Failed", $"Try again later. Error: {ex.Message}", "OK");
+                System.Diagnostics.Debug.WriteLine($"Error: {ex}");
+                await _alertService.ShowAlertAsync("Sign Up Failed", "Try again later", "OK");
             }
             finally
             {

@@ -43,10 +43,13 @@
                         </Label.GestureRecognizers>
                     </Label>
                 </HorizontalStackLayout>
-                <Button Text="Link Card" Command="{Binding VerifyCodeCommand}" Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
-                <ActivityIndicator IsRunning="{Binding IsBusy}"
+                <VerticalStackLayout>
+                    <Button Text="Link Card" Command="{Binding VerifyCodeCommand}" Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+                    <ActivityIndicator IsRunning="{Binding IsBusy}"
 HeightRequest="30" WidthRequest="30"
 IsVisible="{Binding IsBusy}" />
+                </VerticalStackLayout>
+               
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

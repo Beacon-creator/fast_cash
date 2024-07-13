@@ -50,6 +50,7 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
 
                     // Log the verification code
@@ -72,9 +73,9 @@ namespace Fast_Cash.ViewModels
             catch (HttpRequestException httpEx)
             {
                 // Handle HTTP request exceptions
-             //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", "A connection error occurred", "OK");
-            }
+                //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+                }
             catch (Exception ex)
             {
                 // Log the exception

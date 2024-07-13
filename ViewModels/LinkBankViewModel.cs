@@ -40,15 +40,8 @@ namespace Fast_Cash.ViewModels
                 return;
 
             try
-            {
-                // Validate required fields
-                if (string.IsNullOrEmpty(AccountOwnerName) || string.IsNullOrEmpty(AccountNumber) || string.IsNullOrEmpty(BvnNumber))
-                {
-                    await _alertService.ShowAlertAsync("Failed", "Please fill in all details.", "OK");
-                    return;
-                }
-
-                IsBusy = true;
+            {     
+               IsBusy = true;
 
                 var bankLink = new BankLink
                 {
@@ -59,16 +52,17 @@ namespace Fast_Cash.ViewModels
 
                 var response = await _httpClientService.PostAsync("api/BankLinks", JsonContent.Create(bankLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"Response Content: {responseContent}");
+            //    Console.WriteLine($"Response Content: {responseContent}");
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Success", "Bank account linked successfully.", "OK");
 
                     // Send verification code
                     var verificationResponse = await SendVerificationCode();
                     var verificationContent = await verificationResponse.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Verification Response Content: {verificationContent}");
+               //     Console.WriteLine($"Verification Response Content: {verificationContent}");
 
                     if (verificationResponse.IsSuccessStatusCode)
                     {
@@ -80,18 +74,22 @@ namespace Fast_Cash.ViewModels
                     }
                     else
                     {
-                        await _alertService.ShowAlertAsync("Error", $"Failed to send verification code. Server response: {verificationContent}", "OK");
+                      //  Console.WriteLine($"Error : {verificationContent}");
+                        await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try to register again", "OK");
                     }
                 }
                 else
                 {
-                    await _alertService.ShowAlertAsync("Error", $"Failed to link bank account. Server response: {responseContent}", "OK");
+                 //   Console.WriteLine($"Error : {responseContent}");
+                    await _alertService.ShowAlertAsync("Error", "Failed to link bank account.Try again later", "OK");
                 }
             }
             catch (HttpRequestException ex)
             {
-                await _alertService.ShowAlertAsync("Error", $"Request error: {ex.Message}", "OK");
-            }
+                
+             //   Console.WriteLine($"Error : {ex.Message}");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+                }
             catch (Exception ex)
             {
                 await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");

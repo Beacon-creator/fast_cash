@@ -54,4 +54,4 @@ File=Resources\Images\vertical_dots.svg;Link=;BaseSize=;Resize=;TintColor=;Color
 File=Resources\Images\wallet.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
 File=Resources\Images\walletred.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
 File=Resources\Images\walletwhite.png;Link=;BaseSize=;Resize=;TintColor=;Color=;IsAppIcon=;ForegroundScale=;ForegroundFile=
-File=Resources\AppIcon\fastlogo.svg;Link=;BaseSize=;Resize=;TintColor=;Color=#FF6E6A;IsAppIcon=True;ForegroundScale=;ForegroundFile=Resources\AppIcon\fastlogo.svg
+File=Resources\AppIcon\appicon.svg;Link=;BaseSize=;Resize=;TintColor=;Color=#FF6E6A;IsAppIcon=True;ForegroundScale=;ForegroundFile=Resources\AppIcon\appiconfg.svg

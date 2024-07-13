@@ -7,6 +7,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
 using Microsoft.Maui.Controls;
+using Newtonsoft.Json.Serialization;
 
 namespace Fast_Cash.ViewModels
 {
@@ -57,16 +58,15 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     var responseContent = await response.Content.ReadAsStringAsync();
-                    System.Diagnostics.Debug.WriteLine($"Response Content: {responseContent}"); // Debug output
+                   // System.Diagnostics.Debug.WriteLine($"Response Content: {responseContent}"); // Debug output
 
                     var jsonDocument = JsonDocument.Parse(responseContent);
                     if (jsonDocument.RootElement.TryGetProperty("token", out JsonElement tokenElement))
                     {
                         string token = tokenElement.GetString();
-                        System.Diagnostics.Debug.WriteLine($"Extracted Token: {token}"); // Debug output
-
-                        IsBusy = false; // hide the spinner
+                      //  System.Diagnostics.Debug.WriteLine($"Extracted Token: {token}"); // Debug output
 
                         // Use Uri.EscapeDataString to ensure the token is correctly encoded
                         await Shell.Current.GoToAsync($"//NewPasswordPage?email={Email}&token={Uri.EscapeDataString(token)}");
@@ -83,13 +83,13 @@ namespace Fast_Cash.ViewModels
             }
             catch (HttpRequestException httpEx)
             {
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
-            }
+                //  System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+                }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+               // System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", "An error occurred, please try again", "OK");
             }
             finally
             {
@@ -99,43 +99,51 @@ namespace Fast_Cash.ViewModels
 
         [RelayCommand]
         private async Task ResendCode()
-        {
-            if (string.IsNullOrWhiteSpace(Email))
             {
+            if (string.IsNullOrWhiteSpace(Email))
+                {
                 await _alertService.ShowAlertAsync("Error", "Email cannot be empty.", "OK");
                 return;
-            }
+                }
 
             try
-            {
+                {
                 IsBusy = true; // Show the spinner
 
-                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/send-code", new { Email });
+                var emailContent = new StringContent($"\"{Email}\"", System.Text.Encoding.UTF8, "application/json");
+             //   System.Diagnostics.Debug.WriteLine($"Email Content: {emailContent.ReadAsStringAsync().Result}"); // Debug output
+
+                var response = await _httpClient.PostAsync("api/PasswordReset/send-code", emailContent);
+
                 if (response.IsSuccessStatusCode)
-                {
+                    {
+                    IsBusy = false;
                     var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
 
                     await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
-                }
+                    }
                 else
+                    {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                 //   System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}"); // Debug output
+                    await _alertService.ShowAlertAsync("Error", "Failed to resend verification code.", "OK");
+                    }
+                }
+            catch (HttpRequestException httpEx)
                 {
-                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code.", "OK");
+              //  System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+                }
+            catch (Exception ex)
+                {
+             //   System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", "An error occurred, please try again", "OK");
+                }
+            finally
+                {
+                IsBusy = false; // hide the spinner
                 }
             }
-            catch (HttpRequestException httpEx)
-            {
-                System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", $"A connection error occurred: {httpEx.Message}", "OK");
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
-            }
-            finally
-            {
-                IsBusy = false; // hide the spinner
-            }
+
         }
     }
-}

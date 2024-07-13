@@ -84,8 +84,8 @@ namespace Fast_Cash.ViewModels
                 if (response.IsSuccessStatusCode)
                 {
                     // Log success response
-                //    System.Diagnostics.Debug.WriteLine("Password reset successful");
-
+                    //    System.Diagnostics.Debug.WriteLine("Password reset successful");
+                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Success", "Password has been reset successfully.", "OK");
                     await Shell.Current.GoToAsync("//SignInPage");
                 }
@@ -101,14 +101,16 @@ namespace Fast_Cash.ViewModels
             catch (HttpRequestException httpEx)
             {
                 // Handle HTTP request exceptions
-             //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
-                await _alertService.ShowAlertAsync("Error", "A connection error occurred", "OK");
+                //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
+
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+      
             }
             catch (Exception ex)
             {
                 // Log the exception
              //   System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", "An error occurred", "OK");
+                await _alertService.ShowAlertAsync("Error", "An error occurred, please try again", "OK");
             }
             finally
             {

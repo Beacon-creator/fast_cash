@@ -11,16 +11,16 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.Fanal_Beacon.Cashnal")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.Fanal-Beacon.Cashnal")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "Cashnal")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("copyright@2024")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("maximizing cash")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("...maximizing cash")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+978dbfce2a4f8423ceeb8eb370c675b8de331cc7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ee8ab465d3f5a1e2f2ae609f0e26edd013f3b1e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

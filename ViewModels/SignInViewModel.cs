@@ -57,10 +57,12 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     var token = await response.Content.ReadAsStringAsync();
                     // Save the token (e.g., in SecureStorage) and navigate to the home screen
                     await SecureStorage.SetAsync("auth_token", token);
 
+                   
                     // Show a success alert
                     await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
 

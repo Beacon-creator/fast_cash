@@ -57,14 +57,6 @@ namespace Fast_Cash.ViewModels
 
             IsBusy = true;
 
-            // Check if all fields are filled
-            if (string.IsNullOrEmpty(OneCodeEntry) || string.IsNullOrEmpty(TwoCodeEntry) || string.IsNullOrEmpty(ThreeCodeEntry) || string.IsNullOrEmpty(FourCodeEntry))
-            {
-                await _alertService.ShowAlertAsync("Failed", "Please complete the code.", "OK");
-                IsBusy = false;
-                return;
-            }
-
             var verificationCode = OneCodeEntry + TwoCodeEntry + ThreeCodeEntry + FourCodeEntry;
 
             var verificationRequest = new VerificationRequest
@@ -77,6 +69,7 @@ namespace Fast_Cash.ViewModels
                 var response = await _httpClientService.PostAsync("api/BankLinks/VerifyCode", JsonContent.Create(verificationRequest));
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Success", $"Verification successful: {verificationCode}.", "OK");
                     await Shell.Current.GoToAsync("CardLinkSuccess");
                 }
@@ -111,6 +104,7 @@ namespace Fast_Cash.ViewModels
 
                 if (response.IsSuccessStatusCode)
                 {
+                    IsBusy = false;
                     var verificationCode = await response.Content.ReadAsStringAsync();
                     await _alertService.ShowAlertAsync("Success", $"Verification code resent: {verificationCode}", "OK");
                 }

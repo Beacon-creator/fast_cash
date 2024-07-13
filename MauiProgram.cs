@@ -19,7 +19,9 @@ namespace Fast_Cash
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
-            builder.UseMauiApp<App>().ConfigureFonts(fonts =>
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("Lato-Regular.ttf", "LatoRegular");
                 fonts.AddFont("Lato-Bold.ttf", "LatoBold");

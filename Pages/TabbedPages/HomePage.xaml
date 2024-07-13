@@ -2,9 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Pages.TabbedPages.HomePage"
-               xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
-              NavigationPage.HasBackButton="False"
-                NavigationPage.HasNavigationBar="False"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
              Title="HomePage">
     <VerticalStackLayout  Padding="20,0">
         <HorizontalStackLayout Margin="0,20" Spacing="15">
@@ -15,17 +16,17 @@
                 <Label Style="{DynamicResource headlabel3}" Text="Hi, Jon ?"/>
                 <Label Margin="0" Style="{DynamicResource headlabel2}" Text="Welcome back"/>
             </VerticalStackLayout>
-            
+
             <HorizontalStackLayout Margin="50,0" Spacing="30" HorizontalOptions="EndAndExpand">
                 <ImageButton Command="{Binding QrcodeCommand}" HeightRequest="40" WidthRequest="40" Source="qr_code.svg"/>
-                <ImageButton Command="{Binding DotCommand}" HeightRequest="30" WidthRequest="10" Source="vertical_dots.svg"/>
+                <ImageButton x:Name="DotButton" Command="{Binding ShowDropdownCommand}" HeightRequest="30" WidthRequest="10" Source="vertical_dots.svg"/>
             </HorizontalStackLayout>
+
         </HorizontalStackLayout>
 
         <local:WalletsCard Margin="0,30,0,20" Route="////AccountPageMain"
                            BackgroundImageSource="cross.svg" MainText="Create Wallet"/>
 
-      
         <Label Style="{DynamicResource headlabel}" Text="Functions"/>
 
         <HorizontalStackLayout Spacing="10" Margin="0,20">
@@ -33,6 +34,9 @@
             <local:FunctionsCard BackgroundImageSource="seo_and_web.svg" HeadText="Transfer" SubText="Money"/>
             <local:FunctionsCard BackgroundImageSource="exchange.svg" HeadText="Exchange" SubText="Money"/>
         </HorizontalStackLayout>
+        <ActivityIndicator IsRunning="{Binding IsBusy}"
+HeightRequest="30" WidthRequest="30"
+IsVisible="{Binding IsBusy}" />
         <VerticalStackLayout>
             <Label Style="{DynamicResource headlabel}" Text="Recent Transaction"/>
 
@@ -40,6 +44,6 @@
             <Label FontSize="Small" Style="{DynamicResource headlabel}" Text="No Transaction"/>
             <Label Margin="0" FontSize="Small"  Style="{DynamicResource headlabel}" Text="Let's get Started"/>
         </VerticalStackLayout>
-       
+
     </VerticalStackLayout>
 </ContentPage>
