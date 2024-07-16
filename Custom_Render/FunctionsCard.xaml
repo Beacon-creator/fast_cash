@@ -2,14 +2,11 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.FunctionsCard">
-    <VerticalStackLayout>
-        <Frame WidthRequest="115"  HasShadow="True" BackgroundColor="{DynamicResource ProTextColor}" CornerRadius="10">
-            <StackLayout Spacing="5">
-                <ImageButton HeightRequest="30" WidthRequest="30" Source="{Binding BackgroundImageSource}"/>
-                <Label HorizontalOptions="Center" FontSize="14" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding HeadText}"/>
-                <Label HorizontalOptions="Center"  TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding SubText}"/>
-            </StackLayout>
-
-        </Frame>
-    </VerticalStackLayout>
+    <Frame HasShadow="True" BackgroundColor="{DynamicResource ProTextColor}" CornerRadius="10" Padding="10">
+        <StackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center">
+            <ImageButton HeightRequest="60" WidthRequest="60" Source="{Binding BackgroundImageSource}" Aspect="AspectFit"/>
+            <Label HorizontalOptions="Center" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding HeadText}"/>
+            <Label HorizontalOptions="Center" FontSize="14" TextColor="{DynamicResource PrimaryTextColor}" Text="{Binding SubText}"/>
+        </StackLayout>
+    </Frame>
 </ContentView>

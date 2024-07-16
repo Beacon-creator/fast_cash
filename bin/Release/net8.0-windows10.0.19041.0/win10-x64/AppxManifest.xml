@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="com.Fanal_Beacon.Cashnal" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
+  <Identity Name="com.Fanal-Beacon.Cashnal" Publisher="CN=User Name" Version="1.0.0.1" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="845D37AE-0160-47DF-BEFD-DEC66F15F6EA" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Cashnal</DisplayName>

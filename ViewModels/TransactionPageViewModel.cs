@@ -8,7 +8,7 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private double sliderValue;
 
-        public string AmountOfMoneyLabel => $"Amount of money: N{SliderValue * 1000}";
+        public string AmountOfMoneyLabel => $"Amount: N{SliderValue * 1000}";
 
         public IRelayCommand ClearSliderCommand { get; }
 

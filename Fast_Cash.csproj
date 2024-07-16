@@ -44,6 +44,10 @@
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+	
 	<ItemGroup>
 		<!-- App Icon -->
 		 <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FF6E6A" />
@@ -74,12 +78,16 @@
 	  <Compile Remove="Custom_Render\BankCard.xaml.cs" />
 	  <Compile Remove="Custom_Render\Facescanner.xaml.cs" />
 	  <Compile Remove="Custom_Render\OptionsPopup.xaml.cs" />
+	  <Compile Remove="Pages\Page1.xaml.cs" />
+	  <Compile Remove="Pages\TabbedPages\HomeTab.xaml.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Remove="Custom_Render\BankCard.xaml" />
 	  <MauiXaml Remove="Custom_Render\Facescanner.xaml" />
 	  <MauiXaml Remove="Custom_Render\OptionsPopup.xaml" />
+	  <MauiXaml Remove="Pages\Page1.xaml" />
+	  <MauiXaml Remove="Pages\TabbedPages\HomeTab.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -165,6 +173,8 @@
 		<PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.7.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
 		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.6.3" />
+		<PackageReference Include="Microsoft.IdentityModel.Logging" Version="7.6.3" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.3" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.70" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.70" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -175,6 +185,7 @@
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
 		<PackageReference Include="Tesseract" Version="5.2.0" />
 		<PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
 		<PackageReference Include="ZXing.Net.Maui" Version="0.4.0" />
 		<PackageReference Include="ZXing.Net.Maui.Controls" Version="0.4.0" />
 	</ItemGroup>
@@ -182,6 +193,9 @@
 	<ItemGroup>
 	  <Compile Update="Pages\AccountPageMain.xaml.cs">
 	    <DependentUpon>AccountPageMain.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\StartPage.xaml.cs">
+	    <DependentUpon>StartPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -237,9 +251,6 @@
 	  <MauiXaml Update="Pages\NewPasswordPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\Page1.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Pages\SignInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -249,7 +260,7 @@
 	  <MauiXaml Update="Pages\SplashScreen.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\StartPage1.xaml">
+	  <MauiXaml Update="Pages\StartPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\TabbedPages\AccountPage.xaml">

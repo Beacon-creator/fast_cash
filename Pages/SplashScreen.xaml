@@ -6,18 +6,18 @@
              >
     
     <ContentPage.Content>
-        <StackLayout BackgroundColor="{DynamicResource PrimaryBackgroundColor}">
+        <StackLayout Padding="20,0">
             
             <StackLayout Style="{DynamicResource StackLay}">
                 <Image Source="fastlogo.svg" Style="{DynamicResource walimage}"/>
-                <Label Margin="20,10,0,0" 
-                    Text="Fanal Cash" 
+                <Label Margin="10,10,0,0" 
+                    Text="Cashnal" 
                        TextColor="{DynamicResource ProTextColor}"
                     FontSize="40" />
             </StackLayout>
 
-            <StackLayout VerticalOptions="StartAndExpand">
-                <Label Text="Welcome" FontSize="30" FontAttributes="Bold"
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label Text="Welcome" FontSize="Title" FontAttributes="Bold" 
                         TextColor="{DynamicResource ProTextColor}"
                         HorizontalOptions="CenterAndExpand" />
 
@@ -27,11 +27,11 @@
 
                 <Label Text="Here to deliver the best in time financial assistance to a transacting world" 
                        TextColor="{DynamicResource ProTextColor}"
-                       Margin="30,10,30,0"
+                      HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
                        Style="{DynamicResource headlabel4}"/>
 
-                <Label Text="Let's begin  >"  
-                       TextColor="{DynamicResource ProTextColor}" Margin="0,20,0,0"
+                <Label Text="Let's begin  >"  FontSize="Large"
+                       TextColor="{DynamicResource ProTextColor}" Margin="0,40,0,0"
                        Style="{DynamicResource headlabel4}">
 
                     <Label.GestureRecognizers>

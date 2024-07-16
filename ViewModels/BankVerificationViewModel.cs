@@ -5,6 +5,7 @@ using CommunityToolkit.Mvvm.Input;
 using Fast_Cash.EventHandlers;
 using Fast_Cash.Model;
 using Microsoft.Maui.Controls;
+using Newtonsoft.Json.Linq;
 
 namespace Fast_Cash.ViewModels
 {
@@ -42,12 +43,12 @@ namespace Fast_Cash.ViewModels
 
             // Retrieve the token
             var token = _tokenService.GetToken();
-           // Console.WriteLine($"token: {token}");
+            Console.WriteLine($"token: {token}");
             if (!string.IsNullOrEmpty(token))
-            {
+                {
                 Email = _jwtService.GetEmailFromToken(token);
+                }
             }
-        }
 
         [RelayCommand]
         private async Task VerifyCode()
@@ -70,22 +71,22 @@ namespace Fast_Cash.ViewModels
                 if (response.IsSuccessStatusCode)
                 {
                     IsBusy = false;
-                    await _alertService.ShowAlertAsync("Success", $"Verification successful: {verificationCode}.", "OK");
+                    await _alertService.ShowAlertAsync("Success", "Verification successful.", "OK");
                     await Shell.Current.GoToAsync("CardLinkSuccess");
                 }
                 else
                 {
                     var errorResponse = await response.Content.ReadAsStringAsync();
-                    await _alertService.ShowAlertAsync("Error", $"Invalid or expired verification code. Server response: {errorResponse}", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
                 }
             }
             catch (HttpRequestException ex)
             {
-                await _alertService.ShowAlertAsync("Error", $"Request error: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Network Error", "Try again later", "OK");
             }
             catch (Exception ex)
             {
-                await _alertService.ShowAlertAsync("Error", $"An error occurred: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
             }
             finally
             {
@@ -105,17 +106,20 @@ namespace Fast_Cash.ViewModels
                 if (response.IsSuccessStatusCode)
                 {
                     IsBusy = false;
-                    var verificationCode = await response.Content.ReadAsStringAsync();
-                    await _alertService.ShowAlertAsync("Success", $"Verification code resent: {verificationCode}", "OK");
+                    var verificationContent = await response.Content.ReadAsStringAsync();
+
+                    var verificationResult = JObject.Parse(verificationContent);
+                    var verificationCode = verificationResult["code"]?.ToString();
+                    await _alertService.ShowAlertAsync("Success", $"Verification code has been resent: {verificationCode}", "OK");
                 }
                 else
                 {
-                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try again later", "OK");
                 }
             }
             catch (Exception ex)
             {
-                await _alertService.ShowAlertAsync("Error", $"Failed to send verification code: {ex.Message}", "OK");
+                await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try again later", "OK");
                 throw;
             }
         }
@@ -126,7 +130,7 @@ namespace Fast_Cash.ViewModels
         private async Task Cancel()
         {
             var appShell = (AppShell)Application.Current.MainPage;
-            await appShell.NavigateToHomeScreen();
+            await appShell.NavigateToHome();
         }
     }
 }

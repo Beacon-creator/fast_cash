@@ -12,6 +12,6 @@ public partial class CardLinkSuccess : ContentPage
     {
         var appShell = (AppShell)Application.Current.MainPage;
 
-        await appShell.NavigateToHomeScreen();
+        await appShell.NavigateToHome();
     }
 }

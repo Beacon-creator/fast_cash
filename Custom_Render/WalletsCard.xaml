@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.WalletsCard">
     <VerticalStackLayout>
-        <Frame HeightRequest="180" BackgroundColor="{DynamicResource PrimaryBackgroundColor}" CornerRadius="10">
+        <Frame  BackgroundColor="{DynamicResource PrimaryBackgroundColor}" CornerRadius="10">
             <StackLayout>
-                <ImageButton Clicked="WalletFrame_Tapped" VerticalOptions="Center" Margin="0,20,0,0" Source="{Binding BackgroundImageSource}"/>
+                <ImageButton Clicked="WalletFrame_Tapped" VerticalOptions="Center" Margin="0,10,0,0" Source="{Binding BackgroundImageSource}"/>
                 <Label Style="{DynamicResource headlabel}" TextColor="{DynamicResource ProTextColor}" Text="{Binding MainText}"/>
 
             </StackLayout>

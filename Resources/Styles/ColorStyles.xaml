@@ -7,6 +7,7 @@
     <Color x:Key="PrimaryBackgroundColor" >#FF6E6A</Color>
     <Color x:Key="PrimaryBackgroundColor2" >Transparent</Color>
     <Color x:Key="SecundaryBackgroundColor" >#FFFFFF</Color>
+    <Color x:Key="PageBackgroundColor" >#FFFFFF</Color>
     <Color x:Key="SecundaryBackgroundColor2" >#496FFF</Color>
     <Color x:Key="TertiaryBackgroundColor" >#C3CBCE</Color>
 
@@ -18,7 +19,10 @@
     <Color x:Key="ProButtonColor" >#CCCCCC</Color>
     <Color x:Key="ButtonbackColor" >#ff6e6a</Color>
 
-    
+
+    <Color x:Key="IndicatorColor" >#CCCCCC</Color>
+    <Color x:Key="SelectedIndicatorColor" >#ff6e6a</Color>
+
     <!-- Text Colors -->
     <Color x:Key="PrimaryTextColor">#0D0D0D</Color>
     <Color x:Key="PrimaryTextColor2">#1A181B</Color>

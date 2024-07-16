@@ -5,31 +5,47 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
              NavigationPage.HasBackButton="False"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              NavigationPage.HasNavigationBar="False"
              Title="HomePage">
+
+ 
+    
     <VerticalStackLayout  Padding="20,0">
-        <HorizontalStackLayout Margin="0,20" Spacing="15">
-            <Frame WidthRequest="50" HeightRequest="50" Padding="0" CornerRadius="50" BorderColor="{DynamicResource SecundaryTextColor}">
+        <Grid Margin="0,20" RowDefinitions="Auto" ColumnDefinitions="Auto, Auto, *, Auto">
+            <!-- User Image Frame -->
+            <!--<Frame Grid.Row="0" Grid.Column="0" WidthRequest="50" HeightRequest="50" Padding="0" CornerRadius="50" BorderColor="{DynamicResource SecundaryTextColor}">
                 <ImageButton Source="user.png"/>
+            </Frame>-->
+            <Frame Grid.Row="0" Grid.Column="0" WidthRequest="50" HeightRequest="50" Padding="0" CornerRadius="50" BorderColor="{DynamicResource SecundaryTextColor}">
+                <ImageButton Source="{Binding ProfileImage}" Command="{Binding SelectProfilePictureCommand}"/>
             </Frame>
-            <VerticalStackLayout Margin="0,0,50,0">
-                <Label Style="{DynamicResource headlabel3}" Text="Hi, Jon ?"/>
-                <Label Margin="0" Style="{DynamicResource headlabel2}" Text="Welcome back"/>
+            <!-- Greeting and Email Labels -->
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Margin="10,0">
+                <Label Margin="0" Style="{DynamicResource headlabel2}"  Text="{Binding GreetingMessage}"/>
+                <Label Margin="0" HorizontalOptions="StartAndExpand" FontSize="Small" Style="{DynamicResource headlabel2}" Text="{Binding Email}"/>
             </VerticalStackLayout>
 
-            <HorizontalStackLayout Margin="50,0" Spacing="30" HorizontalOptions="EndAndExpand">
-                <ImageButton Command="{Binding QrcodeCommand}" HeightRequest="40" WidthRequest="40" Source="qr_code.svg"/>
-                <ImageButton x:Name="DotButton" Command="{Binding ShowDropdownCommand}" HeightRequest="30" WidthRequest="10" Source="vertical_dots.svg"/>
-            </HorizontalStackLayout>
+            <!-- QR Code and Dropdown Buttons -->
+            <Grid Grid.Row="0" Grid.Column="3" HorizontalOptions="EndAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
 
-        </HorizontalStackLayout>
+                <ImageButton Grid.Column="0" Command="{Binding QrcodeCommand}" HeightRequest="40" WidthRequest="40" Source="qr_code.svg"/>
+                <ImageButton Grid.Column="2" x:Name="DotButton" Command="{Binding ShowDropdownCommand}" HeightRequest="40" WidthRequest="20" Source="vertical_dots.svg"/>
+            </Grid>
+        </Grid>
 
-        <local:WalletsCard Margin="0,30,0,20" Route="////AccountPageMain"
+
+        <local:WalletsCard Margin="0,10,0,10" Route="////AccountPageMain"
                            BackgroundImageSource="cross.svg" MainText="Create Wallet"/>
 
         <Label Style="{DynamicResource headlabel}" Text="Functions"/>
 
-        <HorizontalStackLayout Spacing="10" Margin="0,20">
+        <HorizontalStackLayout Spacing="30" HorizontalOptions="CenterAndExpand" Margin="0,20">
             <local:FunctionsCard BackgroundImageSource="hand_card_coin.svg" HeadText="Recharge" SubText="Money"/>
             <local:FunctionsCard BackgroundImageSource="seo_and_web.svg" HeadText="Transfer" SubText="Money"/>
             <local:FunctionsCard BackgroundImageSource="exchange.svg" HeadText="Exchange" SubText="Money"/>
@@ -38,11 +54,9 @@
 HeightRequest="30" WidthRequest="30"
 IsVisible="{Binding IsBusy}" />
         <VerticalStackLayout>
-            <Label Style="{DynamicResource headlabel}" Text="Recent Transaction"/>
+            <Label Style="{DynamicResource headlabel}" Text="No recent Transaction yet"/>
 
-            <ImageButton Margin="0,10" Source="empty_folder.svg"/>
-            <Label FontSize="Small" Style="{DynamicResource headlabel}" Text="No Transaction"/>
-            <Label Margin="0" FontSize="Small"  Style="{DynamicResource headlabel}" Text="Let's get Started"/>
+            <ImageButton HeightRequest="70" Margin="0,10,0,0" Source="empty_folder.svg"/>
         </VerticalStackLayout>
 
     </VerticalStackLayout>

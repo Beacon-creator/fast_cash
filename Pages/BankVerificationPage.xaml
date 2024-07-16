@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
              xmlns:local1="clr-namespace:Fast_Cash.Model"
+                   BackgroundColor="{DynamicResource PageBackgroundColor}"
              x:Class="Fast_Cash.Pages.BankVerificationPage"
              Title="BankVerificationPage">
 

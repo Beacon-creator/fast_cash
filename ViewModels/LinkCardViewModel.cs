@@ -67,7 +67,7 @@ namespace Fast_Cash.ViewModels
                     }
                 else
                     {
-                    await _alertService.ShowAlertAsync("Error", $"Failed to link card. Server response: {responseContent}", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to link card. Try again later", "OK");
                     }
                 }
             catch (HttpRequestException ex)

@@ -23,6 +23,8 @@
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Debug": "8.0.0",
           "Microsoft.IdentityModel.JsonWebTokens": "7.6.3",
+          "Microsoft.IdentityModel.Logging": "7.6.3",
+          "Microsoft.IdentityModel.Tokens": "7.6.3",
           "Microsoft.Maui.Controls": "8.0.70",
           "Microsoft.Maui.Controls.Compatibility": "8.0.70",
           "Microsoft.Maui.Essentials": "8.0.70",

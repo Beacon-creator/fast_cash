@@ -113,6 +113,7 @@
     <Style x:Key="entranceButtons" TargetType="Button">
         <Setter Property="TextColor" Value="{DynamicResource ProTextColor}"/>
         <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="FontSize" Value="Medium"/>
         <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="BackgroundColor" Value="{DynamicResource ButtonbackColor}"/>
@@ -122,12 +123,13 @@
     <Style x:Key="otherbuttons" TargetType="Button">
         <Setter Property="TextColor" Value="{DynamicResource ProTextColor2}"/>
         <Setter Property="CornerRadius" Value="10"/>
-        <Setter Property="HorizontalOptions" Value="Start"/>
         <Setter Property="BorderWidth" Value="1.5"/>
         <Setter Property="BorderColor" Value="{DynamicResource PrimaryBackgroundColor}"/>
         <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
         <Setter Property="BackgroundColor" Value="{DynamicResource ProTextColor}"/>
-        <Setter Property="WidthRequest" Value="165"/>
+        <Setter Property="HeightRequest" Value="50"/>
     </Style>
 
     <!--start checkbox-->
@@ -199,11 +201,10 @@
         <Setter Property="HorizontalOptions" Value="End"/>
         <Setter Property="VerticalOptions" Value="Center"/>
     </Style>
-    
+
     <Style x:Key="StackLay" TargetType="{x:Type StackLayout}">
-        <Setter Property="Margin" Value="0,150,0,0"/>
         <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
-        <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+        <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
         <Setter Property="Orientation" Value="Horizontal"/>
     </Style>
 

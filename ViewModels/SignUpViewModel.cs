@@ -88,14 +88,15 @@ namespace Fast_Cash.ViewModels
                     // Show a success alert
                     await _alertService.ShowAlertAsync("Successful", "You have successfully signed up.", "OK");
 
-                    var appShell = (AppShell)Application.Current.MainPage;
-                    await appShell.NavigateToHomeScreen();
-                }
+                    await Shell.Current.GoToAsync("///SignInPage");
+                    //  var appShell = (AppShell)Application.Current.MainPage;
+                    //  await appShell.NavigateToHome();
+                    }
                 else
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
                     IsBusy = false;
-                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                  //  System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
                     await _alertService.ShowAlertAsync("Sign Up Failed", "Check details and try again", "OK");
                 }
             }
@@ -108,7 +109,7 @@ namespace Fast_Cash.ViewModels
             catch (Exception ex)
             {
                 IsBusy = false;
-                System.Diagnostics.Debug.WriteLine($"Error: {ex}");
+             //   System.Diagnostics.Debug.WriteLine($"Error: {ex}");
                 await _alertService.ShowAlertAsync("Sign Up Failed", "Try again later", "OK");
             }
             finally
@@ -121,7 +122,7 @@ namespace Fast_Cash.ViewModels
         private async Task SignInAsync()
         {
             // Navigate to the sign-in page
-            await Shell.Current.GoToAsync("SignInPage");
+            await Shell.Current.GoToAsync("///SignInPage");
         }
 
         [RelayCommand]

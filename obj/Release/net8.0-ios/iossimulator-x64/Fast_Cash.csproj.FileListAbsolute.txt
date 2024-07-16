@@ -507,3 +507,6 @@ C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\ios
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\Fast_Cash.pdb
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\Fast_Cash.genruntimeconfig.cache
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\ref\Fast_Cash.dll
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\sp\fastlogo_64778EB98825267781FD894D624D01D7BDE065448AE3EABF1AB23A4A264B83E1.png
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\sp\fastlogo_64778EB98825267781FD894D624D01D7BDE065448AE3EABF1AB23A4A264B83E1@2x.png
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-ios\iossimulator-x64\resizetizer\sp\fastlogo_64778EB98825267781FD894D624D01D7BDE065448AE3EABF1AB23A4A264B83E1@3x.png

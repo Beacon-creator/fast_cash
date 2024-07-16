@@ -18,9 +18,9 @@ namespace Fast_Cash.Pages
         }
 
         private async void Letsbegin_Tapped(object sender, EventArgs e)
-        {            
-              await Navigation.PushAsync(new StartPage1());            
-        }
+        {
+            await Shell.Current.GoToAsync(nameof(StartPage));
+            }
 
        
     }

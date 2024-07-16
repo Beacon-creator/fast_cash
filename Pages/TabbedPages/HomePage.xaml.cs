@@ -6,14 +6,29 @@ using Microsoft.Maui.Controls;
 
 namespace Fast_Cash.Pages.TabbedPages;
 
+[QueryProperty(nameof(Email), "email")]
 public partial class HomePage : ContentPage
     {
+    private string email;
     private Popup _popupInstance;
+    public string Email
+        {
+        get => email;
+        set
+            {
+            email = value;
+            OnPropertyChanged(nameof(Email));
+            var viewModel = BindingContext as HomePageVM;
+            if (viewModel != null)
+                {
+                viewModel.Email = email;
+                }
+            }
+        }
 
     public HomePage()
         {
         InitializeComponent();
-        // Resolve the ViewModel from the ServiceProviderHelper
         BindingContext = ServiceProviderHelper.GetService<HomePageVM>();
         }
 

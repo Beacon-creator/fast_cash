@@ -4,7 +4,8 @@
              x:Class="Fast_Cash.Pages.TabbedPages.AccountPage"
              xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
              xmlns:localpage="clr-namespace:Fast_Cash.Pages"
-              xmlns:localmodel="clr-namespace:Fast_Cash.ViewModels"
+             xmlns:localmodel="clr-namespace:Fast_Cash.ViewModels"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False"
              Title="AccountPage">
@@ -14,76 +15,74 @@
     </ContentPage.BindingContext>
 
     <VerticalStackLayout Padding="20,0">
-        <local:NavTop Header="Link Account"/>
-        <ScrollView Orientation="Vertical">
-            <VerticalStackLayout Margin="0,0">
-                <Image Source="acc.png"/>
-                <Label Style="{DynamicResource headlabel}" WidthRequest="350" Text="ID code has been sent please check your phone number"/>
-                <local:SearchFrame Margin="20,30,0,0"/>
-                <VerticalStackLayout Margin="0,20">
-                    <Label Margin="25,0" FontSize="Medium" Text="Bank account"/>
-                    <HorizontalStackLayout Spacing="5">
-                        <ImageButton Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="leftarrow.svg"/>
+        <local:NavTop Header="Link Account" />
 
-                        <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchAVisible}">
+            <VerticalStackLayout HorizontalOptions="CenterAndExpand"
+                Margin="0,20,0,0" VerticalOptions="FillAndExpand">
+            <Image Source="acc.png" Aspect="AspectFit" 
+                   VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
+                
+            <Label Style="{DynamicResource headlabel}"
+                      Text="ID code has been sent please check your phone number" />
+                <local:SearchFrame Margin="0,20" />
+
+                <VerticalStackLayout Margin="0,20">
+                    <Label Margin="25,0" FontSize="Medium" Text="Bank account" />
+                    <HorizontalStackLayout Spacing="5" HorizontalOptions="CenterAndExpand">
+                        <ImageButton Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="leftarrow.svg" />
+
+                        <HorizontalStackLayout Margin="0,20" Spacing="25" HorizontalOptions="CenterAndExpand" IsVisible="{Binding BatchAVisible}">
                             <!-- Batch A content -->
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
-                            </Frame>
-                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg" />
                             </Frame>
                             <!-- More frames -->
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Margin="0,20" Spacing="15" IsVisible="{Binding BatchBVisible}">
+                        <HorizontalStackLayout Margin="0,20" Spacing="25" HorizontalOptions="CenterAndExpand" IsVisible="{Binding BatchBVisible}">
                             <!-- Batch B content -->
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group609.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group608.svg" />
                             </Frame>
                             <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg"/>
-                            </Frame>
-                            <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group507.svg"/>
+                                <ImageButton Command="{Binding BankOneClickedCommand}" WidthRequest="50" HeightRequest="45" Source="group603.svg" />
                             </Frame>
                             <!-- More frames -->
                         </HorizontalStackLayout>
-                        <ImageButton Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="forward_arrow.svg"/>
+
+                        <ImageButton Command="{Binding ToggleBatchesCommand}" WidthRequest="20" HeightRequest="20" Source="forward_arrow.svg" />
                     </HorizontalStackLayout>
 
-                    <Label Margin="25,0" FontSize="Medium" Text="International Card"/>
-                    <HorizontalStackLayout Margin="25,20" Spacing="42">
+                    <Label Margin="25,0" FontSize="Medium" Text="International Card" />
+                    <HorizontalStackLayout Margin="0,20" HorizontalOptions="CenterAndExpand" Spacing="20">
                         <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="american_ex.svg"/>
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="american_ex.svg" />
                         </Frame>
                         <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group613.svg"/>
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group613.svg" />
                         </Frame>
                         <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="5" HasShadow="False" BorderColor="{DynamicResource SecundaryTextColor}">
-                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group614.svg"/>
+                            <ImageButton Command="{Binding CardOneClickedCommand}" WidthRequest="76" HeightRequest="55" Source="group614.svg" />
                         </Frame>
                         <!-- More frames -->
                     </HorizontalStackLayout>
-
-                    
                 </VerticalStackLayout>
             </VerticalStackLayout>
-        </ScrollView>
+
     </VerticalStackLayout>
 </ContentPage>

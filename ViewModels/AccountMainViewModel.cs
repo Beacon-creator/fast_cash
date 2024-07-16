@@ -32,7 +32,7 @@ namespace Fast_Cash.ViewModels
         {
             var appShell = (AppShell)Application.Current.MainPage;
 
-            await appShell.NavigateToHomeScreen();
+            await appShell.NavigateToHome();
         }
 
         [RelayCommand]

@@ -13,22 +13,53 @@ namespace Fast_Cash.ViewModels
     {
     public partial class HomePageVM : ObservableObject
         {
-        private readonly HttpClientService _httpClientService;
         private readonly HttpClient _httpClient;
         private readonly IAlertService _alertService;
+        private readonly TokenService _tokenService;
+        private readonly JwtService _jwtService;
+
+
+        [ObservableProperty]
+        private ImageSource profileImage;
 
         [ObservableProperty]
         private bool isBusy;
 
-        public HomePageVM(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
+        [ObservableProperty]
+        private string email;
+
+        [ObservableProperty]
+        private string greetingMessage;
+        public HomePageVM(HttpClient httpClient, IAlertService alertService, TokenService tokenService, JwtService jwtService)
             {
-            _httpClientService = httpClientService;
             _httpClient = httpClient;
             _alertService = alertService;
+            _tokenService = tokenService;
+            _jwtService = jwtService;
+
+
+            SetGreetingMessage();
+
 
             if (_httpClient.BaseAddress == null)
                 {
                 _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
+                }
+
+           // Initialize();
+            }
+
+
+        private void Initialize()
+            {
+            var token = _tokenService.GetToken();
+            if (!string.IsNullOrEmpty(token))
+                {
+                Email = _jwtService.GetEmailFromToken(token);
+                if (string.IsNullOrEmpty(Email))
+                    {
+                    _alertService.ShowAlertAsync("Error", "Invalid token format or missing email claim.", "OK");
+                    }
                 }
             }
 
@@ -51,11 +82,9 @@ namespace Fast_Cash.ViewModels
             IsBusy = true;
             try
                 {
-                IsBusy = true;
-                var response = await _httpClientService.PostAsync("api/User/Logout", null);
+                var response = await _httpClient.PostAsync("api/User/Logout", null);
                 if (response.IsSuccessStatusCode)
                     {
-                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Successful", "Logout successful.", "OK");
                     await Shell.Current.GoToAsync("//LoginPage");
                     }
@@ -66,7 +95,7 @@ namespace Fast_Cash.ViewModels
                 }
             catch (HttpRequestException httpEx)
                 {
-                await _alertService.ShowAlertAsync("Network error", "Try again later,", "OK");
+                await _alertService.ShowAlertAsync("Network error", "Try again later.", "OK");
                 }
             catch (Exception ex)
                 {
@@ -94,10 +123,9 @@ namespace Fast_Cash.ViewModels
             IsBusy = true;
             try
                 {
-                var response = await _httpClientService.DeleteAsync("api/User/DeleteAccount");
+                var response = await _httpClient.DeleteAsync("api/User/DeleteAccount");
                 if (response.IsSuccessStatusCode)
                     {
-                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Successful", "Account deleted successfully.", "OK");
                     await Shell.Current.GoToAsync("//LogupPage");
                     }
@@ -135,6 +163,49 @@ namespace Fast_Cash.ViewModels
                 }
             }
 
+        private void SetGreetingMessage()
+            {
+            var currentHour = DateTime.Now.Hour;
+
+            if (currentHour >= 0 && currentHour < 12)
+                {
+                GreetingMessage = "Good morning!";
+                }
+            else if (currentHour >= 12 && currentHour < 18)
+                {
+                GreetingMessage = "Good afternoon!";
+                }
+            else
+                {
+                GreetingMessage = "Good evening!";
+                }
+            }
+
+        [RelayCommand]
+        private async Task SelectProfilePicture()
+            {
+            try
+                {
+                var result = await MediaPicker.PickPhotoAsync();
+                if (result != null)
+                    {
+                    var stream = await result.OpenReadAsync();
+                    ProfileImage = ImageSource.FromStream(() => stream);
+                    }
+                }
+            catch (FeatureNotSupportedException fnsEx)
+                {
+                // Handle not supported on device exception
+                }
+            catch (PermissionException pEx)
+                {
+                // Handle permission exception
+                }
+            catch (Exception ex)
+                {
+                // Handle other exceptions
+                }
+            }
         public AsyncRelayCommand OnLogoutCommand => new AsyncRelayCommand(OnLogout);
         public AsyncRelayCommand OnDeleteAccountCommand => new AsyncRelayCommand(OnDeleteAccount);
         }

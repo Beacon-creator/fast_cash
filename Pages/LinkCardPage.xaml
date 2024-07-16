@@ -4,6 +4,7 @@
     xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
              xmlns:local1="clr-namespace:Fast_Cash.Model"
              x:Class="Fast_Cash.Pages.LinkCardPage"
+                   BackgroundColor="{DynamicResource PageBackgroundColor}"
              NavigationPage.HasBackButton="False"
              Title="LinkCardPage">
     <VerticalStackLayout Padding="20,0">
@@ -15,7 +16,7 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <VerticalStackLayout Spacing="5" Margin="20,15">
+        <VerticalStackLayout Spacing="5" Margin="0,15">
             <VerticalStackLayout>
                 <local1:LineEntry Placeholder="Card holder name"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
@@ -40,7 +41,7 @@
 
         <VerticalStackLayout>
             <Button x:Name="LinkCard" FontSize="Medium" Text="Link Card" Command="{Binding LinkCardCommand}" 
-          Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+          Style="{DynamicResource entranceButtons}" Margin="0,50,0,0"/>
 
             <ActivityIndicator IsRunning="{Binding IsBusy}"
 HeightRequest="30" WidthRequest="30"

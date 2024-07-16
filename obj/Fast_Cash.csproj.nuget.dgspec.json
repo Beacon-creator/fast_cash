@@ -122,6 +122,14 @@
               "target": "Package",
               "version": "[7.6.3, )"
             },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[8.0.70, )"
@@ -163,6 +171,10 @@
             "Tesseract": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -253,6 +265,14 @@
               "target": "Package",
               "version": "[7.6.3, )"
             },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[8.0.70, )"
@@ -294,6 +314,10 @@
             "Tesseract": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -384,6 +408,14 @@
               "target": "Package",
               "version": "[7.6.3, )"
             },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[8.0.70, )"
@@ -425,6 +457,10 @@
             "Tesseract": {
               "target": "Package",
               "version": "[5.2.0, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
             },
             "ZXing.Net.Maui": {
               "target": "Package",
@@ -516,6 +552,14 @@
               "target": "Package",
               "version": "[7.6.3, )"
             },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.6.3, )"
+            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[8.0.70, )"
@@ -552,6 +596,10 @@
               "target": "Package",
               "version": "[5.2.0, )"
             },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.8.1, )"
+            },
             "ZXing.Net.Maui": {
               "target": "Package",
               "version": "[0.4.0, )"
@@ -574,24 +622,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
-            },
-            {
               "name": "Microsoft.Windows.SDK.NET.Ref",
               "version": "[10.0.19041.31, 10.0.19041.31]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.5, 8.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -619,9 +651,6 @@
           "#import": []
         },
         "iossimulator-x64": {
-          "#import": []
-        },
-        "maccatalyst-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

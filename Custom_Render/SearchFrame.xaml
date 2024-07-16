@@ -4,9 +4,12 @@
                            xmlns:local="clr-namespace:Fast_Cash.Model"
              x:Class="Fast_Cash.Custom_Render.SearchFrame">
     <Frame CornerRadius="10" HasShadow="True" BorderColor="{DynamicResource SecundaryTextColor}" Padding="20,0">
-        <HorizontalStackLayout VerticalOptions="Center" Spacing="10">
-            <ImageButton WidthRequest="30" HeightRequest="30" Source="search.svg" Clicked="OnSearchClicked" />
-            <local:LineEntry x:Name="searchEntry" Placeholder="Search" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+        <HorizontalStackLayout>
+            <Grid ColumnDefinitions="Auto,*">
+                <ImageButton Grid.Column="0" WidthRequest="30" HeightRequest="30" Source="search.svg" Clicked="OnSearchClicked" />
+            <local:LineEntry Grid.Column="1" x:Name="searchEntry" Placeholder="Search" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            </Grid>
         </HorizontalStackLayout>
+        
     </Frame>
 </ContentView>

@@ -66,14 +66,15 @@ namespace Fast_Cash.ViewModels
                     if (jsonDocument.RootElement.TryGetProperty("token", out JsonElement tokenElement))
                     {
                         string token = tokenElement.GetString();
-                      //  System.Diagnostics.Debug.WriteLine($"Extracted Token: {token}"); // Debug output
+                          System.Diagnostics.Debug.WriteLine($"Extracted Token: {token}"); // Debug output
 
+                        await _alertService.ShowAlertAsync("Success", "Code verified successfully.", "OK");
                         // Use Uri.EscapeDataString to ensure the token is correctly encoded
                         await Shell.Current.GoToAsync($"//NewPasswordPage?email={Email}&token={Uri.EscapeDataString(token)}");
                     }
                     else
                     {
-                        await _alertService.ShowAlertAsync("Error", "Token is missing in the response.", "OK");
+                        await _alertService.ShowAlertAsync("Error", "Please, log in again.", "OK");
                     }
                 }
                 else

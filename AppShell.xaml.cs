@@ -22,7 +22,7 @@ namespace Fast_Cash
             Routing.RegisterRoute("CardscanPage", typeof(Pages.TabbedPages.CardscanPage));
             Routing.RegisterRoute("FacescanPage", typeof(Pages.TabbedPages.FacescanPage));
 
-            Routing.RegisterRoute(nameof(StartPage1), typeof(Pages.StartPage1));
+            Routing.RegisterRoute(nameof(StartPage), typeof(Pages.StartPage));
             Routing.RegisterRoute(nameof(SignUpPage), typeof(Pages.SignUpPage));
             Routing.RegisterRoute(nameof(SignInPage), typeof(Pages.SignInPage));
 
@@ -37,14 +37,27 @@ namespace Fast_Cash
             Routing.RegisterRoute(nameof(CardLinkSuccess), typeof(Pages.CardLinkSuccess));
         }
 
-        public async Task NavigateToHomeScreen()
-        {
+        public async Task NavigateToHomeScreen(string email)
+            {
             // Set the TabBar to visible
             MainTabBar.IsVisible = true;
 
             // Navigate to the HomePage tab
-              await Shell.Current.GoToAsync("///HomePage");
+           //   await Shell.Current.GoToAsync("///HomePage");
+
+            await Shell.Current.GoToAsync($"///HomePage?email={email}");
         }
+
+        public async Task NavigateToHome()
+            {
+            // Set the TabBar to visible
+            MainTabBar.IsVisible = true;
+
+            // Navigate to the HomePage tab
+               await Shell.Current.GoToAsync("///HomePage");
+
+          
+            }
 
         public async Task NavigateToLoginPage()
         {

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Pages.CardLinkSuccess"
              NavigationPage.HasNavigationBar="False"
+                   BackgroundColor="{DynamicResource PageBackgroundColor}"
              Title="CardLinkSuccess">
     <VerticalStackLayout Padding="20,0">
      
@@ -23,7 +24,7 @@
         <Label Text="Your happiness is our pleasure" Style="{DynamicResource headlabel4}"/>
 
         <Button x:Name="Home" FontSize="Medium" Text="Home" Clicked="Home_Clicked" 
-            Style="{DynamicResource entranceButtons}" Margin="20,50,20,0"/>
+            Style="{DynamicResource entranceButtons}" Margin="0,50,0,0"/>
     </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

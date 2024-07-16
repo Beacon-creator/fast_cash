@@ -67,7 +67,7 @@ namespace Fast_Cash.ViewModels
                     // Log the error response
                   //  System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
 
-                    await _alertService.ShowAlertAsync("Error", "Failed to send verification code", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Not sent,Check if your email is correct", "OK");
                 }
             }
             catch (HttpRequestException httpEx)

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
+             x:Class="Fast_Cash.Pages.StartPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    <ContentPage.BindingContext>
+        <vm:StartPageViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Padding="30,0" Margin="0,100,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <CarouselView x:Name="carouselView" ItemsSource="{Binding CarouselItems}" IndicatorView="indicatorView" VerticalOptions="FillAndExpand">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Margin="0,0" VerticalOptions="CenterAndExpand">
+                        <Image Source="{Binding ImageUrl}" Aspect="AspectFit" VerticalOptions="FillAndExpand"/>
+                        <Label Text="{Binding Text}" Style="{DynamicResource headlabel}" />
+                        <Label Text="{Binding Text2}" Style="{DynamicResource headlabel4}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="indicatorView"  Margin="0,50,0,0" VerticalOptions="Center"
+                       IndicatorColor="{DynamicResource IndicatorColor}"
+                       SelectedIndicatorColor="{DynamicResource SelectedIndicatorColor}"
+                       HorizontalOptions="Center" />
+        <Button x:Name="GetStartedButton" Text="Get Started" Command="{Binding GetStartedCommand}"
+                Margin="0,30,0,0"
+                Style="{DynamicResource entranceButtons}" />
+    </StackLayout>
+</ContentPage>

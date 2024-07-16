@@ -34,7 +34,7 @@ namespace Fast_Cash
 
 
             //pages
-            builder.Services.AddSingleton<StartPage1>();
+            builder.Services.AddSingleton<StartPage>();
             builder.Services.AddTransient<SignUpPage>();
             builder.Services.AddTransient<SignInPage>();
             builder.Services.AddTransient<HomePage>();
