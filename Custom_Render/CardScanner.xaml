@@ -8,7 +8,7 @@
             BackgroundColor="{DynamicResource ProTextColor}" WidthRequest="250" HeightRequest="200" HasShadow="True">
             <ImageButton x:Name="CardImage" WidthRequest="80" HeightRequest="80" Source="qr_code.svg"/>
         </Frame>
-        <Button Text="Scan Card" Clicked="OnScanButtonClicked"/>
+        <Button Style="{DynamicResource entranceButtons}" Margin="20" Text="Scan Card" Clicked="OnScanButtonClicked"/>
         <Label x:Name="ResultLabel"/>
     </VerticalStackLayout>
 </ContentView>

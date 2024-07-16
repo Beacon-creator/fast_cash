@@ -40,20 +40,23 @@
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-100.png">
-      <PackagePath>fastlogoSplashScreen.scale-100.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\appiconfg.svg">
+      <PackagePath>appiconfg.svg</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-125.png">
-      <PackagePath>fastlogoSplashScreen.scale-125.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-100.png">
+      <PackagePath>cashsplashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-150.png">
-      <PackagePath>fastlogoSplashScreen.scale-150.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-125.png">
+      <PackagePath>cashsplashSplashScreen.scale-125.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-200.png">
-      <PackagePath>fastlogoSplashScreen.scale-200.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-150.png">
+      <PackagePath>cashsplashSplashScreen.scale-150.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-400.png">
-      <PackagePath>fastlogoSplashScreen.scale-400.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-200.png">
+      <PackagePath>cashsplashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-400.png">
+      <PackagePath>cashsplashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Lato-Black.ttf">
       <PackagePath>Lato-Black.ttf</PackagePath>
@@ -355,6 +358,36 @@
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-400.png">
       <PackagePath>car.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-100.png">
+      <PackagePath>cashlogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-125.png">
+      <PackagePath>cashlogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-150.png">
+      <PackagePath>cashlogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-200.png">
+      <PackagePath>cashlogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-400.png">
+      <PackagePath>cashlogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-100.png">
+      <PackagePath>cashnallogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-125.png">
+      <PackagePath>cashnallogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-150.png">
+      <PackagePath>cashnallogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-200.png">
+      <PackagePath>cashnallogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-400.png">
+      <PackagePath>cashnallogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-100.png">
       <PackagePath>chain.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -447,6 +480,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-400.png">
       <PackagePath>exchange.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-100.png">
+      <PackagePath>fastlogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-125.png">
+      <PackagePath>fastlogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-150.png">
+      <PackagePath>fastlogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-200.png">
+      <PackagePath>fastlogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-400.png">
+      <PackagePath>fastlogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-100.png">
       <PackagePath>forward_arrow.scale-100.png</PackagePath>
@@ -901,6 +949,12 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\azure.core\1.40.0\lib\net6.0\Azure.Core.dll">
+      <PackagePath>Azure.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\azure.identity\1.12.0\lib\netstandard2.0\Azure.Identity.dll">
+      <PackagePath>Azure.Identity.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\communitytoolkit.maui\9.0.2\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.dll">
       <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
     </AppxPackagedFile>
@@ -916,11 +970,53 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\emgu.cv\4.9.0.5494\lib\netstandard2.0\Emgu.CV.dll">
       <PackagePath>Emgu.CV.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.api.commonprotos\2.15.0\lib\netstandard2.0\Google.Api.CommonProtos.dll">
+      <PackagePath>Google.Api.CommonProtos.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.api.gax\4.8.0\lib\netstandard2.0\Google.Api.Gax.dll">
+      <PackagePath>Google.Api.Gax.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.api.gax.grpc\4.8.0\lib\netstandard2.0\Google.Api.Gax.Grpc.dll">
+      <PackagePath>Google.Api.Gax.Grpc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.apis\1.67.0\lib\net6.0\Google.Apis.dll">
+      <PackagePath>Google.Apis.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.apis.auth\1.67.0\lib\net6.0\Google.Apis.Auth.dll">
+      <PackagePath>Google.Apis.Auth.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.apis.core\1.67.0\lib\net6.0\Google.Apis.Core.dll">
+      <PackagePath>Google.Apis.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.cloud.vision.v1\3.7.0\lib\netstandard2.0\Google.Cloud.Vision.V1.dll">
+      <PackagePath>Google.Cloud.Vision.V1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.longrunning\3.2.0\lib\netstandard2.0\Google.LongRunning.dll">
+      <PackagePath>Google.LongRunning.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\google.protobuf\3.25.0\lib\net5.0\Google.Protobuf.dll">
+      <PackagePath>Google.Protobuf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\grpc.auth\2.60.0\lib\netstandard2.0\Grpc.Auth.dll">
+      <PackagePath>Grpc.Auth.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\grpc.core.api\2.60.0\lib\netstandard2.1\Grpc.Core.Api.dll">
+      <PackagePath>Grpc.Core.Api.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\grpc.net.client\2.60.0\lib\net8.0\Grpc.Net.Client.dll">
+      <PackagePath>Grpc.Net.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\grpc.net.common\2.60.0\lib\net8.0\Grpc.Net.Common.dll">
+      <PackagePath>Grpc.Net.Common.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.aspnet.webapi.client\6.0.0\lib\netstandard2.0\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.azure.cognitiveservices.vision.computervision\7.0.1\lib\netstandard2.0\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll">
       <PackagePath>Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.extensions.ambientmetadata.application\8.7.0\lib\net8.0\Microsoft.Extensions.AmbientMetadata.Application.dll">
       <PackagePath>Microsoft.Extensions.AmbientMetadata.Application.dll</PackagePath>
@@ -1009,16 +1105,22 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.graphics.win2d\1.2.0\lib\net6.0-windows10.0.19041.0\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.abstractions\7.6.3\lib\net8.0\Microsoft.IdentityModel.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identity.client\4.61.3\lib\net6.0\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identity.client.extensions.msal\4.61.3\lib\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll">
+      <PackagePath>Microsoft.Identity.Client.Extensions.Msal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.abstractions\8.0.0\lib\net8.0\Microsoft.IdentityModel.Abstractions.dll">
       <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.jsonwebtokens\7.6.3\lib\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.jsonwebtokens\8.0.0\lib\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll">
       <PackagePath>Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.logging\7.6.3\lib\net8.0\Microsoft.IdentityModel.Logging.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.logging\8.0.0\lib\net8.0\Microsoft.IdentityModel.Logging.dll">
       <PackagePath>Microsoft.IdentityModel.Logging.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.tokens\7.6.3\lib\net8.0\Microsoft.IdentityModel.Tokens.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.identitymodel.tokens\8.0.0\lib\net8.0\Microsoft.IdentityModel.Tokens.dll">
       <PackagePath>Microsoft.IdentityModel.Tokens.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.io.recyclablememorystream\3.0.0\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll">
@@ -1120,8 +1222,23 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\polly.ratelimiting\8.4.1\lib\net8.0\Polly.RateLimiting.dll">
       <PackagePath>Polly.RateLimiting.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.identitymodel.tokens.jwt\7.6.3\lib\net8.0\System.IdentityModel.Tokens.Jwt.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.clientmodel\1.0.0\lib\net6.0\System.ClientModel.dll">
+      <PackagePath>System.ClientModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.codedom\7.0.0\lib\net7.0\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.identitymodel.tokens.jwt\8.0.0\lib\net8.0\System.IdentityModel.Tokens.Jwt.dll">
       <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.management\7.0.2\runtimes\win\lib\net7.0\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.memory.data\1.0.2\lib\netstandard2.0\System.Memory.Data.dll">
+      <PackagePath>System.Memory.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.security.cryptography.protecteddata\4.7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\system.speech\8.0.0\runtimes\win\lib\net8.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
@@ -1131,6 +1248,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\tesseract\5.2.0\lib\netstandard2.0\Tesseract.dll">
       <PackagePath>Tesseract.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\xamarin.essentials\1.8.1\lib\netstandard2.0\Xamarin.Essentials.dll">
+      <PackagePath>Xamarin.Essentials.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\zxing.net\0.16.9\lib\net7.0\zxing.dll">
       <PackagePath>zxing.dll</PackagePath>

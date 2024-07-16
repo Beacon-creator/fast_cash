@@ -36,7 +36,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<Title></Title>
+		<Title>Cashnal</Title>
 		<Description>...maximizing cash</Description>
 		<Copyright>copyright@2024</Copyright>
 		<PackageIcon></PackageIcon>
@@ -49,23 +49,18 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<!-- App Icon -->
-		 <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FF6E6A" />
-		 <MauiSplashScreen Include="Resources\AppIcon\fastlogo.svg">
-		   <Resize>True</Resize>
-		   <Color>#FF6E6A</Color>
-		   <BaseSize>100,100</BaseSize>
-		 </MauiSplashScreen>
-	<!--	<MauiSplashScreen Include="Resources\AppIcon\fastlogo.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FF6E6A" BaseSize="128,128" /> -->
+	
+	
 		
 
 		<!-- Splash Screen -->
+			<MauiSplashScreen Include="Resources\Splash\cashsplash.svg" Color="#FF6E6A" BaseSize="128,128" />
+			<MauiSplashScreen Include="Resources\Splash\splash.svg" />
 		<!--	<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" /> -->
-		<MauiSplashScreen Include="Resources\Splash\fastlogo.svg" Color="#FF6E6A" Resize="True" />
-		<!-- Images -->
+	<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
-		<MauiImage Update="Resources\Splash\fastlogo.svg" Resize="True" BaseSize="300,185" />
+	
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -92,6 +87,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.svg" />
 	  <None Remove="Resources\Fonts\Lato-Black.ttf" />
 	  <None Remove="Resources\Fonts\Lato-BlackItalic.ttf" />
 	  <None Remove="Resources\Fonts\Lato-Bold.ttf" />
@@ -120,6 +116,7 @@
 	  <None Remove="Resources\Images\cross.svg" />
 	  <None Remove="Resources\Images\empty_folder.svg" />
 	  <None Remove="Resources\Images\exchange.svg" />
+	  <None Remove="Resources\Images\fastlogo.svg" />
 	  <None Remove="Resources\Images\forward_arrow.svg" />
 	  <None Remove="Resources\Images\front_arrow.svg" />
 	  <None Remove="Resources\Images\gift.svg" />
@@ -160,6 +157,8 @@
 	  <None Remove="Resources\Images\wallet.png" />
 	  <None Remove="Resources\Images\walletred.png" />
 	  <None Remove="Resources\Images\walletwhite.png" />
+	  <None Remove="Resources\Splash\cashsplash.svg" />
+	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -294,15 +293,10 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <None Update="Resources\AppIcon\fastlogo.svg">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Update="Resources\Splash\fastlogo.svg">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
+
+		<!-- App Icon --> 
+		<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#FF6E6A" />
 	</ItemGroup>
 
 </Project>
