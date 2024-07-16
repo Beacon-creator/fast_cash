@@ -9,6 +9,6 @@
         
         <local:NavTop Header="QR code"  Home="Home" Route="//HomePage"/>
         <Label Style="{DynamicResource headlabel2}" Text="Scan your face for verification"/>
-        <local:CardScanner Margin="0,20"/>
+        <local:CardScanner x:Name="CardScannerComponent" Margin="0,20"/>
     </VerticalStackLayout>
 </ContentPage>

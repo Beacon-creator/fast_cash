@@ -2,9 +2,11 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.FaceScanner">
-    <VerticalStackLayout>
-        <Frame CornerRadius="10" BackgroundColor="{DynamicResource ProTextColor}" WidthRequest="300" HeightRequest="400" HasShadow="True">
-            <ImageButton WidthRequest="80" HeightRequest="180" Source="qr_code.svg"/>
-        </Frame>
-    </VerticalStackLayout>
+	<VerticalStackLayout>
+		<Frame CornerRadius="10" BackgroundColor="{DynamicResource ProTextColor}" WidthRequest="300" HeightRequest="400" HasShadow="True">
+			<ImageButton x:Name="FaceImage" WidthRequest="80" HeightRequest="180" Source="qr_code.svg"/>
+		</Frame>
+		<Button Text="Scan Face" Clicked="OnScanButtonClicked"/>
+		<Label x:Name="ResultLabel"/>
+	</VerticalStackLayout>
 </ContentView>

@@ -66,6 +66,10 @@
         "net8.0-android34.0": {
           "targetAlias": "net8.0-android",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -85,6 +89,10 @@
             "Emgu.CV.runtime.windows": {
               "target": "Package",
               "version": "[4.9.0.5494, )"
+            },
+            "Google.Cloud.Vision.V1": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
@@ -120,15 +128,15 @@
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
@@ -162,7 +170,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -209,6 +217,10 @@
         "net8.0-ios17.2": {
           "targetAlias": "net8.0-ios",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -228,6 +240,10 @@
             "Emgu.CV.runtime.windows": {
               "target": "Package",
               "version": "[4.9.0.5494, )"
+            },
+            "Google.Cloud.Vision.V1": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
@@ -263,15 +279,15 @@
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
@@ -305,7 +321,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -352,6 +368,10 @@
         "net8.0-maccatalyst17.2": {
           "targetAlias": "net8.0-maccatalyst",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -371,6 +391,10 @@
             "Emgu.CV.runtime.windows": {
               "target": "Package",
               "version": "[4.9.0.5494, )"
+            },
+            "Google.Cloud.Vision.V1": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
@@ -406,15 +430,15 @@
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
@@ -448,7 +472,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
@@ -496,6 +520,10 @@
         "net8.0-windows10.0.19041": {
           "targetAlias": "net8.0-windows10.0.19041.0",
           "dependencies": {
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.0, )"
+            },
             "CommunityToolkit.Maui": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -515,6 +543,10 @@
             "Emgu.CV.runtime.windows": {
               "target": "Package",
               "version": "[4.9.0.5494, )"
+            },
+            "Google.Cloud.Vision.V1": {
+              "target": "Package",
+              "version": "[3.7.0, )"
             },
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
@@ -550,15 +582,15 @@
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
@@ -586,7 +618,7 @@
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.6.3, )"
+              "version": "[8.0.0, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",

@@ -30,7 +30,7 @@ namespace Fast_Cash.EventHandlers
             // Directly use the token without parsing it as JSON
             var token = tokenJson;
 
-            Console.WriteLine($"token: {token}");
+          //  Console.WriteLine($"token: {token}");
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
 
@@ -43,12 +43,12 @@ namespace Fast_Cash.EventHandlers
                 }
             catch (HttpRequestException ex)
                 {
-                Console.WriteLine($"Network error in PostAsync: {ex.Message}");
+             //   Console.WriteLine($"Network error in PostAsync: {ex.Message}");
                 throw new Exception("Network error occurred. Please check your connection and try again.");
                 }
             catch (Exception ex)
                 {
-                Console.WriteLine($"Error in PostAsync: {ex.Message}");
+              //  Console.WriteLine($"Error in PostAsync: {ex.Message}");
                 throw new Exception("An error occurred while processing your request. Please try again later.");
                 }
             }
@@ -62,12 +62,12 @@ namespace Fast_Cash.EventHandlers
                 }
             catch (HttpRequestException ex)
                 {
-                Console.WriteLine($"Network error in DeleteAsync: {ex.Message}");
+                // Console.WriteLine($"Network error in DeleteAsync: {ex.Message}");
                 throw new Exception("Network error occurred. Please check your connection and try again.");
                 }
             catch (Exception ex)
                 {
-                Console.WriteLine($"Error in DeleteAsync: {ex.Message}");
+              //  Console.WriteLine($"Error in DeleteAsync: {ex.Message}");
                 throw new Exception("An error occurred while processing your request. Please try again later.");
                 }
             }
@@ -77,7 +77,7 @@ namespace Fast_Cash.EventHandlers
             var tokenJson = await SecureStorage.GetAsync("auth_token");
 
 
-            Console.WriteLine($"tokenjson: {tokenJson}");
+          //  Console.WriteLine($"tokenjson: {tokenJson}");
             if (tokenJson == null)
                 {
                 await Shell.Current.GoToAsync("//LoginPage");
@@ -85,10 +85,10 @@ namespace Fast_Cash.EventHandlers
                 }
 
             var tokenObj = JObject.Parse(tokenJson);
-            Console.WriteLine($"tokenObj: {tokenObj}");
+           // Console.WriteLine($"tokenObj: {tokenObj}");
             var token = tokenObj["token"].ToString();
 
-            Console.WriteLine($"token: {token}");
+          //  Console.WriteLine($"token: {token}");
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             }
         }

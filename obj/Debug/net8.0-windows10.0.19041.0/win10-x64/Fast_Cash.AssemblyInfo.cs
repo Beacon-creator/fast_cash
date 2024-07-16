@@ -20,7 +20,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("copyright@2024")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("...maximizing cash")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+f456c1be41590a9b66354907da61a7fad2876640")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+473f9c3c2da49d0b1374952bc8f5d91d711e745e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

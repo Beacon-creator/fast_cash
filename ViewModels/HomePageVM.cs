@@ -136,11 +136,11 @@ namespace Fast_Cash.ViewModels
                 }
             catch (HttpRequestException httpEx)
                 {
-                await _alertService.ShowAlertAsync("Error", "A connection error occurred", "OK");
+                await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
             catch (Exception ex)
                 {
-                await _alertService.ShowAlertAsync("Error", "An error occurred", "OK");
+                await _alertService.ShowAlertAsync("Error", "Please try again", "OK");
                 }
             finally
                 {

@@ -78,6 +78,7 @@
 	  <Compile Remove="Custom_Render\BankCard.xaml.cs" />
 	  <Compile Remove="Custom_Render\Facescanner.xaml.cs" />
 	  <Compile Remove="Custom_Render\OptionsPopup.xaml.cs" />
+	  <Compile Remove="EventHandlers\FaceScannerService.cs" />
 	  <Compile Remove="Pages\Page1.xaml.cs" />
 	  <Compile Remove="Pages\TabbedPages\HomeTab.xaml.cs" />
 	</ItemGroup>
@@ -111,6 +112,8 @@
 	  <None Remove="Resources\Images\bus.svg" />
 	  <None Remove="Resources\Images\calendar.svg" />
 	  <None Remove="Resources\Images\car.svg" />
+	  <None Remove="Resources\Images\cashlogo.svg" />
+	  <None Remove="Resources\Images\cashnallogo.svg" />
 	  <None Remove="Resources\Images\chain.svg" />
 	  <None Remove="Resources\Images\closeeyes.png" />
 	  <None Remove="Resources\Images\credit_card.svg" />
@@ -160,11 +163,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="Azure.Identity" Version="1.12.0" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.2" />
 		<PackageReference Include="CommunityToolkit.Maui.Markup" Version="4.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Emgu.CV" Version="4.9.0.5494" />
 		<PackageReference Include="Emgu.CV.runtime.windows" Version="4.9.0.5494" />
+		<PackageReference Include="Google.Cloud.Vision.V1" Version="3.7.0" />
 		<PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision" Version="7.0.1" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
@@ -172,9 +177,9 @@
 		<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="8.0.7" />
 		<PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.7.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
-		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.6.3" />
-		<PackageReference Include="Microsoft.IdentityModel.Logging" Version="7.6.3" />
-		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.3" />
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.0.0" />
+		<PackageReference Include="Microsoft.IdentityModel.Logging" Version="8.0.0" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.70" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.70" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -182,7 +187,7 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="OpenCvSharp4" Version="4.10.0.20240616" />
 		<PackageReference Include="Polly" Version="8.4.1" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.0" />
 		<PackageReference Include="Tesseract" Version="5.2.0" />
 		<PackageReference Include="System.Net.Http.Json" Version="8.0.0" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />

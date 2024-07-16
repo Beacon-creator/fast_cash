@@ -22,6 +22,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\ban_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\bus.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\car.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\cashlogo.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\cashnallogo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\chain.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\credit_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\cross.png
@@ -62,6 +64,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\ban_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\bus.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\car.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\cashlogo.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\cashnallogo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\chain.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\credit_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\cross.png
@@ -102,6 +106,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\ban_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\bus.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\car.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\cashlogo.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\cashnallogo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\chain.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\credit_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\cross.png
@@ -142,6 +148,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\ban_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\bus.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\car.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\cashlogo.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\cashnallogo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\chain.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\credit_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\cross.png
@@ -182,6 +190,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\ban_logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\bus.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\calendar.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\car.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\cashlogo.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\cashnallogo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\chain.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\credit_card.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\cross.png
