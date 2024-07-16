@@ -12,7 +12,7 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <Label FontSize="Small" Text="{Binding SelectedDateString}" 
+                <Label FontSize="Small" Style="{DynamicResource callabel}" Text="{Binding SelectedDateString}" 
                        HorizontalOptions="Start" VerticalOptions="Center" Grid.Column="0"/>
                 <ImageButton x:Name="calendericon" Margin="5,0,0,0" WidthRequest="20" HeightRequest="20" Source="calendar.svg" 
                              Clicked="CalendarIconClicked" Grid.Column="1" />
@@ -37,7 +37,7 @@
                             </Grid.ColumnDefinitions>
                             <ImageButton Source="icn_back.svg" WidthRequest="20" HeightRequest="20"
                                          Clicked="PreviousMonthClicked" Grid.Column="0" />
-                            <Label Text="{Binding CurrentMonthYear}" 
+                            <Label Text="{Binding CurrentMonthYear}" Style="{DynamicResource callabel}"
                                    HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
                             <ImageButton
                                 Source="front_arrow.svg" Clicked="NextMonthClicked" Grid.Column="2" />
@@ -53,7 +53,7 @@
                                         <Frame.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="DayTapped" />
                                         </Frame.GestureRecognizers>
-                                        <Label Text="{Binding}" HorizontalOptions="Center" VerticalOptions="Center" />
+                                        <Label Text="{Binding}" Style="{DynamicResource callabel}" HorizontalOptions="Center" VerticalOptions="Center" />
                                     </Frame>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>

@@ -15,17 +15,20 @@
         <Grid Padding="30,0" RowDefinitions="Auto,Auto, *">
             <StackLayout Grid.Row="0" Orientation="Horizontal" Style="{DynamicResource StackLay}" Margin="0,50,0,0">
                 <Image Style="{DynamicResource walimagered}"/>
-                <Label Text="Fanal Cash" Style="{DynamicResource fclabel}"/>
+                <Label Text="Fanal Cash" Style="{DynamicResource hclabel}"/>
             </StackLayout>
 
             <StackLayout Margin="0,50,0,0" Grid.Row="1">
                
               
-                <Label Text="Log in" Margin="0,10,0,30" Style="{DynamicResource sublabel}"/>
+                <Label Text="Log in" 
+                       Margin="0,10,0,30" Style="{DynamicResource sublabel}"/>
                 <StackLayout>
                     <Grid ColumnDefinitions="Auto,*">
-                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="mailicon.png" />
-                        <local1:LineEntry x:Name="EmailandPhone" Grid.Column="1" FontSize="Medium" Margin="10,5" Placeholder="Email" Text="{Binding EmailOrPhone}" />
+                        <ImageButton Style="{DynamicResource imgicon}"
+                            Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="mailicon.png" />
+                        <local1:LineEntry x:Name="EmailandPhone" Style="{DynamicResource lineentry}"
+                                          Grid.Column="1" Margin="10,5" Placeholder="Email" Text="{Binding EmailOrPhone}" />
                     </Grid>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
                     
@@ -33,10 +36,10 @@
 
                 <StackLayout>
                     <Grid ColumnDefinitions="Auto,*,Auto">
-                        <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
-                        <local1:LineEntry Grid.Column="1" Margin="10,5" Placeholder="Password"
+                        <ImageButton Grid.Column="0" WidthRequest="20" Style="{DynamicResource imgicon}" HeightRequest="20" Source="password.svg" />
+                        <local1:LineEntry Grid.Column="1" Margin="10,5" Placeholder="Password" Style="{DynamicResource lineentry}"
                                           IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
-                            Text="{Binding Password}" x:Name="EntryPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+                            Text="{Binding Password}" x:Name="EntryPassword" HorizontalOptions="FillAndExpand"/>
                         <ImageButton Margin="10,0" Grid.Column="2" Style="{DynamicResource eyebutton}" Source="closeeyes">
                             <ImageButton.Triggers>
                                 <EventTrigger Event="Clicked">

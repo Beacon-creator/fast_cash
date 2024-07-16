@@ -37,6 +37,24 @@
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\appiconfg.svg">
+      <PackagePath>appiconfg.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-100.png">
+      <PackagePath>cashsplashSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-125.png">
+      <PackagePath>cashsplashSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-150.png">
+      <PackagePath>cashsplashSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-200.png">
+      <PackagePath>cashsplashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-400.png">
+      <PackagePath>cashsplashSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\fastlogoSplashScreen.scale-100.png">
       <PackagePath>fastlogoSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -352,6 +370,36 @@
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-400.png">
       <PackagePath>car.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-100.png">
+      <PackagePath>cashlogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-125.png">
+      <PackagePath>cashlogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-150.png">
+      <PackagePath>cashlogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-200.png">
+      <PackagePath>cashlogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-400.png">
+      <PackagePath>cashlogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-100.png">
+      <PackagePath>cashnallogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-125.png">
+      <PackagePath>cashnallogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-150.png">
+      <PackagePath>cashnallogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-200.png">
+      <PackagePath>cashnallogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-400.png">
+      <PackagePath>cashnallogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-100.png">
       <PackagePath>chain.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -444,6 +492,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-400.png">
       <PackagePath>exchange.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-100.png">
+      <PackagePath>fastlogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-125.png">
+      <PackagePath>fastlogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-150.png">
+      <PackagePath>fastlogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-200.png">
+      <PackagePath>fastlogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-400.png">
+      <PackagePath>fastlogo.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-100.png">
       <PackagePath>forward_arrow.scale-100.png</PackagePath>
@@ -1039,6 +1102,15 @@
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windowsappsdk\1.5.240607001\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.1\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Azure.Core.dll">
+      <PackagePath>Azure.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Azure.Identity.dll">
+      <PackagePath>Azure.Identity.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\CommunityToolkit.Maui.dll">
       <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
     </AppxPackagedFile>
@@ -1053,6 +1125,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Emgu.CV.dll">
       <PackagePath>Emgu.CV.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Api.CommonProtos.dll">
+      <PackagePath>Google.Api.CommonProtos.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Api.Gax.dll">
+      <PackagePath>Google.Api.Gax.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Api.Gax.Grpc.dll">
+      <PackagePath>Google.Api.Gax.Grpc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Apis.dll">
+      <PackagePath>Google.Apis.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Apis.Auth.dll">
+      <PackagePath>Google.Apis.Auth.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Apis.Core.dll">
+      <PackagePath>Google.Apis.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Cloud.Vision.V1.dll">
+      <PackagePath>Google.Cloud.Vision.V1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.LongRunning.dll">
+      <PackagePath>Google.LongRunning.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Google.Protobuf.dll">
+      <PackagePath>Google.Protobuf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Grpc.Auth.dll">
+      <PackagePath>Grpc.Auth.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Grpc.Core.Api.dll">
+      <PackagePath>Grpc.Core.Api.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Grpc.Net.Client.dll">
+      <PackagePath>Grpc.Net.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Grpc.Net.Common.dll">
+      <PackagePath>Grpc.Net.Common.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.Net.Http.Formatting.dll">
       <PackagePath>System.Net.Http.Formatting.dll</PackagePath>
@@ -1146,6 +1257,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Graphics.Canvas.Interop.dll">
       <PackagePath>Microsoft.Graphics.Canvas.Interop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Identity.Client.dll">
+      <PackagePath>Microsoft.Identity.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.Identity.Client.Extensions.Msal.dll">
+      <PackagePath>Microsoft.Identity.Client.Extensions.Msal.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Microsoft.IdentityModel.Abstractions.dll">
       <PackagePath>Microsoft.IdentityModel.Abstractions.dll</PackagePath>
@@ -1258,8 +1375,23 @@
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Polly.RateLimiting.dll">
       <PackagePath>Polly.RateLimiting.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.ClientModel.dll">
+      <PackagePath>System.ClientModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.CodeDom.dll">
+      <PackagePath>System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.IdentityModel.Tokens.Jwt.dll">
       <PackagePath>System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.Memory.Data.dll">
+      <PackagePath>System.Memory.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>System.Security.Cryptography.ProtectedData.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
@@ -1269,6 +1401,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Tesseract.dll">
       <PackagePath>Tesseract.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\Xamarin.Essentials.dll">
+      <PackagePath>Xamarin.Essentials.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-windows10.0.19041.0\win10-x64\R2R\zxing.dll">
       <PackagePath>zxing.dll</PackagePath>

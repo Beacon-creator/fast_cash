@@ -10,7 +10,7 @@
     <VerticalStackLayout Padding="20,0">
         <local:NavTop Header="Services"/>
         <VerticalStackLayout>
-            <Label Margin="0,20" FontSize="Medium"
+            <Label Margin="0,20" FontSize="Medium" Style="{DynamicResource fclabel}"
                    Text="We provide top service for you and your family"
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" />

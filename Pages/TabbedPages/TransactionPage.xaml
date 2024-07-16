@@ -27,21 +27,18 @@
 
         <HorizontalStackLayout Margin="20,10" Spacing="35">
             <Label  Style="{DynamicResource headlabel4}" FontSize="Medium" Text="To date:"/>
-            <local:CalenderFrame Margin="16,10,0,0"
+            <local:CalenderFrame Margin="22,10,0,0"
                 x:Name="ToDateCalendar"/>
         </HorizontalStackLayout>
 
-        <VerticalStackLayout Margin="10,30,0,10">
+        <VerticalStackLayout Margin="0,30,0,10">
             <Label Margin="0,10" Style="{DynamicResource headlabel4}" FontSize="Medium" Text="{Binding AmountOfMoneyLabel}" />
-            <Slider  Margin="0,20" x:Name="slide"
-                    Minimum="0"
+            <Slider  Margin="0,20" x:Name="slide" Opacity="0.5"
+                     ThumbColor="{DynamicResource PrimaryTextColor}"
+                    Minimum="0" BackgroundColor="{DynamicResource PrimaryBackgroundColor}"
                     Maximum="100"
                     Value="{Binding SliderValue, Mode=TwoWay}" />
-            <!--<Label Margin="0,10" Style="{DynamicResource headlabel4}" FontSize="Small" Text="Clear">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Command="{Binding ClearSliderCommand}"/>
-                </Label.GestureRecognizers>
-            </Label>-->
+         
         </VerticalStackLayout>
 
         <Button x:Name="Clear_but" Text="Clear" FontSize="Medium"

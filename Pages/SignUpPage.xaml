@@ -13,7 +13,7 @@
         <Grid Padding="30,0" RowDefinitions="Auto,Auto,*">
             <StackLayout Grid.Row="0" Orientation="Horizontal" Style="{DynamicResource StackLay}" Margin="0,50,0,0">
                 <Image Style="{DynamicResource walimagered}"/>
-                <Label Text="Fanal Cash" Style="{DynamicResource fclabel}"/>
+                <Label Text="Fanal Cash" Style="{DynamicResource hclabel}"/>
             </StackLayout>
 
             <StackLayout Margin="0,25,0,0" Grid.Row="1">
@@ -21,7 +21,7 @@
 
                 <StackLayout Spacing="10" Orientation="Horizontal">
                     
-                    <Picker Title="Select Code" FontSize="Medium" Margin="0,4,0,0">
+                    <Picker Title="Country Code" FontSize="Medium" Margin="0,4,0,0">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>+1</x:String>
@@ -35,9 +35,9 @@
 
                     <StackLayout Orientation="Vertical">
                         <Grid ColumnDefinitions="Auto,*">
-                          
-                            <local1:LineEntry Grid.Column="1" Margin="5,5" FontSize="Medium"
-                                              Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="225" Placeholder="Phone No." >
+
+                            <local1:LineEntry Grid.Column="1" Margin="5,5" Style="{DynamicResource lineentry}"
+                                              Text="{Binding PhoneNumber}" Keyboard="Numeric" WidthRequest="200" Placeholder="Phone No." >
                                 <Entry.Behaviors>
                                     <local:PhoneNumberValidationBehavior/>
                                 </Entry.Behaviors>
@@ -51,7 +51,7 @@
                     <Grid ColumnDefinitions="Auto,*">
                         <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="mailicon.png" />
                         <local1:LineEntry Grid.Column="1" HorizontalOptions="FillAndExpand"
-                                          FontSize="Medium" Margin="10,1" Text="{Binding Email}" Placeholder="Email Address">
+                                          Style="{DynamicResource lineentry}" Margin="10,1" Text="{Binding Email}" Placeholder="Email Address">
                             <Entry.Behaviors>
                                 <local:EmailValidatorBehavior/>
                             </Entry.Behaviors>
@@ -65,7 +65,7 @@
                         <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
                         <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding Password}" Placeholder="Password" 
                                           IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
-                            x:Name="EntryPassword" HorizontalOptions="FillAndExpand" FontSize="Medium">
+                            x:Name="EntryPassword" HorizontalOptions="FillAndExpand" Style="{DynamicResource lineentry}">
                             <Entry.Behaviors>
                                 <local:PasswordValidationBehavior/>
                             </Entry.Behaviors>
@@ -86,7 +86,7 @@
                         <ImageButton Grid.Column="0" WidthRequest="20" HeightRequest="20" Source="password.svg" />
                         <local1:LineEntry Grid.Column="1" Margin="10,0" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password"
                                            IsPassword="{Binding Source={x:Reference ShowPasswordActualTrigger}, Path=HidePassword}"
-                            x:Name="EntryConfirmPassword" HorizontalOptions="FillAndExpand" FontSize="Medium"/>
+                            x:Name="EntryConfirmPassword" HorizontalOptions="FillAndExpand" Style="{DynamicResource lineentry}"/>
                     </Grid>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
                 </StackLayout>
@@ -115,9 +115,9 @@
                         <Label.FormattedText>
                             <FormattedString>
                                 <FormattedString.Spans>
-                                    <Span Text="I agree to the "/>
+                                    <Span Text="I agree to the " TextColor="{DynamicResource PrimaryTextColor}"/>
                                     <Span Text="terms" x:Name="Terms_Rules" TextColor="{DynamicResource TertiaryTextColor}"/>
-                                    <Span Text=" and "/>
+                                    <Span Text=" and " TextColor="{DynamicResource PrimaryTextColor}"/>
                                     <Span Text="privacy policy." TextColor="{DynamicResource TertiaryTextColor}" x:Name="privacy_Rules"/>
                                 </FormattedString.Spans>
                             </FormattedString>

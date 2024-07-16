@@ -7,7 +7,8 @@
         <HorizontalStackLayout>
             <Grid ColumnDefinitions="Auto,*">
                 <ImageButton Grid.Column="0" WidthRequest="30" HeightRequest="30" Source="search.svg" Clicked="OnSearchClicked" />
-            <local:LineEntry Grid.Column="1" x:Name="searchEntry" Placeholder="Search" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
+            <local:LineEntry Grid.Column="1" x:Name="searchEntry" Style="{DynamicResource lineentry}"
+                             Placeholder="Search" VerticalOptions="Center" HorizontalOptions="FillAndExpand"/>
             </Grid>
         </HorizontalStackLayout>
         

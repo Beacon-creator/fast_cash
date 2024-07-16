@@ -178,9 +178,19 @@
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.HomePageVM.ProfileImage">
+            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.profileImage"/>
         </member>
         <member name="P:Fast_Cash.ViewModels.HomePageVM.IsBusy">
             <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.isBusy"/>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.HomePageVM.Email">
+            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.email"/>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.HomePageVM.GreetingMessage">
+            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.greetingMessage"/>
         </member>
         <member name="F:Fast_Cash.ViewModels.HomePageVM.tapCommand">
             <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.TapCommand"/>.</summary>
@@ -211,6 +221,12 @@
         </member>
         <member name="P:Fast_Cash.ViewModels.HomePageVM.ShowDropdownCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.ShowDropdown"/>.</summary>
+        </member>
+        <member name="F:Fast_Cash.ViewModels.HomePageVM.selectProfilePictureCommand">
+            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.SelectProfilePictureCommand"/>.</summary>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.HomePageVM.SelectProfilePictureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.SelectProfilePicture"/>.</summary>
         </member>
         <member name="T:Fast_Cash.ViewModels.LinkBankViewModel">
             <inheritdoc/>
@@ -1132,6 +1148,12 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.VerificationCode">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "VerificationCode" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ProfileImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ProfileImage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.GreetingMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "GreetingMessage" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AccountOwnerName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AccountOwnerName" generated properties.</summary>
         </member>
@@ -1206,6 +1228,12 @@
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.VerificationCode">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "VerificationCode" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ProfileImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ProfileImage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.GreetingMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "GreetingMessage" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AccountOwnerName">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AccountOwnerName" generated properties.</summary>

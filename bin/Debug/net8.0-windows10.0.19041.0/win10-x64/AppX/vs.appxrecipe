@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-16T16:00:59.075</Modified>
+      <Modified>2024-07-16T19:30:06.834</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-07-16T16:00:58.130</Modified>
+      <Modified>2024-07-16T18:40:31.166</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.runtimeconfig.json">
       <PackagePath>Fast_Cash.runtimeconfig.json</PackagePath>
-      <Modified>2024-07-16T16:00:57.801</Modified>
+      <Modified>2024-07-16T18:40:30.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.dll">
       <PackagePath>Fast_Cash.dll</PackagePath>
-      <Modified>2024-07-16T16:00:54.415</Modified>
+      <Modified>2024-07-16T19:30:03.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Fast_Cash.exe</PackagePath>
-      <Modified>2024-07-16T16:00:54.565</Modified>
+      <Modified>2024-07-16T19:30:03.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -1255,7 +1255,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.deps.json">
       <PackagePath>Fast_Cash.deps.json</PackagePath>
-      <Modified>2024-07-16T16:00:57.792</Modified>
+      <Modified>2024-07-16T18:40:30.249</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
