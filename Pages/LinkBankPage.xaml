@@ -11,27 +11,29 @@
         <local:TopNav Header="Link Bank"/>
 
         <VerticalStackLayout Margin="0,30">
-            
-    
-        <Image Margin="0,20" Source="img603.png"/>
-        <Label Margin="0,30"
+
+
+            <Image Margin="0,20" Aspect="AspectFit" 
+           VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"
+               Source="img603.png"/>
+        <Label Margin="0,20" TextColor="{DynamicResource PrimaryTextColor}"
           Text="Please, provide accurate information"
           VerticalOptions="Center" 
           HorizontalOptions="Center" />
 
-        <VerticalStackLayout Margin="0,20">
+        <VerticalStackLayout Margin="0,10">
             <VerticalStackLayout Margin="0,10">
-                <local1:LineEntry x:Name="accnam" Placeholder="Account owner name"/>
+                <local1:LineEntry x:Name="accnam" Style="{DynamicResource lineentry}" Placeholder="Account owner name"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout Margin="0,10">
-                <local1:LineEntry Keyboard="Numeric" Placeholder="Account number"/>
+                    <local1:LineEntry Keyboard="Numeric" Style="{DynamicResource lineentry}" Placeholder="Account number"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout Margin="0,10">
-                <local1:LineEntry Keyboard="Numeric" Placeholder="BVN" IsPassword="True"/>
+                    <local1:LineEntry Keyboard="Numeric" Style="{DynamicResource lineentry}" Placeholder="BVN" IsPassword="True"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
 
@@ -41,7 +43,7 @@
      
             <VerticalStackLayout>
                 <Button x:Name="Continuebut" FontSize="Medium" Text="Continue" Command="{Binding LinkBankAccountCommand}" 
-   Style="{DynamicResource entranceButtons}" Margin="0,50,0,0"/>
+   Style="{DynamicResource entranceButtons}" Margin="0,30,0,0"/>
 
                 <ActivityIndicator IsRunning="{Binding IsBusy}"
 HeightRequest="30" WidthRequest="30"

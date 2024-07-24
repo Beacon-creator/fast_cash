@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
              xmlns:local1="clr-namespace:Fast_Cash.Model"
-                   BackgroundColor="{DynamicResource PageBackgroundColor}"
+             xmlns:behaviors="clr-namespace:Fast_Cash.EventHandlers"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              x:Class="Fast_Cash.Pages.BankVerificationPage"
              Title="BankVerificationPage">
 
@@ -12,23 +13,41 @@
             <StackLayout Orientation="Horizontal">
             </StackLayout>
             <StackLayout Spacing="10" VerticalOptions="CenterAndExpand">
-                <Image Source="img603.png" Aspect="AspectFit"/>
+                <Image Source="img603.png"  Aspect="AspectFit" 
+           VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
                 <StackLayout Spacing="10">
                     <Label Text="OTP code has been sent to your phone number that you registered with bank" Style="{DynamicResource headlabel}"/>
                     <Label Text="OTP code" Style="{DynamicResource headlabel4}"/>
                 </StackLayout>
                 <StackLayout Margin="0,10" Spacing="10" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                     <Frame Style="{DynamicResource verifyF}">
-                        <local1:LineEntry x:Name="OneCodeEntry" Text="{Binding OneCodeEntry}" Style="{DynamicResource verifyE}" />
+                        <local1:LineEntry x:Name="OneCodeEntry"  Text="{Binding OneCodeEntry}" Style="{DynamicResource verifyE}" >
+                            <local1:LineEntry.Behaviors>
+                                <behaviors:AutoFocusBehavior NextEntry="{x:Reference TwoCodeEntry}" />
+                            </local1:LineEntry.Behaviors>
+                        </local1:LineEntry>
                     </Frame>
                     <Frame Style="{DynamicResource verifyF}">
-                        <local1:LineEntry x:Name="TwoCodeEntry" Text="{Binding TwoCodeEntry}" Style="{DynamicResource verifyE}" />
+                        <local1:LineEntry x:Name="TwoCodeEntry" Text="{Binding TwoCodeEntry}" Style="{DynamicResource verifyE}">
+                            <local1:LineEntry.Behaviors>
+                                <behaviors:AutoFocusBehavior NextEntry="{x:Reference ThreeCodeEntry}" PreviousEntry="{x:Reference OneCodeEntry}" />
+                            </local1:LineEntry.Behaviors>
+                        </local1:LineEntry>
+                      
                     </Frame> 
                     <Frame Style="{DynamicResource verifyF}">
-                        <local1:LineEntry x:Name="ThreeCodeEntry" Text="{Binding ThreeCodeEntry}" Style="{DynamicResource verifyE}" />
+                        <local1:LineEntry x:Name="ThreeCodeEntry" Text="{Binding ThreeCodeEntry}" Style="{DynamicResource verifyE}">
+                            <local1:LineEntry.Behaviors>
+                                <behaviors:AutoFocusBehavior NextEntry="{x:Reference FourCodeEntry}" PreviousEntry="{x:Reference TwoCodeEntry}" />
+                            </local1:LineEntry.Behaviors>
+                        </local1:LineEntry>
                     </Frame>
                     <Frame Style="{DynamicResource verifyF}">
-                        <local1:LineEntry x:Name="FourCodeEntry" Text="{Binding FourCodeEntry}" Style="{DynamicResource verifyE}" />
+                        <local1:LineEntry x:Name="FourCodeEntry" Text="{Binding FourCodeEntry}" Style="{DynamicResource verifyE}">
+                            <local1:LineEntry.Behaviors>
+                                <behaviors:AutoFocusBehavior PreviousEntry="{x:Reference ThreeCodeEntry}" />
+                            </local1:LineEntry.Behaviors>
+                        </local1:LineEntry>
                     </Frame>
                 </StackLayout>
               

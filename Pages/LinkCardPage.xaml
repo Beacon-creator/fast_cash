@@ -11,29 +11,29 @@
         <local:NavTop Home="Home" Route="//HomePage" Header="Link Card"/>
 
         <Image Margin="0,30" Source="credit_card.svg"/>
-        <Label Margin="0,20"
+        <Label Margin="0,20" TextColor="{DynamicResource PrimaryTextColor}"
             Text="CVV number is printed on your card back"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
         <VerticalStackLayout Spacing="5" Margin="0,15">
             <VerticalStackLayout>
-                <local1:LineEntry Placeholder="Card holder name"/>
+                <local1:LineEntry Style="{DynamicResource lineentry}" Placeholder="Card holder name"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
             
             <VerticalStackLayout>
-                <local1:LineEntry Keyboard="Numeric" Placeholder="Card number"/>
+                <local1:LineEntry Style="{DynamicResource lineentry}" Keyboard="Numeric" Placeholder="Card number"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout>
-                <local1:LineEntry Keyboard="Numeric" Placeholder="CVV" IsPassword="True"/>
+                <local1:LineEntry Style="{DynamicResource lineentry}" Keyboard="Numeric" Placeholder="CVV" IsPassword="True"/>
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout>
-                <local1:LineEntry Placeholder="MM/YY" Keyboard="Numeric" EnableMMYYFormatting="True" />
+                <local1:LineEntry Style="{DynamicResource lineentry}" Placeholder="MM/YY" Keyboard="Numeric" EnableMMYYFormatting="True" />
                 <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" HeightRequest="1"/>
             </VerticalStackLayout>
             

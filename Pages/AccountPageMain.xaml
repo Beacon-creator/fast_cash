@@ -14,11 +14,14 @@
         <localModel:AccountMainViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Margin="0,20,0,0" Padding="20,0">
-        <Image Source="acc.png" Aspect="AspectFit" 
+    <VerticalStackLayout Padding="20,0">
+        <local:NavTop Home="Home" Route="//HomePage" Header="Link Account"/>
+
+        <VerticalStackLayout Margin="0,20,0,0">
+            <Image Source="acc.png"  Aspect="AspectFit" 
            VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
 
-        <Label Style="{DynamicResource headlabel}"
+            <Label Style="{DynamicResource headlabel}"
               Text="ID code has been sent please check your phone number" />
         <local:SearchFrame Margin="0,20" />
 
@@ -82,6 +85,7 @@
                     <TapGestureRecognizer Command="{Binding LinkCardLaterCommand}"/>
                 </Label.GestureRecognizers>
             </Label>
+        </VerticalStackLayout>
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

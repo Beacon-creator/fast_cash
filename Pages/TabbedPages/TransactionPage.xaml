@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
-             xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
-                  BackgroundColor="{DynamicResource PageBackgroundColor}"
+              xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
              x:Class="Fast_Cash.Pages.TabbedPages.TransactionPage"
              NavigationPage.HasBackButton="False"   
              NavigationPage.HasNavigationBar="False"
@@ -20,29 +20,33 @@
             VerticalOptions="Center" 
             HorizontalOptions="Start" />
 
-        <HorizontalStackLayout Margin="20,0" Spacing="30">
+        <HorizontalStackLayout Margin="20,0" Spacing="10">
             <Label Style="{DynamicResource headlabel4}" FontSize="Medium" Text="From date:"/>
-            <local:CalenderFrame Margin="0,10,0,0" x:Name="FromDateCalendar"/>
+            <local:CalenderFrame Margin="0,10,0,0" 
+                                 x:Name="FromDateCalendar" 
+                                 IsOpen="{Binding IsFromDateCalendarOpen}" 
+                                 TappedCommand="{Binding FromDateCalendarTappedCommand}"/>
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Margin="20,10" Spacing="35">
-            <Label  Style="{DynamicResource headlabel4}" FontSize="Medium" Text="To date:"/>
-            <local:CalenderFrame Margin="22,10,0,0"
-                x:Name="ToDateCalendar"/>
+        <HorizontalStackLayout Margin="20,10" Spacing="10">
+            <Label Style="{DynamicResource headlabel4}" FontSize="Medium" Text="To date:"/>
+            <local:CalenderFrame Margin="22,10,0,0" 
+                                 x:Name="ToDateCalendar" 
+                                 IsOpen="{Binding IsToDateCalendarOpen}" 
+                                 TappedCommand="{Binding ToDateCalendarTappedCommand}"/>
         </HorizontalStackLayout>
 
-        <VerticalStackLayout Margin="0,30,0,10">
+        <VerticalStackLayout Margin="0,20,0,10">
             <Label Margin="0,10" Style="{DynamicResource headlabel4}" FontSize="Medium" Text="{Binding AmountOfMoneyLabel}" />
-            <Slider  Margin="0,20" x:Name="slide" Opacity="0.5"
-                     ThumbColor="{DynamicResource PrimaryTextColor}"
+            <Slider Margin="0,20" x:Name="slide" Opacity="0.5"
+                    ThumbColor="{DynamicResource PrimaryTextColor}"
                     Minimum="0" BackgroundColor="{DynamicResource PrimaryBackgroundColor}"
                     Maximum="100"
                     Value="{Binding SliderValue, Mode=TwoWay}" />
-         
         </VerticalStackLayout>
 
         <Button x:Name="Clear_but" Text="Clear" FontSize="Medium"
-            Command="{Binding ClearSliderCommand}" 
-            Style="{DynamicResource entranceButtons}" />
+                Command="{Binding ClearSliderCommand}" 
+                Style="{DynamicResource entranceButtons}" />
     </VerticalStackLayout>
 </ContentPage>

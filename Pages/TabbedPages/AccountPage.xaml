@@ -19,8 +19,8 @@
 
             <VerticalStackLayout HorizontalOptions="CenterAndExpand"
                 Margin="0,10,0,0" VerticalOptions="FillAndExpand">
-            <Image Source="acc.png" Aspect="AspectFit" WidthRequest="300"
-                   VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
+            <Image Source="acc.png"  Aspect="AspectFit" 
+           VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
                 
             <Label Style="{DynamicResource headlabel}"
                       Text="ID code has been sent please check your phone number" />

@@ -38,9 +38,6 @@ namespace Fast_Cash.ViewModels
         private string? confirmPassword;
 
         [ObservableProperty]
-        private string? phoneNumber;
-
-        [ObservableProperty]
         private bool isBusy;
 
         [ObservableProperty]
@@ -73,7 +70,7 @@ namespace Fast_Cash.ViewModels
 
                 IsBusy = true; // Show the spinner
 
-                var signUpModel = new { Email, Password, PhoneNumber };
+                var signUpModel = new { Email, Password };
 
                 var response = await _httpClient.PostAsJsonAsync("api/signUp", signUpModel);
 

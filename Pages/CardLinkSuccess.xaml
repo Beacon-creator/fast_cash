@@ -19,7 +19,8 @@
       VerticalOptions="Center" Style="{DynamicResource headlabel2}"
       HorizontalOptions="Start" />
 
-        <Image Margin="0,50,0,0" Source="illustration.png"/>
+            <Image Margin="0,50,0,0" Source="illustration.png" Aspect="AspectFit" 
+           VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand"/>
         <Label Text="Thank for using our services !" Style="{DynamicResource headlabel4}"/>
         <Label Text="Your happiness is our pleasure" Style="{DynamicResource headlabel4}"/>
 

@@ -14,9 +14,7 @@
     <VerticalStackLayout  Padding="20,0">
         <Grid Margin="0,20" RowDefinitions="Auto" ColumnDefinitions="Auto, Auto, *, Auto">
             <!-- User Image Frame -->
-            <!--<Frame Grid.Row="0" Grid.Column="0" WidthRequest="50" HeightRequest="50" Padding="0" CornerRadius="50" BorderColor="{DynamicResource SecundaryTextColor}">
-                <ImageButton Source="user.png"/>
-            </Frame>-->
+   
             <Frame Grid.Row="0" Grid.Column="0" WidthRequest="50" HeightRequest="50" Padding="0" CornerRadius="50" BorderColor="{DynamicResource SecundaryTextColor}">
                 <ImageButton Source="{Binding ProfileImage}" Command="{Binding SelectProfilePictureCommand}"/>
             </Frame>

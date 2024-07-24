@@ -10,23 +10,23 @@
     <VerticalStackLayout Padding="20,0">
         <local:NavTop Header="Services"/>
         <VerticalStackLayout>
-            <Label Margin="0,20" FontSize="Medium" Style="{DynamicResource fclabel}"
+            <Label Margin="0,20" FontSize="Medium" TextColor="{DynamicResource PrimaryTextColor}"
                    Text="We provide top service for you and your family"
                    VerticalOptions="Center" 
                    HorizontalOptions="Center" />
-            <local:SearchFrame Margin="0,10,0,10"/>
+            <local:SearchFrame Margin="0,10,0,15"/>
         </VerticalStackLayout>
 
             <VerticalStackLayout Spacing="10">
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="20">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
                     <local:FunctionsCard WidthRequest="155" HeadText="Booking Car" BackgroundImageSource="car.svg" VerticalOptions="Center" HorizontalOptions="Center" />
                     <local:FunctionsCard WidthRequest="155" HeadText="Booking flight" BackgroundImageSource="airplane.svg" VerticalOptions="Center" HorizontalOptions="Center" />
                 </HorizontalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="20">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
                     <local:FunctionsCard WidthRequest="155" HeadText="Booking Train" BackgroundImageSource="train.svg" VerticalOptions="Center" HorizontalOptions="StartAndExpand" />
                     <local:FunctionsCard WidthRequest="155" HeadText="Booking Bus" BackgroundImageSource="bus.svg" VerticalOptions="Center" HorizontalOptions="Center" />
                 </HorizontalStackLayout>
-                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="20">
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
                     <local:FunctionsCard WidthRequest="155" HeadText="Pay Bill" BackgroundImageSource="pay.svg" VerticalOptions="Center" HorizontalOptions="Center" />
                     <local:FunctionsCard WidthRequest="155" HeadText="Shopping" BackgroundImageSource="car.svg" VerticalOptions="Center" HorizontalOptions="Center" />
                 </HorizontalStackLayout>

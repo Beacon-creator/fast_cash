@@ -102,6 +102,23 @@
         <Setter Property="FontAttributes"
                            Value="Bold" />
     </Style>
+
+
+
+    <Style x:Key="TermsLabelStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="Margin" Value="0,0" />
+        <Setter Property="FormattedText">
+            <FormattedString>
+                <FormattedString.Spans>
+                    <Span Text="I agree to the " TextColor="{DynamicResource PrimaryTextColor}" />
+                    <Span Text="terms" TextColor="{DynamicResource TertiaryTextColor}" />
+                    <Span Text=" and " TextColor="{DynamicResource PrimaryTextColor}" />
+                    <Span Text="privacy policy." TextColor="{DynamicResource TertiaryTextColor}" />
+                </FormattedString.Spans>
+            </FormattedString>
+        </Setter>
+    </Style>
     <!--end Labels-->
    
 
@@ -175,6 +192,14 @@
 
     </Style>
 
+    <Style x:Key="TandCBoxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="HorizontalOptions" Value="StartAndExpand" />
+        <Setter Property="HeightRequest" Value="20" />
+        <Setter Property="WidthRequest" Value="20" />
+        <Setter Property="Margin" Value="0,0,30,0" />
+    </Style>
+
+
     <!--end checkbox-->
 
     <!--start image-->
@@ -199,8 +224,8 @@
     <Style x:Key="walimagered" TargetType="{x:Type Image}">
         <Setter Property="Source" Value="walletred.png"/>
         <Setter Property="Margin" Value="10,0,0,0"/>
-        <Setter Property="WidthRequest" Value="80"/>
-        <Setter Property="HeightRequest" Value="80"/>
+        <Setter Property="WidthRequest" Value="60"/>
+        <Setter Property="HeightRequest" Value="60"/>
         <Setter Property="BackgroundColor" Value="Transparent"/>
     </Style>
     <!--end image-->

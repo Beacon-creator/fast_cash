@@ -52,7 +52,7 @@
                 </StackLayout>
 
                 <Label Text="Forgot password ?" FontSize="Medium" TextColor="{DynamicResource SecundaryTextColor}" 
-                       HorizontalOptions="End" Margin="0,10,0,0" >
+                       HorizontalOptions="End" Margin="0,15" >
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding NavigateToForgotPasswordCommand}"/>
                     </Label.GestureRecognizers>
@@ -60,7 +60,7 @@
             </StackLayout>
 
             <StackLayout Orientation="Vertical" Grid.Row="2">
-                <VerticalStackLayout Margin="0,30">
+                <VerticalStackLayout Margin="0,30,0,20">
                     <Button x:Name="loginbut" FontSize="Large" Text="Log in" Style="{DynamicResource entranceButtons}" Command="{Binding SignInCommand}"/>
                     <ActivityIndicator IsRunning="{Binding IsBusy}"
                      HeightRequest="30" WidthRequest="30"
@@ -68,13 +68,13 @@
                 </VerticalStackLayout>
                
                 
-                <StackLayout Spacing="20" Margin="0,0,0,20" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <StackLayout Spacing="20" Margin="0,20,0,10" HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
                     <Label TextColor="{DynamicResource SecundaryTextColor2}" Text="Or sign in with" Style="{DynamicResource Titlelabel}"/>
                     <BoxView BackgroundColor="{DynamicResource SecundaryTextColor}" WidthRequest="55" HeightRequest="2"/>
                 </StackLayout>
 
-                <Grid ColumnSpacing="10" ColumnDefinitions="*,*">
+                <Grid ColumnSpacing="10" Margin="0,20,0,0" ColumnDefinitions="*,*">
                    
                         <Button x:Name="googlebut" ImageSource="google.svg" Style="{DynamicResource otherbuttons}" Text="Google" Command="{Binding GoogleSignInCommand}"/>
                         <Button Grid.Column="1"
@@ -83,7 +83,7 @@
                 </Grid>
               
 
-                <StackLayout Margin="0,50,0,50">
+                <StackLayout Margin="0,20">
                     <Label Text="Don't have an account?" Margin="0,5" TextColor="{DynamicResource SecundaryTextColor}" Style="{DynamicResource Titlelabel}"/>
                     <Label Text="Sign up" TextColor="{DynamicResource TertiaryTextColor}" FontSize="Medium" HorizontalOptions="Center">
                         <Label.GestureRecognizers>

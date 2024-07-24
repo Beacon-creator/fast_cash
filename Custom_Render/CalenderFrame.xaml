@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Fast_Cash.Custom_Render.CalenderFrame">
     <ContentView.Content>
-        <Frame HasShadow="True" Padding="10"
+        <Frame Padding="5"
                BorderColor="{DynamicResource SecundaryTextColor}" 
-               CornerRadius="10">
+               CornerRadius="5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
@@ -18,7 +18,7 @@
                              Clicked="CalendarIconClicked" Grid.Column="1" />
 
                 <!-- Popup Calendar -->
-                <Frame x:Name="calendarPopup" IsVisible="False" HasShadow="True" 
+                <Frame x:Name="calendarPopup" IsVisible="{Binding IsOpen}"
                        BorderColor="{DynamicResource SecundaryTextColor}"
                        BackgroundColor="{DynamicResource ProTextColor}" 
                        CornerRadius="5" Padding="0" HorizontalOptions="Center" VerticalOptions="Center">
@@ -59,7 +59,7 @@
                             </CollectionView.ItemTemplate>
                         </CollectionView>
 
-                        <Button Text="X" Grid.Row="0" FontSize="20"
+                        <Button x:Name="closebut" Text="X" Grid.Row="0" FontSize="20"
                                 TextColor="{DynamicResource PrimaryBackgroundColor}" BackgroundColor="Transparent" Clicked="ClosePopupClicked" 
                                 HorizontalOptions="End" VerticalOptions="Center"/>
                     </Grid>

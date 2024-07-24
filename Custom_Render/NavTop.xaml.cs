@@ -47,13 +47,13 @@ public partial class NavTop : ContentView
             }
             catch (ObjectDisposedException ex)
             {
-                Console.WriteLine($"Navigation error: {ex.Message}");
+             //   Console.WriteLine($"Navigation error: {ex.Message}");
                 // Fallback to a known route if the object is disposed
                 await Shell.Current.GoToAsync("//HomePage");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Unexpected error: {ex.Message}");
+             //   Console.WriteLine($"Unexpected error: {ex.Message}");
                 // Fallback to a known route if another error occurs
                 await Shell.Current.GoToAsync("//HomePage");
             }

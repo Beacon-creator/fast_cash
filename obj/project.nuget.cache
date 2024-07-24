@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "k+SLWu4ACi0=",
+  "dgSpecHash": "6epzQZAUYtM=",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\OneDrive\\Documents\\MobileApps\\Fast_Cash\\Fast_Cash.csproj",
   "expectedPackageFiles": [
@@ -78,7 +78,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.maui.graphics\\8.0.70\\microsoft.maui.graphics.8.0.70.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\8.0.70\\microsoft.maui.graphics.win2d.winui.desktop.8.0.70.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.maui.resizetizer\\8.0.70\\microsoft.maui.resizetizer.8.0.70.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.5\\microsoft.net.illink.tasks.8.0.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.7\\microsoft.net.illink.tasks.8.0.7.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
