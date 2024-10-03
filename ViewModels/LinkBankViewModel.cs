@@ -50,7 +50,7 @@ namespace Fast_Cash.ViewModels
                     BVN = BvnNumber
                     };
 
-                var response = await _httpClientService.PostAsync("api/BankLinks", JsonContent.Create(bankLink));
+                var response = await _httpClientService.PostAsync("api/bank-links", JsonContent.Create(bankLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
 
                 if (response.IsSuccessStatusCode)

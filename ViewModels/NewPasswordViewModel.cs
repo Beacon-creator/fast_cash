@@ -37,8 +37,8 @@ namespace Fast_Cash.ViewModels
             // Set the base address if it is not already set
             if (_httpClient.BaseAddress == null)
             {
-                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
-            }
+                _httpClient.BaseAddress = new Uri("https://grabbyfanalapi.onrender.com/");
+                }
         }
 
         public void ApplyQueryAttributes(IDictionary<string, object> query)

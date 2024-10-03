@@ -17,7 +17,6 @@ namespace Fast_Cash.Custom_Render
         public static readonly BindableProperty TappedCommandProperty =
             BindableProperty.Create(nameof(TappedCommand), typeof(ICommand), typeof(CalenderFrame));
 
-
         public DateTime SelectedDate
             {
             get => (DateTime)GetValue(SelectedDateProperty);

@@ -28,7 +28,7 @@
                                  TappedCommand="{Binding FromDateCalendarTappedCommand}"/>
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Margin="20,10" Spacing="10">
+        <HorizontalStackLayout Margin="20,5" Spacing="10">
             <Label Style="{DynamicResource headlabel4}" FontSize="Medium" Text="To date:"/>
             <local:CalenderFrame Margin="22,10,0,0" 
                                  x:Name="ToDateCalendar" 
@@ -36,9 +36,9 @@
                                  TappedCommand="{Binding ToDateCalendarTappedCommand}"/>
         </HorizontalStackLayout>
 
-        <VerticalStackLayout Margin="0,20,0,10">
+        <VerticalStackLayout Margin="0,15,0,10">
             <Label Margin="0,10" Style="{DynamicResource headlabel4}" FontSize="Medium" Text="{Binding AmountOfMoneyLabel}" />
-            <Slider Margin="0,20" x:Name="slide" Opacity="0.5"
+            <Slider Margin="0,10" x:Name="slide" Opacity="0.5"
                     ThumbColor="{DynamicResource PrimaryTextColor}"
                     Minimum="0" BackgroundColor="{DynamicResource PrimaryBackgroundColor}"
                     Maximum="100"

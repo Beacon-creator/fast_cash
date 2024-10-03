@@ -24,7 +24,7 @@ namespace Fast_Cash.ViewModels
             // Set the base address if it is not already set
             if (_httpClient.BaseAddress == null)
             {
-                _httpClient.BaseAddress = new Uri("https://aspbackend20240622133116.azurewebsites.net/");
+                _httpClient.BaseAddress = new Uri("https://grabbyfanalapi.onrender.com/");
             }
         }
 
@@ -70,9 +70,9 @@ namespace Fast_Cash.ViewModels
 
                 IsBusy = true; // Show the spinner
 
-                var signUpModel = new { Email, Password };
+                var signUpModel = new { email = Email, password = Password};
 
-                var response = await _httpClient.PostAsJsonAsync("api/signUp", signUpModel);
+                var response = await _httpClient.PostAsJsonAsync("api/signup", signUpModel);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -83,17 +83,16 @@ namespace Fast_Cash.ViewModels
                     await SecureStorage.SetAsync("auth_token", token);
 
                     // Show a success alert
-                    await _alertService.ShowAlertAsync("Successful", "You have successfully signed up.", "OK");
+                    await _alertService.ShowAlertAsync("Successful", "You have successfully signed up with verification code ....", "OK");
 
                     await Shell.Current.GoToAsync("///SignInPage");
-                    //  var appShell = (AppShell)Application.Current.MainPage;
-                    //  await appShell.NavigateToHome();
+                
                     }
                 else
                 {
                     var errorContent = await response.Content.ReadAsStringAsync();
                     IsBusy = false;
-                  //  System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
                     await _alertService.ShowAlertAsync("Sign Up Failed", "Check details and try again", "OK");
                 }
             }
@@ -106,7 +105,7 @@ namespace Fast_Cash.ViewModels
             catch (Exception ex)
             {
                 IsBusy = false;
-             //   System.Diagnostics.Debug.WriteLine($"Error: {ex}");
+                System.Diagnostics.Debug.WriteLine($"Error: {ex}");
                 await _alertService.ShowAlertAsync("Sign Up Failed", "Try again later", "OK");
             }
             finally

@@ -381,9 +381,6 @@
         <member name="P:Fast_Cash.ViewModels.SignUpViewModel.ConfirmPassword">
             <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.confirmPassword"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.PhoneNumber">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.phoneNumber"/>
-        </member>
         <member name="P:Fast_Cash.ViewModels.SignUpViewModel.IsBusy">
             <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.isBusy"/>
         </member>
@@ -434,14 +431,34 @@
         </member>
         <member name="T:Fast_Cash.ViewModels.TransactionPageViewModel">
             <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
         </member>
         <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue">
             <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.sliderValue"/>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.IsFromDateCalendarOpen">
+            <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.isFromDateCalendarOpen"/>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.IsToDateCalendarOpen">
+            <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.isToDateCalendarOpen"/>
         </member>
         <member name="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnSliderValueChanged(System.Double)">
             <summary>Executes the logic for when <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
             <remarks>This method is invoked right after the value of <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue"/> is changed.</remarks>
+        </member>
+        <member name="F:Fast_Cash.ViewModels.TransactionPageViewModel.fromDateCalendarTappedCommand">
+            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand"/>.</summary>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnFromDateCalendarTapped"/>.</summary>
+        </member>
+        <member name="F:Fast_Cash.ViewModels.TransactionPageViewModel.toDateCalendarTappedCommand">
+            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand"/>.</summary>
+        </member>
+        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnToDateCalendarTapped"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
@@ -1187,14 +1204,17 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EmailOrPhone">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EmailOrPhone" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PhoneNumber">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PhoneNumber" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TermsAccepted">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TermsAccepted" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SliderValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SliderValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsFromDateCalendarOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsFromDateCalendarOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsToDateCalendarOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsToDateCalendarOpen" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -1268,14 +1288,17 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EmailOrPhone">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EmailOrPhone" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PhoneNumber">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PhoneNumber" generated properties.</summary>
-        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TermsAccepted">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TermsAccepted" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SliderValue">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SliderValue" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsFromDateCalendarOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsFromDateCalendarOpen" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsToDateCalendarOpen">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsToDateCalendarOpen" generated properties.</summary>
         </member>
     </members>
 </doc>
