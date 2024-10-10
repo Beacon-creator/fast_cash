@@ -1,11 +1,11 @@
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
 using System.Threading.Tasks;
 
-namespace Fast_Cash.Custom_Render
+namespace Cashnal.Custom_Render
     {
     public partial class CardScanner : ContentView
         {

@@ -4,10 +4,10 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     public partial class ForgotPasswordViewModel : ObservableObject
     {
@@ -46,7 +46,7 @@ namespace Fast_Cash.ViewModels
                 }
                 IsBusy = true; // show the spinner
 
-                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/send-code", Email);
+                var response = await _httpClient.PostAsJsonAsync("api/password-reset/send-code", Email);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -76,7 +76,7 @@ namespace Fast_Cash.ViewModels
                 //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
                 }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Log the exception
               //  System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");

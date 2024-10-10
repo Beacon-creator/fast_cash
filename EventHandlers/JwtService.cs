@@ -4,11 +4,11 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
     {
     public class JwtService
         {
-        public string? GetEmailFromToken(string token)
+        public static string? GetEmailFromToken(string token)
             {
             try
                 {
@@ -20,7 +20,9 @@ namespace Fast_Cash.EventHandlers
                     return null;
                     }
 
-                var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+              //  var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+
+                var jwtToken = handler.ReadJwtToken(token); // Use ReadJwtToken to get typed JwtSecurityToken
 
                 if (jwtToken == null)
                     {
@@ -29,10 +31,10 @@ namespace Fast_Cash.EventHandlers
                     }
 
                 // Log token claims for debugging
-                foreach (var claim in jwtToken.Claims)
-                    {
-                    Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
-                    }
+                //foreach (var claim in jwtToken.Claims)
+                //    {
+                //    Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
+                //    }
 
                 // Extract the email claim using the "sub" claim type
                 var emailClaim = jwtToken.Claims.FirstOrDefault(claim =>

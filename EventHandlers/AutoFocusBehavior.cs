@@ -1,7 +1,7 @@
-﻿using Fast_Cash.Model;
+﻿using Cashnal.Model;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
     {
     public class AutoFocusBehavior : Behavior<LineEntry>
         {

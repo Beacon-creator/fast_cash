@@ -1,4 +1,4 @@
-namespace Fast_Cash.Pages.TabbedPages;
+namespace Cashnal.Pages.TabbedPages;
 
 public partial class CardscanPage : ContentPage
 {

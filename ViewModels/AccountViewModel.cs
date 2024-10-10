@@ -1,11 +1,11 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.Pages;
-using Fast_Cash.Pages.TabbedPages;
+using Cashnal.Pages;
+using Cashnal.Pages.TabbedPages;
 using Microsoft.Maui.Controls;
 using System.Threading.Tasks;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     public partial class AccountViewModel : ObservableObject
     {
@@ -26,14 +26,6 @@ namespace Fast_Cash.ViewModels
             BatchAVisible = !BatchAVisible;
             BatchBVisible = !BatchBVisible;
         }
-
-        //[RelayCommand]
-        //public async Task LinkCardLater()
-        //{
-        //    var appShell = (AppShell)Application.Current.MainPage;
-
-        //    await appShell.NavigateToHomeScreen();
-        //}
 
         [RelayCommand]
         public async Task BankOneClicked()

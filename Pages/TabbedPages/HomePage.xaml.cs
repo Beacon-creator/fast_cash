@@ -1,10 +1,10 @@
 using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
-using Fast_Cash.ViewModels;
+using Cashnal.EventHandlers;
+using Cashnal.ViewModels;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.Pages.TabbedPages;
+namespace Cashnal.Pages.TabbedPages;
 
 [QueryProperty(nameof(Email), "email")]
 public partial class HomePage : ContentPage

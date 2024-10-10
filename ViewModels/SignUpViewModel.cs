@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using CommunityToolkit.Maui.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json.Serialization;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     public partial class SignUpViewModel : ObservableObject
     {
@@ -83,7 +83,7 @@ namespace Fast_Cash.ViewModels
                     await SecureStorage.SetAsync("auth_token", token);
 
                     // Show a success alert
-                    await _alertService.ShowAlertAsync("Successful", "You have successfully signed up with verification code ....", "OK");
+                    await _alertService.ShowAlertAsync("Successful", "You have successfully signed up", "OK");
 
                     await Shell.Current.GoToAsync("///SignInPage");
                 

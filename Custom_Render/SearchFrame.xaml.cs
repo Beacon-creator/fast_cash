@@ -1,6 +1,6 @@
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.Custom_Render;
+namespace Cashnal.Custom_Render;
 
 public partial class SearchFrame : ContentView
 {

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="Fast_Cash.AppShell"
+    x:Class="Cashnal.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Fast_Cash.Pages"
-    xmlns:local1="clr-namespace:Fast_Cash.Pages.TabbedPages"
+    xmlns:local="clr-namespace:Cashnal.Pages"
+    xmlns:local1="clr-namespace:Cashnal.Pages.TabbedPages"
     Shell.FlyoutBehavior="Disabled"
     Shell.NavBarIsVisible="False"
     BackgroundColor="{DynamicResource PageBackgroundColor}"
     Shell.TabBarBackgroundColor="{DynamicResource ProTextColor}"
      Shell.TabBarForegroundColor="{DynamicResource PrimaryBackgroundColor}"
     Shell.TabBarUnselectedColor="{DynamicResource TertiaryBackgroundColor}"
-    Title="Fast_Cash">
+    Title="Cashnal">
 
 
     <ShellContent

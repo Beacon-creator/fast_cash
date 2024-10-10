@@ -3,7 +3,7 @@ using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
 
-namespace Fast_Cash.Custom_Render;
+namespace Cashnal.Custom_Render;
 
 public partial class FunctionsCard : ContentView
 {

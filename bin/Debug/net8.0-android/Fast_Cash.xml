@@ -4,320 +4,175 @@
         <name>Fast_Cash</name>
     </assembly>
     <members>
-        <member name="T:Fast_Cash.ViewModels.AccountMainViewModel">
+        <member name="T:Cashnal.ViewModels.AccountMainViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.BatchAVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.AccountMainViewModel.batchAVisible"/>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.BatchAVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.AccountMainViewModel.batchAVisible"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.BatchBVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.AccountMainViewModel.batchBVisible"/>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.BatchBVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.AccountMainViewModel.batchBVisible"/>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountMainViewModel.toggleBatchesCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountMainViewModel.ToggleBatchesCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountMainViewModel.toggleBatchesCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountMainViewModel.ToggleBatchesCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.ToggleBatchesCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountMainViewModel.ToggleBatches"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.ToggleBatchesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountMainViewModel.ToggleBatches"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountMainViewModel.linkCardLaterCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountMainViewModel.LinkCardLaterCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountMainViewModel.linkCardLaterCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountMainViewModel.LinkCardLaterCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.LinkCardLaterCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountMainViewModel.LinkCardLater"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.LinkCardLaterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountMainViewModel.LinkCardLater"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountMainViewModel.bankOneClickedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountMainViewModel.BankOneClickedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountMainViewModel.bankOneClickedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountMainViewModel.BankOneClickedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.BankOneClickedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountMainViewModel.BankOneClicked"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.BankOneClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountMainViewModel.BankOneClicked"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountMainViewModel.cardOneClickedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountMainViewModel.CardOneClickedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountMainViewModel.cardOneClickedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountMainViewModel.CardOneClickedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountMainViewModel.CardOneClickedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountMainViewModel.CardOneClicked"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountMainViewModel.CardOneClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountMainViewModel.CardOneClicked"/>.</summary>
         </member>
-        <member name="T:Fast_Cash.ViewModels.AccountViewModel">
+        <member name="T:Cashnal.ViewModels.AccountViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountViewModel.BatchAVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.AccountViewModel.batchAVisible"/>
+        <member name="P:Cashnal.ViewModels.AccountViewModel.BatchAVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.AccountViewModel.batchAVisible"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountViewModel.BatchBVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.AccountViewModel.batchBVisible"/>
+        <member name="P:Cashnal.ViewModels.AccountViewModel.BatchBVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.AccountViewModel.batchBVisible"/>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountViewModel.toggleBatchesCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountViewModel.ToggleBatchesCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountViewModel.toggleBatchesCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountViewModel.ToggleBatchesCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountViewModel.ToggleBatchesCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountViewModel.ToggleBatches"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountViewModel.ToggleBatchesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountViewModel.ToggleBatches"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountViewModel.bankOneClickedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountViewModel.BankOneClickedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountViewModel.bankOneClickedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountViewModel.BankOneClickedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountViewModel.BankOneClickedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountViewModel.BankOneClicked"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountViewModel.BankOneClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountViewModel.BankOneClicked"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.AccountViewModel.cardOneClickedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.AccountViewModel.CardOneClickedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.AccountViewModel.cardOneClickedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.AccountViewModel.CardOneClickedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.AccountViewModel.CardOneClickedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.AccountViewModel.CardOneClicked"/>.</summary>
+        <member name="P:Cashnal.ViewModels.AccountViewModel.CardOneClickedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.AccountViewModel.CardOneClicked"/>.</summary>
         </member>
-        <member name="T:Fast_Cash.ViewModels.BankVerificationViewModel">
+        <member name="T:Cashnal.ViewModels.BankVerificationViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.email"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.email"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.OneCodeEntry">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.oneCodeEntry"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.OneCodeEntry">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.oneCodeEntry"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.TwoCodeEntry">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.twoCodeEntry"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.TwoCodeEntry">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.twoCodeEntry"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.ThreeCodeEntry">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.threeCodeEntry"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.ThreeCodeEntry">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.threeCodeEntry"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.FourCodeEntry">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.fourCodeEntry"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.FourCodeEntry">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.fourCodeEntry"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.BankVerificationViewModel.isBusy"/>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.BankVerificationViewModel.isBusy"/>
         </member>
-        <member name="F:Fast_Cash.ViewModels.BankVerificationViewModel.verifyCodeCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.BankVerificationViewModel.VerifyCodeCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.BankVerificationViewModel.verifyCodeCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.BankVerificationViewModel.VerifyCodeCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.VerifyCodeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.BankVerificationViewModel.VerifyCode"/>.</summary>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.VerifyCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.BankVerificationViewModel.VerifyCode"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.BankVerificationViewModel.resendCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.BankVerificationViewModel.ResendCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.BankVerificationViewModel.resendCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.BankVerificationViewModel.ResendCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.ResendCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.BankVerificationViewModel.Resend"/>.</summary>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.ResendCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.BankVerificationViewModel.Resend"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.BankVerificationViewModel.cancelCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.BankVerificationViewModel.CancelCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.BankVerificationViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.BankVerificationViewModel.CancelCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.BankVerificationViewModel.CancelCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.BankVerificationViewModel.Cancel"/>.</summary>
+        <member name="P:Cashnal.ViewModels.BankVerificationViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.BankVerificationViewModel.Cancel"/>.</summary>
         </member>
-        <member name="T:Fast_Cash.ViewModels.ConfirmationDialogViewModel">
+        <member name="T:Cashnal.ViewModels.ConfirmationDialogViewModel">
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="F:Fast_Cash.ViewModels.ConfirmationDialogViewModel.cancelCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.ConfirmationDialogViewModel.CancelCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.ConfirmationDialogViewModel.cancelCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.ConfirmationDialogViewModel.CancelCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.ConfirmationDialogViewModel.CancelCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.ConfirmationDialogViewModel.Cancel"/>.</summary>
+        <member name="P:Cashnal.ViewModels.ConfirmationDialogViewModel.CancelCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.ConfirmationDialogViewModel.Cancel"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.ConfirmationDialogViewModel.deleteCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.ConfirmationDialogViewModel.DeleteCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.ConfirmationDialogViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.ConfirmationDialogViewModel.DeleteCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.ConfirmationDialogViewModel.DeleteCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.ConfirmationDialogViewModel.Delete"/>.</summary>
+        <member name="P:Cashnal.ViewModels.ConfirmationDialogViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.ConfirmationDialogViewModel.Delete"/>.</summary>
         </member>
-        <member name="T:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel">
-            <inheritdoc/>
-            <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.email"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.VerificationCode">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.verificationCode"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.isBusy"/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.verifyCodeCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.VerifyCodeCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.VerifyCodeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.VerifyCode"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.resendCodeCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.ResendCodeCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.ResendCodeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.ForgotPasswordVerificationViewModel.ResendCode"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.ForgotPasswordViewModel">
-            <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordViewModel.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.ForgotPasswordViewModel.email"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.ForgotPasswordViewModel.isBusy"/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.ForgotPasswordViewModel.requestPasswordResetCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.ForgotPasswordViewModel.RequestPasswordResetCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.ForgotPasswordViewModel.RequestPasswordResetCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.ForgotPasswordViewModel.RequestPasswordReset"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.HomePageVM">
-            <inheritdoc/>
-            <inheritdoc/>
-            <inheritdoc/>
-            <inheritdoc/>
+        <member name="T:Cashnal.ViewModels.ForgotPasswordVerificationViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.ProfileImage">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.profileImage"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.email"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.isBusy"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.VerificationCode">
+            <inheritdoc cref="F:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.verificationCode"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.email"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.isBusy"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.GreetingMessage">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.HomePageVM.greetingMessage"/>
+        <member name="F:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.verifyCodeCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.VerifyCodeCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.tapCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.TapCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.VerifyCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.VerifyCode"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.TapCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.Tap(System.String)"/>.</summary>
+        <member name="F:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.resendCodeCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.ResendCodeCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.qrcodeCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.QrcodeCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.ResendCodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.ForgotPasswordVerificationViewModel.ResendCode"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.QrcodeCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.Qrcode"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.logoutCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.LogoutCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.LogoutCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.OnLogout"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.deleteAccountCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.DeleteAccountCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.DeleteAccountCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.OnDeleteAccount"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.showDropdownCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.ShowDropdownCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.ShowDropdownCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.ShowDropdown"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.HomePageVM.selectProfilePictureCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.HomePageVM.SelectProfilePictureCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.HomePageVM.SelectProfilePictureCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.HomePageVM.SelectProfilePicture"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.LinkBankViewModel">
+        <member name="T:Cashnal.ViewModels.ForgotPasswordViewModel">
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.LinkBankViewModel.AccountOwnerName">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkBankViewModel.accountOwnerName"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordViewModel.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.ForgotPasswordViewModel.email"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.LinkBankViewModel.AccountNumber">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkBankViewModel.accountNumber"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.ForgotPasswordViewModel.isBusy"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.LinkBankViewModel.BvnNumber">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkBankViewModel.bvnNumber"/>
+        <member name="F:Cashnal.ViewModels.ForgotPasswordViewModel.requestPasswordResetCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.ForgotPasswordViewModel.RequestPasswordResetCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.LinkBankViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkBankViewModel.isBusy"/>
+        <member name="P:Cashnal.ViewModels.ForgotPasswordViewModel.RequestPasswordResetCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.ForgotPasswordViewModel.RequestPasswordReset"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.LinkBankViewModel.linkBankAccountCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.LinkBankViewModel.LinkBankAccountCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkBankViewModel.LinkBankAccountCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.LinkBankViewModel.LinkBankAccount"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.LinkCardViewModel">
+        <member name="T:Cashnal.ViewModels.HomePageVM">
             <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.CardHolderName">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkCardViewModel.cardHolderName"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.CardNumber">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkCardViewModel.cardNumber"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.CvvNumber">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkCardViewModel.cvvNumber"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.ExpiryDate">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkCardViewModel.expiryDate"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.LinkCardViewModel.isBusy"/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.LinkCardViewModel.linkCardCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.LinkCardViewModel.LinkCardCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.LinkCardViewModel.LinkCardCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.LinkCardViewModel.LinkCard"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.NewPasswordViewModel">
-            <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.NewPasswordViewModel.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.NewPasswordViewModel.email"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.NewPasswordViewModel.Password">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.NewPasswordViewModel.password"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.NewPasswordViewModel.ConfirmPassword">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.NewPasswordViewModel.confirmPassword"/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.NewPasswordViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.NewPasswordViewModel.isBusy"/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.NewPasswordViewModel.resetPasswordCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.NewPasswordViewModel.ResetPasswordCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.NewPasswordViewModel.ResetPasswordCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.NewPasswordViewModel.ResetPassword"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.PopupViewModel">
-            <inheritdoc/>
-            <inheritdoc/>
-            <inheritdoc/>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.PopupViewModel.IsPopupVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.PopupViewModel.isPopupVisible"/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.PopupViewModel.showPopupCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.PopupViewModel.ShowPopupCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.PopupViewModel.ShowPopupCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.PopupViewModel.ShowPopup"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.PopupViewModel.hidePopupCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.PopupViewModel.HidePopupCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.PopupViewModel.HidePopupCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.PopupViewModel.HidePopup"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.SignInViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -325,46 +180,144 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.EmailOrPhone">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignInViewModel.emailOrPhone"/>
+        <member name="P:Cashnal.ViewModels.HomePageVM.ProfileImage">
+            <inheritdoc cref="F:Cashnal.ViewModels.HomePageVM.profileImage"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.Password">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignInViewModel.password"/>
+        <member name="P:Cashnal.ViewModels.HomePageVM.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.HomePageVM.isBusy"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignInViewModel.isBusy"/>
+        <member name="P:Cashnal.ViewModels.HomePageVM.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.HomePageVM.email"/>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignInViewModel.signInCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignInViewModel.SignInCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.HomePageVM.GreetingMessage">
+            <inheritdoc cref="F:Cashnal.ViewModels.HomePageVM.greetingMessage"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.SignInCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignInViewModel.SignIn"/>.</summary>
+        <member name="F:Cashnal.ViewModels.HomePageVM.tapCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.TapCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignInViewModel.navigateToForgotPasswordCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignInViewModel.NavigateToForgotPasswordCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.HomePageVM.TapCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.Tap(System.String)"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.NavigateToForgotPasswordCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignInViewModel.NavigateToForgotPassword"/>.</summary>
+        <member name="F:Cashnal.ViewModels.HomePageVM.qrcodeCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.QrcodeCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignInViewModel.navigateToSignUpCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignInViewModel.NavigateToSignUpCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.HomePageVM.QrcodeCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.Qrcode"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.NavigateToSignUpCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignInViewModel.NavigateToSignUp"/>.</summary>
+        <member name="F:Cashnal.ViewModels.HomePageVM.logoutCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.LogoutCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignInViewModel.googleSignInCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignInViewModel.GoogleSignInCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.HomePageVM.LogoutCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.OnLogout"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.GoogleSignInCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignInViewModel.GoogleSignIn"/>.</summary>
+        <member name="F:Cashnal.ViewModels.HomePageVM.deleteAccountCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.DeleteAccountCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignInViewModel.microsoftSignInCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignInViewModel.MicrosoftSignInCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.HomePageVM.DeleteAccountCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.OnDeleteAccount"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignInViewModel.MicrosoftSignInCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignInViewModel.MicrosoftSignIn"/>.</summary>
+        <member name="F:Cashnal.ViewModels.HomePageVM.showDropdownCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.ShowDropdownCommand"/>.</summary>
         </member>
-        <member name="T:Fast_Cash.ViewModels.SignUpViewModel">
+        <member name="P:Cashnal.ViewModels.HomePageVM.ShowDropdownCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.ShowDropdown"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.HomePageVM.selectProfilePictureCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.HomePageVM.SelectProfilePictureCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.HomePageVM.SelectProfilePictureCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.HomePageVM.SelectProfilePicture"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.LinkBankViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkBankViewModel.AccountOwnerName">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkBankViewModel.accountOwnerName"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkBankViewModel.AccountNumber">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkBankViewModel.accountNumber"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkBankViewModel.BvnNumber">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkBankViewModel.bvnNumber"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkBankViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkBankViewModel.isBusy"/>
+        </member>
+        <member name="F:Cashnal.ViewModels.LinkBankViewModel.linkBankAccountCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.LinkBankViewModel.LinkBankAccountCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkBankViewModel.LinkBankAccountCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.LinkBankViewModel.LinkBankAccount"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.LinkCardViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.CardHolderName">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkCardViewModel.cardHolderName"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.CardNumber">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkCardViewModel.cardNumber"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.CvvNumber">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkCardViewModel.cvvNumber"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.ExpiryDate">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkCardViewModel.expiryDate"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.LinkCardViewModel.isBusy"/>
+        </member>
+        <member name="F:Cashnal.ViewModels.LinkCardViewModel.linkCardCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.LinkCardViewModel.LinkCardCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.LinkCardViewModel.LinkCardCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.LinkCardViewModel.LinkCard"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.NewPasswordViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cashnal.ViewModels.NewPasswordViewModel.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.NewPasswordViewModel.email"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.NewPasswordViewModel.Password">
+            <inheritdoc cref="F:Cashnal.ViewModels.NewPasswordViewModel.password"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.NewPasswordViewModel.ConfirmPassword">
+            <inheritdoc cref="F:Cashnal.ViewModels.NewPasswordViewModel.confirmPassword"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.NewPasswordViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.NewPasswordViewModel.isBusy"/>
+        </member>
+        <member name="F:Cashnal.ViewModels.NewPasswordViewModel.resetPasswordCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.NewPasswordViewModel.ResetPasswordCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.NewPasswordViewModel.ResetPasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.NewPasswordViewModel.ResetPassword"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.PopupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cashnal.ViewModels.PopupViewModel.IsPopupVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.PopupViewModel.isPopupVisible"/>
+        </member>
+        <member name="F:Cashnal.ViewModels.PopupViewModel.showPopupCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.PopupViewModel.ShowPopupCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.PopupViewModel.ShowPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.PopupViewModel.ShowPopup"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.PopupViewModel.hidePopupCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.PopupViewModel.HidePopupCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.PopupViewModel.HidePopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.PopupViewModel.HidePopup"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.SignInViewModel">
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
@@ -372,93 +325,140 @@
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.Email">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.email"/>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.EmailOrPhone">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignInViewModel.emailOrPhone"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.Password">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.password"/>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.Password">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignInViewModel.password"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.ConfirmPassword">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.confirmPassword"/>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignInViewModel.isBusy"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.IsBusy">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.isBusy"/>
+        <member name="F:Cashnal.ViewModels.SignInViewModel.signInCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignInViewModel.SignInCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.TermsAccepted">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.termsAccepted"/>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.SignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignInViewModel.SignIn"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.IsPopupVisible">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.SignUpViewModel.isPopupVisible"/>
+        <member name="F:Cashnal.ViewModels.SignInViewModel.navigateToForgotPasswordCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignInViewModel.NavigateToForgotPasswordCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignUpViewModel.signUpCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignUpViewModel.SignUpCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.NavigateToForgotPasswordCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignInViewModel.NavigateToForgotPassword"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.SignUpCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignUpViewModel.SignUpAsync"/>.</summary>
+        <member name="F:Cashnal.ViewModels.SignInViewModel.navigateToSignUpCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignInViewModel.NavigateToSignUpCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignUpViewModel.signInCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignUpViewModel.SignInCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.NavigateToSignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignInViewModel.NavigateToSignUp"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.SignInCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignUpViewModel.SignInAsync"/>.</summary>
+        <member name="F:Cashnal.ViewModels.SignInViewModel.googleSignInCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignInViewModel.GoogleSignInCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignUpViewModel.googleSignUpCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignUpViewModel.GoogleSignUpCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.GoogleSignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignInViewModel.GoogleSignIn"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.GoogleSignUpCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignUpViewModel.GoogleSignUp"/>.</summary>
+        <member name="F:Cashnal.ViewModels.SignInViewModel.microsoftSignInCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignInViewModel.MicrosoftSignInCommand"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.SignUpViewModel.microsoftSignUpCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignUpViewModel.MicrosoftSignUpCommand"/>.</summary>
+        <member name="P:Cashnal.ViewModels.SignInViewModel.MicrosoftSignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignInViewModel.MicrosoftSignIn"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.MicrosoftSignUpCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignUpViewModel.MicrosoftSignUp"/>.</summary>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.SignUpViewModel.showTermsPopupCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.SignUpViewModel.ShowTermsPopupCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.SignUpViewModel.ShowTermsPopupCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.SignUpViewModel.ShowTermsPopup"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.StartPageViewModel">
+        <member name="T:Cashnal.ViewModels.SignUpViewModel">
             <inheritdoc/>
-        </member>
-        <member name="F:Fast_Cash.ViewModels.StartPageViewModel.getStartedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.StartPageViewModel.GetStartedCommand"/>.</summary>
-        </member>
-        <member name="P:Fast_Cash.ViewModels.StartPageViewModel.GetStartedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.StartPageViewModel.GetStarted"/>.</summary>
-        </member>
-        <member name="T:Fast_Cash.ViewModels.TransactionPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
             <inheritdoc/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.sliderValue"/>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.Email">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.email"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.IsFromDateCalendarOpen">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.isFromDateCalendarOpen"/>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.Password">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.password"/>
         </member>
-        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.IsToDateCalendarOpen">
-            <inheritdoc cref="F:Fast_Cash.ViewModels.TransactionPageViewModel.isToDateCalendarOpen"/>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.ConfirmPassword">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.confirmPassword"/>
         </member>
-        <member name="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnSliderValueChanged(System.Double)">
-            <summary>Executes the logic for when <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue"/> just changed.</summary>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.IsBusy">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.isBusy"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.TermsAccepted">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.termsAccepted"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.IsPopupVisible">
+            <inheritdoc cref="F:Cashnal.ViewModels.SignUpViewModel.isPopupVisible"/>
+        </member>
+        <member name="F:Cashnal.ViewModels.SignUpViewModel.signUpCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignUpViewModel.SignUpCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.SignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignUpViewModel.SignUpAsync"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.SignUpViewModel.signInCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignUpViewModel.SignInCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.SignInCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignUpViewModel.SignInAsync"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.SignUpViewModel.googleSignUpCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignUpViewModel.GoogleSignUpCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.GoogleSignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignUpViewModel.GoogleSignUp"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.SignUpViewModel.microsoftSignUpCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignUpViewModel.MicrosoftSignUpCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.MicrosoftSignUpCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignUpViewModel.MicrosoftSignUp"/>.</summary>
+        </member>
+        <member name="F:Cashnal.ViewModels.SignUpViewModel.showTermsPopupCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.SignUpViewModel.ShowTermsPopupCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.SignUpViewModel.ShowTermsPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.SignUpViewModel.ShowTermsPopup"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.StartPageViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:Cashnal.ViewModels.StartPageViewModel.getStartedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.StartPageViewModel.GetStartedCommand"/>.</summary>
+        </member>
+        <member name="P:Cashnal.ViewModels.StartPageViewModel.GetStartedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.StartPageViewModel.GetStarted"/>.</summary>
+        </member>
+        <member name="T:Cashnal.ViewModels.TransactionPageViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Cashnal.ViewModels.TransactionPageViewModel.SliderValue">
+            <inheritdoc cref="F:Cashnal.ViewModels.TransactionPageViewModel.sliderValue"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.TransactionPageViewModel.IsFromDateCalendarOpen">
+            <inheritdoc cref="F:Cashnal.ViewModels.TransactionPageViewModel.isFromDateCalendarOpen"/>
+        </member>
+        <member name="P:Cashnal.ViewModels.TransactionPageViewModel.IsToDateCalendarOpen">
+            <inheritdoc cref="F:Cashnal.ViewModels.TransactionPageViewModel.isToDateCalendarOpen"/>
+        </member>
+        <member name="M:Cashnal.ViewModels.TransactionPageViewModel.OnSliderValueChanged(System.Double)">
+            <summary>Executes the logic for when <see cref="P:Cashnal.ViewModels.TransactionPageViewModel.SliderValue"/> just changed.</summary>
             <param name="value">The new property value that was set.</param>
-            <remarks>This method is invoked right after the value of <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.SliderValue"/> is changed.</remarks>
+            <remarks>This method is invoked right after the value of <see cref="P:Cashnal.ViewModels.TransactionPageViewModel.SliderValue"/> is changed.</remarks>
         </member>
-        <member name="F:Fast_Cash.ViewModels.TransactionPageViewModel.fromDateCalendarTappedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.TransactionPageViewModel.fromDateCalendarTappedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnFromDateCalendarTapped"/>.</summary>
+        <member name="P:Cashnal.ViewModels.TransactionPageViewModel.FromDateCalendarTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.TransactionPageViewModel.OnFromDateCalendarTapped"/>.</summary>
         </member>
-        <member name="F:Fast_Cash.ViewModels.TransactionPageViewModel.toDateCalendarTappedCommand">
-            <summary>The backing field for <see cref="P:Fast_Cash.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand"/>.</summary>
+        <member name="F:Cashnal.ViewModels.TransactionPageViewModel.toDateCalendarTappedCommand">
+            <summary>The backing field for <see cref="P:Cashnal.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand"/>.</summary>
         </member>
-        <member name="P:Fast_Cash.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Fast_Cash.ViewModels.TransactionPageViewModel.OnToDateCalendarTapped"/>.</summary>
+        <member name="P:Cashnal.ViewModels.TransactionPageViewModel.ToDateCalendarTappedCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Cashnal.ViewModels.TransactionPageViewModel.OnToDateCalendarTapped"/>.</summary>
         </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>

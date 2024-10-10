@@ -3,12 +3,12 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
-using Fast_Cash.Model;
+using Cashnal.EventHandlers;
+using Cashnal.Model;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json.Linq;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public partial class LinkBankViewModel : ObservableObject
         {
@@ -50,7 +50,7 @@ namespace Fast_Cash.ViewModels
                     BVN = BvnNumber
                     };
 
-                var response = await _httpClientService.PostAsync("api/bank-links", JsonContent.Create(bankLink));
+                var response = await _httpClientService.PostAsync("api/bank-link", JsonContent.Create(bankLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
 
                 if (response.IsSuccessStatusCode)
@@ -86,6 +86,7 @@ namespace Fast_Cash.ViewModels
                 }
             catch (Exception ex)
                 {
+                Console.WriteLine($"Error in banklink: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
                 }
             finally

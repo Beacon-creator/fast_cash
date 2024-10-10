@@ -1,8 +1,6 @@
-﻿using Fast_Cash.Pages;
-using Fast_Cash.Pages.TabbedPages;
-
-namespace Fast_Cash
-{
+﻿
+namespace Cashnal
+    {
     public partial class App : Application
     {
         public App()
@@ -11,17 +9,12 @@ namespace Fast_Cash
 
             MainPage = new AppShell();
 
-         //  MainPage = new NavigationPage(new HomePage());
-          //   MainPage = new StartPage1();
-
 
         }
 
-        protected override async void OnStart()
-        {
-        //    await Shell.Current.GoToAsync("//Signup");
-
-                base.OnStart();
+        protected override void OnStart()
+            {
+            base.OnStart();
+            }
         }
-    }
 }

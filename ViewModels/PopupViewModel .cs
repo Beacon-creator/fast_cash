@@ -2,7 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     public partial class PopupViewModel : ObservableObject
     {

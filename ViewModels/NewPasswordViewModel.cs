@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Controls;
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     public partial class NewPasswordViewModel : ObservableObject, IQueryAttributable
     {
@@ -79,7 +79,7 @@ namespace Fast_Cash.ViewModels
                 IsBusy = true; // show the spinner
 
                 var resetPasswordModel = new { Email, Password, Token = token };
-                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/reset-password", resetPasswordModel);
+                var response = await _httpClient.PostAsJsonAsync("api/password-reset/reset-password", resetPasswordModel);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -106,7 +106,7 @@ namespace Fast_Cash.ViewModels
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
       
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // Log the exception
              //   System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");

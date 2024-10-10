@@ -6,7 +6,7 @@ using Microsoft.Maui.Controls;
 using Microsoft.Maui;
 
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
 {
     public class ShowPasswordTriggerActions : TriggerAction<ImageButton>, INotifyPropertyChanged
     {

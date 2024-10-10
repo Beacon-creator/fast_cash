@@ -1,4 +1,4 @@
-namespace Fast_Cash.Custom_Render;
+namespace Cashnal.Custom_Render;
 
 public partial class NavTop : ContentView
 {
@@ -45,7 +45,7 @@ public partial class NavTop : ContentView
             {
                 await Shell.Current.GoToAsync(Route);
             }
-            catch (ObjectDisposedException ex)
+            catch (ObjectDisposedException)
             {
              //   Console.WriteLine($"Navigation error: {ex.Message}");
                 // Fallback to a known route if the object is disposed

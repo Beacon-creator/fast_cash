@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Threading.Tasks;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public partial class ConfirmationDialogViewModel : ObservableObject
         {

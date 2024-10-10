@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-               xmlns:local="clr-namespace:Fast_Cash.Custom_Render"
-             x:Class="Fast_Cash.Pages.TabbedPages.CardscanPage"
+               xmlns:local="clr-namespace:Cashnal.Custom_Render"
+             x:Class="Cashnal.Pages.TabbedPages.CardscanPage"
                   BackgroundColor="{DynamicResource PageBackgroundColor}"
              Title="CardscanPage">
     <VerticalStackLayout Padding="20,20">

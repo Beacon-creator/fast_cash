@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public partial class SignInViewModel : ObservableObject
         {
@@ -21,6 +22,7 @@ namespace Fast_Cash.ViewModels
             _alertService = alertService;
             _httpClient = httpClient;
 
+            // Set the base address for HttpClient if not set
             if (_httpClient.BaseAddress == null)
                 {
                 _httpClient.BaseAddress = new Uri("https://grabbyfanalapi.onrender.com/");
@@ -36,6 +38,7 @@ namespace Fast_Cash.ViewModels
         [ObservableProperty]
         private bool isBusy;
 
+        // Sign in command to authenticate the user
         [RelayCommand]
         private async Task SignIn()
             {
@@ -52,66 +55,93 @@ namespace Fast_Cash.ViewModels
 
                 IsBusy = true;
 
+                // Prepare the login request model
                 var loginModel = new { identifier = EmailOrPhone, password = Password };
                 var response = await _httpClient.PostAsJsonAsync("api/login", loginModel);
 
                 if (response.IsSuccessStatusCode)
                     {
-                    IsBusy = false;
                     var jsonResponse = await response.Content.ReadAsStringAsync();
                     var tokenObject = JsonSerializer.Deserialize<TokenResponse>(jsonResponse);
 
-                    if (tokenObject != null)
+                    if (tokenObject != null && !string.IsNullOrEmpty(tokenObject.Token))
                         {
                         var token = tokenObject.Token;
-                        if (!string.IsNullOrEmpty(token))
+
+                        // Save the token securely
+                        await SecureStorage.SetAsync("auth_token", token);
+
+                        // Extract email from token using JwtService
+                        var email = JwtService.GetEmailFromToken(token);
+
+                        if (email != null)
                             {
-                            var jwtService = new JwtService();
-                            var email = jwtService.GetEmailFromToken(token);
+                            await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
 
-                            if (email != null)
-                                {
-                                await SecureStorage.SetAsync("auth_token", token);
-                                await _alertService.ShowAlertAsync("Login Successful", "You have successfully signed in.", "OK");
-
-                                // Navigate to HomePage and pass the email as a query parameter
-                                var appShell = (AppShell)Application.Current.MainPage;
-                                await appShell.NavigateToHomeScreen(email);
-                                }
-                            else
-                                {
-                                await _alertService.ShowAlertAsync("Login Failed", "Email not found in the token. Please check the claims in the console log.", "OK");
-                                }
+                            // Navigate to the home screen
+                            var appShell = (AppShell)Application.Current.MainPage;
+                            await appShell.NavigateToHomeScreen(email);
                             }
                         else
                             {
-                            await _alertService.ShowAlertAsync("Login Failed", "Received token is not a valid JWT.", "OK");
+                            await _alertService.ShowAlertAsync("Login Failed", "Email not found in token.", "OK");
                             }
                         }
                     else
                         {
-                        await _alertService.ShowAlertAsync("Login Failed", "Received token is not a valid JWT.", "OK");
+                        await _alertService.ShowAlertAsync("Login Failed", "Invalid token received.", "OK");
                         }
                     }
                 else
                     {
                     var errorContent = await response.Content.ReadAsStringAsync();
                     await _alertService.ShowAlertAsync("Login Failed", "Invalid credentials, please try again.", "OK");
+                    System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
                     }
                 }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
                 {
                 await _alertService.ShowAlertAsync("Login Failed", "A connection error occurred", "OK");
                 }
             catch (Exception ex)
                 {
-                await _alertService.ShowAlertAsync("Login Failed", "Try again later.", "OK");
+                System.Diagnostics.Debug.WriteLine($"Error: {ex}");
+                await _alertService.ShowAlertAsync("Login Failed", "An unexpected error occurred, please try again.", "OK");
                 }
             finally
                 {
                 IsBusy = false;
                 }
             }
+
+        // Example of how you can retrieve and use the token for authenticated requests
+        //public async Task MakeAuthenticatedRequestAsync()
+        //    {
+        //    var token = await SecureStorage.GetAsync("auth_token");
+        //    if (!string.IsNullOrEmpty(token))
+        //        {
+        //        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        //        // Example: Making an authenticated API request
+        //        var response = await _httpClient.GetAsync("api/protected-endpoint");
+
+        //        if (response.IsSuccessStatusCode)
+        //            {
+        //            var content = await response.Content.ReadAsStringAsync();
+        //            // Process the content (e.g., display data)
+        //            }
+        //        else
+        //            {
+        //            var errorContent = await response.Content.ReadAsStringAsync();
+        //            System.Diagnostics.Debug.WriteLine($"Error Response: {errorContent}");
+        //            await _alertService.ShowAlertAsync("Error", "Failed to load data.", "OK");
+        //            }
+        //        }
+        //    else
+        //        {
+        //        await _alertService.ShowAlertAsync("Error", "Authentication token not found.", "OK");
+        //        }
+        //    }
 
         [RelayCommand]
         private async Task NavigateToForgotPassword()

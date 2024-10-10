@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
-using Fast_Cash.ViewModels;
-using Fast_Cash.EventHandlers;
+using Cashnal.ViewModels;
+using Cashnal.EventHandlers;
 
-namespace Fast_Cash.Pages
+namespace Cashnal.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ForgotPasswordVerificationPage : ContentPage

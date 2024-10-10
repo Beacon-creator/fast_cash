@@ -3,11 +3,11 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
-using Fast_Cash.Model;
+using Cashnal.EventHandlers;
+using Cashnal.Model;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public partial class LinkCardViewModel : ObservableObject
         {
@@ -54,7 +54,7 @@ namespace Fast_Cash.ViewModels
                     ExpiryDate = ExpiryDate
                     };
 
-                var response = await _httpClientService.PostAsync("api/CardLinks", JsonContent.Create(cardLink));
+                var response = await _httpClientService.PostAsync("api/card-link", JsonContent.Create(cardLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
             //    Console.WriteLine($"Response Status Code: {response.StatusCode}");
              //   Console.WriteLine($"Response Content: {responseContent}");
@@ -70,13 +70,13 @@ namespace Fast_Cash.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Failed to link card. Try again later", "OK");
                     }
                 }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
                 {
                 //   Console.WriteLine($"Error : {ex.Message}");
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
 
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
                 //   Console.WriteLine($"Error : {ex.Message}");
              

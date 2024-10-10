@@ -1,6 +1,6 @@
-using Fast_Cash.Pages.TabbedPages;
+using Cashnal.Pages.TabbedPages;
 
-namespace Fast_Cash.Pages;
+namespace Cashnal.Pages;
 
 public partial class CardLinkSuccess : ContentPage
 {

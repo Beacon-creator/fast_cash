@@ -2,7 +2,7 @@
 using System.Text.RegularExpressions;
 using Microsoft.Maui.Controls;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
 {
     public class PhoneNumberValidationBehavior : Behavior<Entry>
     {

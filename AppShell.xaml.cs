@@ -1,10 +1,8 @@
-﻿using Fast_Cash.Pages;
-using Fast_Cash.Pages.TabbedPages;
-using Microsoft.Extensions.DependencyInjection;
-//using Fast_Cash.Pages.TabbedPages;
+﻿using Cashnal.Pages;
 
-namespace Fast_Cash
-{
+
+namespace Cashnal
+    {
     public partial class AppShell : Shell
     {
         public AppShell()
@@ -42,8 +40,7 @@ namespace Fast_Cash
             // Set the TabBar to visible
             MainTabBar.IsVisible = true;
 
-            // Navigate to the HomePage tab
-           //   await Shell.Current.GoToAsync("///HomePage");
+           
 
             await Shell.Current.GoToAsync($"///HomePage?email={email}");
         }

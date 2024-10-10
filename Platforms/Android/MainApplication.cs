@@ -1,8 +1,8 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Fast_Cash
-{
+namespace Cashnal
+    {
     [Application]
     public class MainApplication : MauiApplication
     {

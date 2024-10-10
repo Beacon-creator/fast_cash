@@ -1,14 +1,12 @@
 ﻿using System.Net.Http.Json;
-using System.Threading.Tasks;
+using Cashnal.EventHandlers;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
-using Fast_Cash.Model;
-using Microsoft.Maui.Controls;
+using Cashnal.Model;
 using Newtonsoft.Json.Linq;
 
-namespace Fast_Cash.ViewModels
-{
+namespace Cashnal.ViewModels
+    {
     public partial class BankVerificationViewModel : ObservableObject
     {
         private readonly HttpClientService _httpClientService;
@@ -42,11 +40,11 @@ namespace Fast_Cash.ViewModels
             _tokenService = tokenService;
 
             // Retrieve the token
-            var token = _tokenService.GetToken();
+            var token = TokenService.GetToken();
             Console.WriteLine($"token: {token}");
             if (!string.IsNullOrEmpty(token))
                 {
-                Email = _jwtService.GetEmailFromToken(token);
+                Email = JwtService.GetEmailFromToken(token);
                 }
             }
 
@@ -117,7 +115,7 @@ namespace Fast_Cash.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try again later", "OK");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try again later", "OK");
                 throw;

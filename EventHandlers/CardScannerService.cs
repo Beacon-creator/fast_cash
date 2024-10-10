@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
     {
     public class CardScannerService
         {

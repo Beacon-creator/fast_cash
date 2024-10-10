@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Windows.Input;
 
-namespace Fast_Cash.Custom_Render
+namespace Cashnal.Custom_Render
     {
     public partial class CalenderFrame : ContentView
         {

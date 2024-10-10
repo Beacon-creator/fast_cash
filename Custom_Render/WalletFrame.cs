@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fast_Cash.Custom_Render
+namespace Cashnal.Custom_Render
 {
    public class WalletFrame : ImageButton
     {

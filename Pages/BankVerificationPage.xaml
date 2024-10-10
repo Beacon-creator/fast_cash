@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:vm="clr-namespace:Fast_Cash.ViewModels"
-             xmlns:local1="clr-namespace:Fast_Cash.Model"
-             xmlns:behaviors="clr-namespace:Fast_Cash.EventHandlers"
+             xmlns:vm="clr-namespace:Cashnal.ViewModels"
+             xmlns:local1="clr-namespace:Cashnal.Model"
+             xmlns:behaviors="clr-namespace:Cashnal.EventHandlers"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
-             x:Class="Fast_Cash.Pages.BankVerificationPage"
+             x:Class="Cashnal.Pages.BankVerificationPage"
              Title="BankVerificationPage">
 
     <ContentPage.Content>

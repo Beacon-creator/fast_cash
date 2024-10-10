@@ -2,9 +2,9 @@
 using System.Text.RegularExpressions;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
-using Fast_Cash.Model;
+using Cashnal.Model;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
 {
     public class EmailValidatorBehavior : Behavior<LineEntry>
     {

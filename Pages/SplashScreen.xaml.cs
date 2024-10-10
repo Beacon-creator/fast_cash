@@ -7,7 +7,7 @@ using Microsoft.Maui.Controls.Xaml;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui;
 
-namespace Fast_Cash.Pages
+namespace Cashnal.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SplashScreen : ContentPage

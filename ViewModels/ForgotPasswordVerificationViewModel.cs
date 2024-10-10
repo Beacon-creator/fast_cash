@@ -5,11 +5,11 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Fast_Cash.EventHandlers;
+using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
 using Newtonsoft.Json.Serialization;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
 {
     [QueryProperty(nameof(Email), "email")]
     public partial class ForgotPasswordVerificationViewModel : ObservableObject
@@ -55,7 +55,7 @@ namespace Fast_Cash.ViewModels
                 IsBusy = true; // Show the spinner
 
                 var verificationModel = new { Email, Code = VerificationCode };
-                var response = await _httpClient.PostAsJsonAsync("api/PasswordReset/verify-code", verificationModel);
+                var response = await _httpClient.PostAsJsonAsync("api/password-reset/verify-code", verificationModel);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -115,7 +115,7 @@ namespace Fast_Cash.ViewModels
                 var emailContent = new StringContent($"\"{Email}\"", System.Text.Encoding.UTF8, "application/json");
              //   System.Diagnostics.Debug.WriteLine($"Email Content: {emailContent.ReadAsStringAsync().Result}"); // Debug output
 
-                var response = await _httpClient.PostAsync("api/PasswordReset/send-code", emailContent);
+                var response = await _httpClient.PostAsync("api/password-reset/send-code", emailContent);
 
                 if (response.IsSuccessStatusCode)
                     {

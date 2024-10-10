@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using Microsoft.Maui.Controls;
-using Fast_Cash.Model;
+using Cashnal.Model;
 
-namespace Fast_Cash.EventHandlers
+namespace Cashnal.EventHandlers
 {
     public class PasswordValidationBehavior : Behavior<LineEntry>
     {

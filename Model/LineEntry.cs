@@ -1,6 +1,6 @@
 ﻿
 
-namespace Fast_Cash.Model
+namespace Cashnal.Model
 {
     public class LineEntry : Entry
     {

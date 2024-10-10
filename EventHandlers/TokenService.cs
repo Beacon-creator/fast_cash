@@ -1,44 +1,103 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration; // For using IConfiguration
 
-namespace Fast_Cash.EventHandlers
-{
-    public class TokenService
+namespace Cashnal.EventHandlers
     {
+    public class TokenService
+        {
         private const string TokenKey = "jwt_token";
         private readonly string _secretKey;
-        public async Task SaveTokenAsync(string token)
-        {
+
+
+        // Save the token asynchronously using SecureStorage
+        public static async Task SaveTokenAsync(string token)
+            {
             await SecureStorage.SetAsync(TokenKey, token);
-        }
+            }
 
-        public string GetToken()
-        {
-            return SecureStorage.GetAsync(TokenKey).Result;
-        }
+        // Retrieve the token synchronously
+        public static string GetToken()
+            {
+            // Retrieve the token directly as a string
+            var token = SecureStorage.GetAsync(TokenKey).Result;
+            if (string.IsNullOrEmpty(token))
+                {
+                throw new Exception("Token not found in storage.");
+                }
+            return token;
+            }
 
+        // Optionally, if needed, you could add a method to remove the token from storage
+        public static async Task RemoveTokenAsync()
+            {
+            await SecureStorage.SetAsync(TokenKey, string.Empty); // Or use RemoveAsync if available
+            }
+
+        // Generate JWT token based on userId and email
         public string GenerateToken(string userId, string email)
             {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_secretKey);
+
             var tokenDescriptor = new SecurityTokenDescriptor
                 {
                 Subject = new ClaimsIdentity(new[]
                 {
-                new Claim(ClaimTypes.NameIdentifier, userId),
-                new Claim(ClaimTypes.Email, email)
-            }),
-                Expires = DateTime.UtcNow.AddHours(1),
+                    new Claim(ClaimTypes.NameIdentifier, userId),
+                    new Claim(ClaimTypes.Email, email)
+                }),
+                Expires = DateTime.UtcNow.AddHours(1), // Token expiration time
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
                 };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
+            return tokenHandler.WriteToken(token); // Return the generated token as a string
+            }
+
+        // Validate JWT token
+        public ClaimsPrincipal? ValidateToken(string token)
+            {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_secretKey);
+
+            try
+                {
+                var validationParameters = new TokenValidationParameters
+                    {
+                    ValidateIssuerSigningKey = true, // Ensure the token was signed with the correct secret
+                    IssuerSigningKey = new SymmetricSecurityKey(key), // Use the same secret key to validate
+                    ValidateIssuer = false, // Issuer validation is not required in this case
+                    ValidateAudience = false, // Audience validation is not required in this case
+                    ValidateLifetime = true, // Ensure the token has not expired
+                    ClockSkew = TimeSpan.Zero // Remove clock skew for token expiration
+                    };
+
+                // Validate the token and return the claims
+                var claims = tokenHandler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
+                return claims;
+                }
+            catch (SecurityTokenExpiredException ex)
+                {
+                Console.WriteLine($"Token expired: {ex.Message}");
+                return null;
+                }
+            catch (SecurityTokenException ex)
+                {
+                Console.WriteLine($"Token validation failed: {ex.Message}");
+                return null;
+                }
+            catch (Exception ex)
+                {
+                Console.WriteLine($"Error validating token: {ex.Message}");
+                return null;
+                }
             }
         }
-}
+
+
+    }

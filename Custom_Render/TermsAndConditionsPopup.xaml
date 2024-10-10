@@ -2,7 +2,7 @@
 <toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             x:Class="Fast_Cash.Custom_Render.TermsAndConditionsPopup">
+             x:Class="Cashnal.Custom_Render.TermsAndConditionsPopup">
     <Grid VerticalOptions="Center"
           BackgroundColor="{DynamicResource TertiaryBackgroundColor}"
           HorizontalOptions="Center" Padding="10"
@@ -18,7 +18,6 @@
             </StackLayout>
             
         </ScrollView>
-        <!--<Button Text="X" Style="{DynamicResource entranceButtons}" HeightRequest="40"
-         Command="{Binding HidePopupCommand}" VerticalOptions="End" HorizontalOptions="Center"/>-->
+   
     </Grid>
 </toolkit:Popup>

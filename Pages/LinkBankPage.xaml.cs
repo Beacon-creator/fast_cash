@@ -1,8 +1,8 @@
 // Pages/LinkBankPage.xaml.cs
-using Fast_Cash.EventHandlers;
-using Fast_Cash.ViewModels;
+using Cashnal.EventHandlers;
+using Cashnal.ViewModels;
 
-namespace Fast_Cash.Pages
+namespace Cashnal.Pages
 {
     public partial class LinkBankPage : ContentPage
     {

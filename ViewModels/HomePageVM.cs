@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Maui.Controls;
-using Fast_Cash.Custom_Render;
-using Fast_Cash.EventHandlers;
-using Fast_Cash.Pages;
-using Fast_Cash.Pages.TabbedPages;
+using Cashnal.Custom_Render;
+using Cashnal.Pages;
+using Cashnal.Pages.TabbedPages;
+using Cashnal.EventHandlers;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public partial class HomePageVM : ObservableObject
         {
@@ -52,10 +52,10 @@ namespace Fast_Cash.ViewModels
 
         private void Initialize()
             {
-            var token = _tokenService.GetToken();
+            var token = TokenService.GetToken();
             if (!string.IsNullOrEmpty(token))
                 {
-                Email = _jwtService.GetEmailFromToken(token);
+                Email = JwtService.GetEmailFromToken(token);
                 if (string.IsNullOrEmpty(Email))
                     {
                     _alertService.ShowAlertAsync("Error", "Invalid token format or missing email claim.", "OK");
@@ -82,7 +82,7 @@ namespace Fast_Cash.ViewModels
             IsBusy = true;
             try
                 {
-                var response = await _httpClient.PostAsync("api/User/Logout", null);
+                var response = await _httpClient.PostAsync("api/users/logout", null);
                 if (response.IsSuccessStatusCode)
                     {
                     await _alertService.ShowAlertAsync("Successful", "Logout successful.", "OK");
@@ -93,11 +93,12 @@ namespace Fast_Cash.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Failed to logout. Please try again later.", "OK");
                     }
                 }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
                 {
+                
                 await _alertService.ShowAlertAsync("Network error", "Try again later.", "OK");
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
                 await _alertService.ShowAlertAsync("Error", "An error occurred", "OK");
                 }
@@ -123,7 +124,7 @@ namespace Fast_Cash.ViewModels
             IsBusy = true;
             try
                 {
-                var response = await _httpClient.DeleteAsync("api/User/DeleteAccount");
+                var response = await _httpClient.DeleteAsync("api/users/deleteAccount");
                 if (response.IsSuccessStatusCode)
                     {
                     await _alertService.ShowAlertAsync("Successful", "Account deleted successfully.", "OK");
@@ -134,11 +135,11 @@ namespace Fast_Cash.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Failed to delete account. Please try again later.", "OK");
                     }
                 }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
                 {
                 await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
                 await _alertService.ShowAlertAsync("Error", "Please try again", "OK");
                 }
@@ -149,7 +150,7 @@ namespace Fast_Cash.ViewModels
             }
 
         [RelayCommand]
-        private void ShowDropdown()
+        private static void ShowDropdown()
             {
             var currentPage = Shell.Current.CurrentPage;
 
@@ -193,20 +194,20 @@ namespace Fast_Cash.ViewModels
                     ProfileImage = ImageSource.FromStream(() => stream);
                     }
                 }
-            catch (FeatureNotSupportedException fnsEx)
+            catch (FeatureNotSupportedException)
                 {
-                // Handle not supported on device exception
+              //  Console.WriteLine(fnsEx);
                 }
-            catch (PermissionException pEx)
+            catch (PermissionException)
                 {
-                // Handle permission exception
+               // Console.WriteLine(pEx);
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
-                // Handle other exceptions
+               
                 }
             }
-        public AsyncRelayCommand OnLogoutCommand => new AsyncRelayCommand(OnLogout);
-        public AsyncRelayCommand OnDeleteAccountCommand => new AsyncRelayCommand(OnDeleteAccount);
+        public AsyncRelayCommand OnLogoutCommand => new(OnLogout);
+        public AsyncRelayCommand OnDeleteAccountCommand => new(OnDeleteAccount);
         }
     }

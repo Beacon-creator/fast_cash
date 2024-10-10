@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.ComponentModel;
-using Fast_Cash.Pages;
+using Cashnal.Pages;
 
-namespace Fast_Cash.ViewModels
+namespace Cashnal.ViewModels
     {
     public class CarouselItem
         {
