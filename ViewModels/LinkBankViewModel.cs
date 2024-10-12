@@ -55,7 +55,6 @@ namespace Cashnal.ViewModels
 
                 if (response.IsSuccessStatusCode)
                     {
-                    IsBusy = false;
                     await _alertService.ShowAlertAsync("Success", "Bank account linked successfully.", "OK");
 
                     // Send verification code
@@ -64,30 +63,40 @@ namespace Cashnal.ViewModels
 
                     if (verificationResponse.IsSuccessStatusCode)
                         {
+                        // Parse and check if the code exists in the response
                         var verificationResult = JObject.Parse(verificationContent);
-                        var verificationCode = verificationResult["code"]?.ToString();
+                        if (verificationResult["code"] != null)
+                            {
+                            var verificationCode = verificationResult["code"]?.ToString();
+                            Console.WriteLine($"Verification code: {verificationCode}");
 
-                        await _alertService.ShowAlertAsync("Verification", $"Verification code sent successfully. Your code is: {verificationCode}", "OK");
-                        await Shell.Current.GoToAsync("//BankVerificationPage");
+                            await _alertService.ShowAlertAsync("Verification", $"Verification code sent successfully. Your code is: {verificationCode}", "OK");
+                            await Shell.Current.GoToAsync("//BankVerificationPage");
+                            }
+                        else
+                            {
+                            // If the code doesn't exist in the response
+                            await _alertService.ShowAlertAsync("Error", "Verification code is missing in the response.", "OK");
+                            }
                         }
                     else
                         {
-                        await _alertService.ShowAlertAsync("Error", "Failed to send verification code, try to register again", "OK");
+                        await _alertService.ShowAlertAsync("Error", "Failed to send verification code. Please try again.", "OK");
                         }
                     }
                 else
                     {
-                    await _alertService.ShowAlertAsync("Error", "Failed to link bank account. Try again later", "OK");
+                    await _alertService.ShowAlertAsync("Error", "Failed to link bank account. Please try again.", "OK");
                     }
                 }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
                 {
-                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
+                await _alertService.ShowAlertAsync("Network error", "Check network connection and try again.", "OK");
                 }
             catch (Exception ex)
                 {
-                Console.WriteLine($"Error in banklink: {ex.Message}");
-                await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
+                Console.WriteLine($"Error in LinkBankAccount: {ex.Message}");
+                await _alertService.ShowAlertAsync("Error", "An error occurred. Please try again later.", "OK");
                 }
             finally
                 {
@@ -99,7 +108,7 @@ namespace Cashnal.ViewModels
             {
             try
                 {
-                var requestUri = $"api/BankLinks/sendVerificationCode";
+                var requestUri = $"api/bank-link/send-verification-code";
                 return await _httpClientService.PostAsync(requestUri, null);
                 }
             catch (Exception ex)

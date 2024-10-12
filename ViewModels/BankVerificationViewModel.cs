@@ -65,7 +65,7 @@ namespace Cashnal.ViewModels
 
             try
             {
-                var response = await _httpClientService.PostAsync("api/BankLinks/VerifyCode", JsonContent.Create(verificationRequest));
+                var response = await _httpClientService.PostAsync("api/bank-link/verify-code", JsonContent.Create(verificationRequest));
                 if (response.IsSuccessStatusCode)
                 {
                     IsBusy = false;
@@ -98,7 +98,7 @@ namespace Cashnal.ViewModels
         {
             try
             {
-                var requestUri = $"api/BankLinks/sendVerificationCode";
+                var requestUri = $"api/bank-link/send-verification-code";
                 var response = await _httpClientService.PostAsync(requestUri, null);
 
                 if (response.IsSuccessStatusCode)
