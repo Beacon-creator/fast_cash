@@ -28,13 +28,7 @@ namespace Cashnal
             builder.UseMauiApp<App>();
             builder.UseBarcodeReader();
 
-            //// Register Configuration (use environment variables or appsettings.json)
-            //var config = new ConfigurationBuilder()
-            //    .AddEnvironmentVariables() // To fetch environment variables
-            //    .Build();
 
-            //// Register TokenService with IConfiguration
-            //builder.Services.AddSingleton<IConfiguration>(config); // Add IConfiguration service
             builder.Services.AddSingleton<TokenService>(); // Register TokenService, it will pull from IConfiguration
 
             // Register other pages

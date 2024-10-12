@@ -38,7 +38,7 @@ namespace Cashnal.EventHandlers
 
                 // Extract the email claim using the "sub" claim type
                 var emailClaim = jwtToken.Claims.FirstOrDefault(claim =>
-                    claim.Type == JwtRegisteredClaimNames.Sub);
+                    claim.Type == JwtRegisteredClaimNames.Email);
 
                 if (emailClaim == null)
                     {
