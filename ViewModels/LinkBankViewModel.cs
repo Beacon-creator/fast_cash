@@ -60,6 +60,7 @@ namespace Cashnal.ViewModels
                     // Send verification code
                     var verificationResponse = await SendVerificationCode();
                     var verificationContent = await verificationResponse.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Full verification response content: {verificationContent}");
 
                     if (verificationResponse.IsSuccessStatusCode)
                         {

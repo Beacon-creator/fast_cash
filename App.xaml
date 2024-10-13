@@ -15,23 +15,4 @@
         </ResourceDictionary>
     </Application.Resources>
 
-
-    <!--<Application.MainPage>
-        <Shell>
-            <TabBar x:Name="ScreenTabs" Icon="chain.svg">
-                <Tab Title="Home">
-                    <ShellContent ContentTemplate="{DataTemplate local1:HomePage}"/>
-                </Tab>
-                <Tab Title="Home" Icon="chain.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local1:ServicesPage}"/>
-                </Tab>
-                <Tab Title="Home" Icon="chain.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local1:TransactionPage}"/>
-                </Tab>
-                <Tab Title="Home" Icon="chain.svg">
-                    <ShellContent ContentTemplate="{DataTemplate local1:TransactionPage}"/>
-                </Tab>
-            </TabBar>
-        </Shell>
-    </Application.MainPage>-->
 </Application>
