@@ -196,11 +196,13 @@ namespace Cashnal.ViewModels
                 }
             catch (FeatureNotSupportedException)
                 {
-              //  Console.WriteLine(fnsEx);
+                //  Console.WriteLine(fnsEx);
+                await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
             catch (PermissionException)
                 {
-               // Console.WriteLine(pEx);
+                // Console.WriteLine(pEx);
+                await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
             catch (Exception)
                 {

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("copyright@2024")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("...maximizing cash")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+d56c83f22301447eadf49f57c12fc6f8a63f8f12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+16b635ad62a22329cc5947790830466942da0854")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fast_Cash")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
