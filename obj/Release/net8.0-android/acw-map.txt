@@ -1240,9 +1240,9 @@ kotlinx.coroutines.flow.StateFlow;kotlinx.coroutines.flow.StateFlow
 ZXing.Net.Maui.FrameAnalyzer, ZXing.Net.MAUI;crc6477b0797571f03227.FrameAnalyzer
 ZXing.Net.Maui.FrameAnalyzer;crc6477b0797571f03227.FrameAnalyzer
 zxing.net.maui.FrameAnalyzer;crc6477b0797571f03227.FrameAnalyzer
-Fast_Cash.MainActivity, Fast_Cash;crc642d790102aa05dd47.MainActivity
-Fast_Cash.MainActivity;crc642d790102aa05dd47.MainActivity
-fast_cash.MainActivity;crc642d790102aa05dd47.MainActivity
-Fast_Cash.MainApplication, Fast_Cash;crc642d790102aa05dd47.MainApplication
-Fast_Cash.MainApplication;crc642d790102aa05dd47.MainApplication
-fast_cash.MainApplication;crc642d790102aa05dd47.MainApplication
+Cashnal.MainActivity, Fast_Cash;crc64476561637bd37e2c.MainActivity
+Cashnal.MainActivity;crc64476561637bd37e2c.MainActivity
+cashnal.MainActivity;crc64476561637bd37e2c.MainActivity
+Cashnal.MainApplication, Fast_Cash;crc64476561637bd37e2c.MainApplication
+Cashnal.MainApplication;crc64476561637bd37e2c.MainApplication
+cashnal.MainApplication;crc64476561637bd37e2c.MainApplication

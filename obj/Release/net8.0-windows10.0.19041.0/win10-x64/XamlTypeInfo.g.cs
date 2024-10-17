@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace Fast_Cash.WinUI
+namespace Cashnal.WinUI
 {
     public partial class App : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {

@@ -23,7 +23,7 @@
   <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
   <permission android:name="com.Fanal_Beacon.Cashnal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature" />
   <uses-permission android:name="com.Fanal_Beacon.Cashnal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-  <application android:name="crc642d790102aa05dd47.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="Cashnal" android:supportsRtl="true">
+  <application android:name="crc64476561637bd37e2c.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/appicon" android:label="Cashnal" android:supportsRtl="true">
     <activity android:name="crc648316b0a9aa8cfd61.BrowserTabActivity" android:exported="true" />
     <activity android:name="microsoft.identity.client.AuthenticationActivity" android:exported="true" />
     <activity android:name="crc64ed1888fb4925e3b7.AuthenticationAgentActivity" android:configChanges="orientation|screenSize" android:exported="false" />
@@ -37,7 +37,7 @@
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
     </provider>
     <activity android:name="crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity" android:configChanges="orientation|screenSize" />
-    <activity android:name="crc642d790102aa05dd47.MainActivity" android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme">
+    <activity android:name="crc64476561637bd37e2c.MainActivity" android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:exported="true" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

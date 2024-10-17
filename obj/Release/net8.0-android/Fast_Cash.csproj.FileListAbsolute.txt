@@ -467,8 +467,6 @@ C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64159f3caeb1269279\MauiDrawingView.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64159f3caeb1269279\MauiSemanticOrderView.java
-C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc642d790102aa05dd47\MainActivity.java
-C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc642d790102aa05dd47\MainApplication.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64338477404e88479c\ColorChangeRevealDrawable.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64338477404e88479c\ControlsAccessibilityDelegate.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64338477404e88479c\DragAndDropGestureHandler.java
@@ -751,3 +749,5 @@ C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64ed1888fb4925e3b7\AuthenticationAgentActivity_CoreWebViewClient.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\microsoft\identity\client\AuthenticationActivity.java
 C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\xamarin\essentials\fileProvider.java
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64476561637bd37e2c\MainActivity.java
+C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Release\net8.0-android\android\src\crc64476561637bd37e2c\MainApplication.java

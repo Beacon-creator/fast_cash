@@ -21,7 +21,7 @@
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
   <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
-  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="Cashnal" android:name="crc642d790102aa05dd47.MainApplication" android:extractNativeLibs="true">
+  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:label="Cashnal" android:name="crc64476561637bd37e2c.MainApplication" android:extractNativeLibs="true">
     <activity android:exported="true" android:name="crc648316b0a9aa8cfd61.BrowserTabActivity" />
     <activity android:exported="true" android:name="microsoft.identity.client.AuthenticationActivity" />
     <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc64ed1888fb4925e3b7.AuthenticationAgentActivity" />
@@ -35,7 +35,7 @@
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
     </provider>
     <activity android:configChanges="orientation|screenSize" android:name="crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity" />
-    <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme" android:name="crc642d790102aa05dd47.MainActivity" android:exported="true">
+    <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme" android:name="crc64476561637bd37e2c.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
