@@ -1,4 +1,4 @@
-﻿namespace Fast_Cash
+﻿namespace Cashnal
 {
     public partial class MainPage : ContentPage
     {
