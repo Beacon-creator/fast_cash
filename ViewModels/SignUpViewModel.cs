@@ -96,16 +96,15 @@ namespace Cashnal.ViewModels
                     await _alertService.ShowAlertAsync("Sign Up Failed", "Check details and try again", "OK");
                 }
             }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
             {
                 IsBusy = false;
 
                 await _alertService.ShowAlertAsync("Connection Error", "Try again later.", "OK");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 IsBusy = false;
-                System.Diagnostics.Debug.WriteLine($"Error: {ex}");
                 await _alertService.ShowAlertAsync("Sign Up Failed", "Try again later", "OK");
             }
             finally
@@ -140,9 +139,9 @@ namespace Cashnal.ViewModels
         {
             var popup = new Custom_Render.TermsAndConditionsPopup
             {
-                BindingContext = this
+               BindingContext = this
             };
-            Application.Current.MainPage.ShowPopup(popup);
+          Application.Current.MainPage.ShowPopup(popup);
         }
     }
 }

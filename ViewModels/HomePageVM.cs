@@ -1,22 +1,17 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.ComponentModel;
-using CommunityToolkit.Mvvm.Input;
-using Microsoft.Maui.Controls;
-using Cashnal.Custom_Render;
+﻿using Cashnal.EventHandlers;
 using Cashnal.Pages;
 using Cashnal.Pages.TabbedPages;
-using Cashnal.EventHandlers;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace Cashnal.ViewModels
     {
     public partial class HomePageVM : ObservableObject
         {
-        private readonly HttpClient _httpClient;
         private readonly IAlertService _alertService;
         private readonly TokenService _tokenService;
         private readonly JwtService _jwtService;
+        private readonly HttpClientService _httpClientService;
 
 
         [ObservableProperty]
@@ -30,29 +25,22 @@ namespace Cashnal.ViewModels
 
         [ObservableProperty]
         private string greetingMessage;
-        public HomePageVM(HttpClient httpClient, IAlertService alertService, TokenService tokenService, JwtService jwtService)
+        public HomePageVM( IAlertService alertService, TokenService tokenService, JwtService jwtService, HttpClientService httpClientService)
             {
-            _httpClient = httpClient;
+          
             _alertService = alertService;
             _tokenService = tokenService;
             _jwtService = jwtService;
-
+            _httpClientService = httpClientService;
 
             SetGreetingMessage();
-
-
-            if (_httpClient.BaseAddress == null)
-                {
-                _httpClient.BaseAddress = new Uri("https://grabbyfanalapi.onrender.com/");
-                }
-
-           // Initialize();
+          
             }
 
 
-        private void Initialize()
+        private async void Initialize()
             {
-            var token = TokenService.GetToken();
+            var token = await TokenService.GetTokenAsync();
             if (!string.IsNullOrEmpty(token))
                 {
                 Email = JwtService.GetEmailFromToken(token);
@@ -82,7 +70,7 @@ namespace Cashnal.ViewModels
             IsBusy = true;
             try
                 {
-                var response = await _httpClient.PostAsync("api/users/logout", null);
+                var response = await _httpClientService.PostAsync("api/users/logout", null);
                 if (response.IsSuccessStatusCode)
                     {
                     await _alertService.ShowAlertAsync("Successful", "Logout successful.", "OK");
@@ -90,6 +78,7 @@ namespace Cashnal.ViewModels
                     }
                 else
                     {
+                    var responseContent = await response.Content.ReadAsStringAsync();
                     await _alertService.ShowAlertAsync("Error", "Failed to logout. Please try again later.", "OK");
                     }
                 }
@@ -124,7 +113,7 @@ namespace Cashnal.ViewModels
             IsBusy = true;
             try
                 {
-                var response = await _httpClient.DeleteAsync("api/users/deleteAccount");
+                var response = await _httpClientService.DeleteAsync("api/users/deleteAccount");
                 if (response.IsSuccessStatusCode)
                     {
                     await _alertService.ShowAlertAsync("Successful", "Account deleted successfully.", "OK");
@@ -160,7 +149,7 @@ namespace Cashnal.ViewModels
                 }
             else
                 {
-                Console.WriteLine("HomePage instance not found");
+               
                 }
             }
 
@@ -196,12 +185,12 @@ namespace Cashnal.ViewModels
                 }
             catch (FeatureNotSupportedException)
                 {
-                //  Console.WriteLine(fnsEx);
+                
                 await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
             catch (PermissionException)
                 {
-                // Console.WriteLine(pEx);
+               
                 await _alertService.ShowAlertAsync("Error", "A connection error occurred, try again", "OK");
                 }
             catch (Exception)

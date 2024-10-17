@@ -1,9 +1,5 @@
 using Cashnal.EventHandlers;
-using Microsoft.Maui.Controls;
 using Newtonsoft.Json.Linq;
-using System;
-using System.IO;
-using System.Threading.Tasks;
 
 namespace Cashnal.Custom_Render
     {

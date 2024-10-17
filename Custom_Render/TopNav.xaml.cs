@@ -1,7 +1,4 @@
-using System;
-using Microsoft.Maui.Controls.Xaml;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui;
+
 
 namespace Cashnal.Custom_Render;
 
@@ -28,21 +25,19 @@ public partial class TopNav : ContentView
         {
             if (Shell.Current.Navigation.NavigationStack.Count > 1)
             {
-                Console.WriteLine("tis clicked");
+
                 await Shell.Current.Navigation.PopAsync();
             }
             else
             {
-                Console.WriteLine("Here clicked");
                 await Shell.Current.GoToAsync("..");
 
-             //   await Navigation.PopAsync();
+          
             }
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            Console.WriteLine($"Navigation error: {ex.Message}");
-            // Fallback to a known absolute path
+         
             await Shell.Current.GoToAsync("//HomePage");
         }
     }

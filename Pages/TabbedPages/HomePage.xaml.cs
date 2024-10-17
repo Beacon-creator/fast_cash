@@ -34,8 +34,7 @@ public partial class HomePage : ContentPage
 
     public void ShowDropdown()
         {
-        Console.WriteLine("You clicked me here");
-
+    
         var logoutButton = new Button
             {
             Text = "Logout",

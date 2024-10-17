@@ -36,7 +36,7 @@ public partial class NavTop : ContentView
         BindingContext = this;
     }
 
-    private async void Home_Tapped(object sender, TappedEventArgs e)
+    private async void Home_Tapped(object sender, TappedEventArgs? e)
     {
 
         if (!string.IsNullOrEmpty(Route))
@@ -47,14 +47,12 @@ public partial class NavTop : ContentView
             }
             catch (ObjectDisposedException)
             {
-             //   Console.WriteLine($"Navigation error: {ex.Message}");
-                // Fallback to a known route if the object is disposed
+      
                 await Shell.Current.GoToAsync("//HomePage");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-             //   Console.WriteLine($"Unexpected error: {ex.Message}");
-                // Fallback to a known route if another error occurs
+           
                 await Shell.Current.GoToAsync("//HomePage");
             }
         }

@@ -1,8 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using System;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
+
 
 namespace Cashnal.EventHandlers
     {
@@ -16,53 +14,43 @@ namespace Cashnal.EventHandlers
 
                 if (!handler.CanReadToken(token))
                     {
-                    Console.WriteLine("Invalid JWT token format.");
+                 
                     return null;
-                    }
-
-              //  var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
-
+                    }        
                 var jwtToken = handler.ReadJwtToken(token); // Use ReadJwtToken to get typed JwtSecurityToken
 
                 if (jwtToken == null)
                     {
-                    Console.WriteLine("Failed to read JWT token.");
                     return null;
                     }
 
-                // Log token claims for debugging
-                //foreach (var claim in jwtToken.Claims)
-                //    {
-                //    Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
-                //    }
-
                 // Extract the email claim using the "sub" claim type
                 var emailClaim = jwtToken.Claims.FirstOrDefault(claim =>
-                    claim.Type == JwtRegisteredClaimNames.Email);
+                claim.Type == JwtRegisteredClaimNames.Email) ;
+                // || claim.Type == JwtRegisteredClaimNames.Sub);
 
                 if (emailClaim == null)
                     {
-                    Console.WriteLine("Email claim not found in the JWT token.");
                     return null;
                     }
 
                 return emailClaim.Value;
                 }
-            catch (ArgumentException ex)
+            catch (ArgumentException)
                 {
-                Console.WriteLine($"Argument Exception: {ex.Message}");
+                return null;
                 }
-            catch (SecurityTokenExpiredException ex)
+            catch (SecurityTokenExpiredException)
                 {
-                Console.WriteLine($"Token Expired Exception: {ex.Message}");
+                 return null;
                 }
-            catch (SecurityTokenInvalidSignatureException ex)
+            catch (SecurityTokenInvalidSignatureException)
                 {
-                Console.WriteLine($"Invalid Signature Exception: {ex.Message}");
+                return null;
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
-                Console.WriteLine($"Error parsing token: {ex.Message}");
+              
                 }
 
             return null;

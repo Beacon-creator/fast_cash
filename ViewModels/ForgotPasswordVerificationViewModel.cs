@@ -7,13 +7,12 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Cashnal.EventHandlers;
 using Microsoft.Maui.Controls;
-using Newtonsoft.Json.Serialization;
 
 namespace Cashnal.ViewModels
-{
+    {
     [QueryProperty(nameof(Email), "email")]
     public partial class ForgotPasswordVerificationViewModel : ObservableObject
-    {
+        {
         private readonly HttpClient _httpClient;
         private readonly HttpClientService _httpClientService;
         private readonly IAlertService _alertService;
@@ -28,76 +27,93 @@ namespace Cashnal.ViewModels
         private bool isBusy;
 
         public ForgotPasswordVerificationViewModel(HttpClient httpClient, HttpClientService httpClientService, IAlertService alertService)
-        {
+            {
             _httpClient = httpClient;
             _httpClientService = httpClientService;
             _alertService = alertService;
 
             if (_httpClient.BaseAddress == null)
-            {
-              
+                {
                 _httpClient.BaseAddress = new Uri("https://grabbyfanalapi.onrender.com/");
                 }
-        }
+            }
 
         [RelayCommand]
         private async Task VerifyCode()
-        {
-
-            if (string.IsNullOrWhiteSpace(VerificationCode))
             {
+            if (string.IsNullOrWhiteSpace(VerificationCode))
+                {
                 await _alertService.ShowAlertAsync("Error", "Verification code cannot be empty.", "OK");
                 return;
-            }
+                }
 
             try
-            {
+                {
                 IsBusy = true; // Show the spinner
 
-                var verificationModel = new { Email, Code = VerificationCode };
+                var verificationModel = new { email = Email, code = VerificationCode };
                 var response = await _httpClient.PostAsJsonAsync("api/password-reset/verify-code", verificationModel);
 
                 if (response.IsSuccessStatusCode)
-                {
-                    IsBusy = false;
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                   // System.Diagnostics.Debug.WriteLine($"Response Content: {responseContent}"); // Debug output
-
-                    var jsonDocument = JsonDocument.Parse(responseContent);
-                    if (jsonDocument.RootElement.TryGetProperty("token", out JsonElement tokenElement))
                     {
-                        string token = tokenElement.GetString();
-                          System.Diagnostics.Debug.WriteLine($"Extracted Token: {token}"); // Debug output
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var jsonDocument = JsonDocument.Parse(responseContent);
+
+                    if (jsonDocument.RootElement.TryGetProperty("token", out JsonElement tokenElement))
+                        {
+                        string token = tokenElement.GetString();      
 
                         await _alertService.ShowAlertAsync("Success", "Code verified successfully.", "OK");
+
                         // Use Uri.EscapeDataString to ensure the token is correctly encoded
                         await Shell.Current.GoToAsync($"//NewPasswordPage?email={Email}&token={Uri.EscapeDataString(token)}");
-                    }
+                        }
                     else
-                    {
+                        {
                         await _alertService.ShowAlertAsync("Error", "Please, log in again.", "OK");
+                        }
+                    }
+                else
+                    {
+                    // Log and display detailed error response
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}");
+
+                    // Attempt to parse the error message from server response
+                    try
+                        {
+                        var jsonDocument = JsonDocument.Parse(errorContent);
+                        if (jsonDocument.RootElement.TryGetProperty("message", out JsonElement messageElement))
+                            {
+                            string errorMessage = messageElement.GetString();
+                            await _alertService.ShowAlertAsync("Error", $"Verification failed: {errorMessage}", "OK");
+                            }
+                        else
+                            {
+                            await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
+                            }
+                        }
+                    catch (JsonException)
+                        {
+                        // Fallback in case the response is not a valid JSON
+                        await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
+                        }
                     }
                 }
-                else
+            catch (HttpRequestException)
                 {
-                    await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
-                }
-            }
-            catch (HttpRequestException httpEx)
-            {
-                //  System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
                 }
-            catch (Exception ex)
-            {
-               // System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
+            catch (Exception)
+                {
                 await _alertService.ShowAlertAsync("Error", "An error occurred, please try again", "OK");
-            }
+                }
             finally
-            {
-                IsBusy = false; // hide the spinner
+                {
+                IsBusy = false; // Hide the spinner
+                }
             }
-        }
+
 
         [RelayCommand]
         private async Task ResendCode()
@@ -112,40 +128,42 @@ namespace Cashnal.ViewModels
                 {
                 IsBusy = true; // Show the spinner
 
-                var emailContent = new StringContent($"\"{Email}\"", System.Text.Encoding.UTF8, "application/json");
-             //   System.Diagnostics.Debug.WriteLine($"Email Content: {emailContent.ReadAsStringAsync().Result}"); // Debug output
-
-                var response = await _httpClient.PostAsync("api/password-reset/send-code", emailContent);
+                var response = await _httpClient.PostAsJsonAsync("api/password-reset/send-code", new { email = Email });
 
                 if (response.IsSuccessStatusCode)
                     {
-                    IsBusy = false;
-                    var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var jsonDocument = JsonDocument.Parse(responseContent);
 
-                    await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
+                    if (jsonDocument.RootElement.TryGetProperty("message", out JsonElement messageElement) &&
+                        jsonDocument.RootElement.TryGetProperty("verificationCode", out JsonElement verificationCodeElement))
+                        {
+                        string verificationCode = verificationCodeElement.GetString();
+                        await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
+                        }
+                    else
+                        {
+                        await _alertService.ShowAlertAsync("Error", "Failed to parse the verification code.", "OK");
+                        }
                     }
                 else
                     {
                     var errorContent = await response.Content.ReadAsStringAsync();
-                 //   System.Diagnostics.Debug.WriteLine($"Error Content: {errorContent}"); // Debug output
-                    await _alertService.ShowAlertAsync("Error", "Failed to resend verification code.", "OK");
+                    await _alertService.ShowAlertAsync("Error", $"Failed to resend verification code. {errorContent}", "OK");
                     }
                 }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
                 {
-              //  System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
-             //   System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
                 await _alertService.ShowAlertAsync("Error", "An error occurred, please try again", "OK");
                 }
             finally
                 {
-                IsBusy = false; // hide the spinner
+                IsBusy = false; // Hide the spinner
                 }
             }
-
         }
     }

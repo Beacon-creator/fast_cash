@@ -78,7 +78,7 @@ namespace Cashnal.ViewModels
 
                 IsBusy = true; // show the spinner
 
-                var resetPasswordModel = new { Email, Password, Token = token };
+                var resetPasswordModel = new { email = Email, password = Password, token };
                 var response = await _httpClient.PostAsJsonAsync("api/password-reset/reset-password", resetPasswordModel);
 
                 if (response.IsSuccessStatusCode)
@@ -98,7 +98,7 @@ namespace Cashnal.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Failed to reset password", "OK");
                 }
             }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
             {
                 // Handle HTTP request exceptions
                 //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");

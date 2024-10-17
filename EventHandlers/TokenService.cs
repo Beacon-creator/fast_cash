@@ -11,7 +11,7 @@ namespace Cashnal.EventHandlers
     public class TokenService
         {
         private const string TokenKey = "jwt_token";
-        private readonly string _secretKey;
+        private readonly string? _secretKey;
 
 
         // Save the token asynchronously using SecureStorage
@@ -21,16 +21,16 @@ namespace Cashnal.EventHandlers
             }
 
         // Retrieve the token synchronously
-        public static string GetToken()
+        public static async Task<string> GetTokenAsync()
             {
-            // Retrieve the token directly as a string
-            var token = SecureStorage.GetAsync(TokenKey).Result;
+            var token = await SecureStorage.GetAsync(TokenKey);
             if (string.IsNullOrEmpty(token))
                 {
                 throw new Exception("Token not found in storage.");
                 }
             return token;
             }
+
 
         // Optionally, if needed, you could add a method to remove the token from storage
         public static async Task RemoveTokenAsync()
@@ -59,6 +59,17 @@ namespace Cashnal.EventHandlers
             return tokenHandler.WriteToken(token); // Return the generated token as a string
             }
 
+
+        public static bool IsTokenExpired(string token)
+            {
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+
+            return jwtToken.ValidTo < DateTime.UtcNow;
+            }
+
+
+
         // Validate JWT token
         public ClaimsPrincipal? ValidateToken(string token)
             {
@@ -81,19 +92,18 @@ namespace Cashnal.EventHandlers
                 var claims = tokenHandler.ValidateToken(token, validationParameters, out SecurityToken validatedToken);
                 return claims;
                 }
-            catch (SecurityTokenExpiredException ex)
+            catch (SecurityTokenExpiredException)
                 {
-                Console.WriteLine($"Token expired: {ex.Message}");
+               
                 return null;
                 }
-            catch (SecurityTokenException ex)
-                {
-                Console.WriteLine($"Token validation failed: {ex.Message}");
+            catch (SecurityTokenException) { 
+         
                 return null;
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
-                Console.WriteLine($"Error validating token: {ex.Message}");
+     
                 return null;
                 }
             }

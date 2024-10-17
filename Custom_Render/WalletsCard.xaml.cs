@@ -1,6 +1,3 @@
-using System;
-using Microsoft.Maui.Controls.Xaml;
-using Microsoft.Maui.Controls;
 
 namespace Cashnal.Custom_Render
 {
@@ -40,7 +37,7 @@ namespace Cashnal.Custom_Render
             BindingContext = this;
         }
 
-        private async void WalletFrame_Tapped(object sender, EventArgs e)
+        private async void WalletFrame_Tapped(object sender, EventArgs? e)
         {
             if (!string.IsNullOrEmpty(Route))
             {
@@ -48,15 +45,15 @@ namespace Cashnal.Custom_Render
                 {
                     await Shell.Current.GoToAsync(Route);
                 }
-                catch (ObjectDisposedException ex)
+                catch (ObjectDisposedException)
                 {
-                    Console.WriteLine($"Navigation error: {ex.Message}");
+                   
                     // Fallback to a known route if the object is disposed
                     await Shell.Current.GoToAsync("//HomePage");
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
-                    Console.WriteLine($"Unexpected error: {ex.Message}");
+                   
                     // Fallback to a known route if another error occurs
                     await Shell.Current.GoToAsync("//HomePage");
                 }

@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System.Threading.Tasks;
 
 namespace Cashnal.ViewModels
     {
@@ -37,7 +36,7 @@ namespace Cashnal.ViewModels
         [RelayCommand]
         private async Task OnFromDateCalendarTapped()
             {
-            Console.WriteLine("From Date Calendar Tapped");
+          
             await Task.Delay(0);
             if (IsToDateCalendarOpen)
                 {
@@ -49,7 +48,7 @@ namespace Cashnal.ViewModels
         [RelayCommand]
         private async Task OnToDateCalendarTapped()
             {
-            Console.WriteLine("To Date Calendar Tapped");
+          
             await Task.Delay(0);
             if (IsFromDateCalendarOpen)
                 {

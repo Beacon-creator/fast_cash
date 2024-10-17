@@ -33,18 +33,31 @@ namespace Cashnal.ViewModels
         private bool isBusy;
 
         public BankVerificationViewModel(HttpClientService httpClientService, IAlertService alertService, JwtService jwtService, TokenService tokenService)
-        {
+            {
             _httpClientService = httpClientService;
             _alertService = alertService;
             _jwtService = jwtService;
             _tokenService = tokenService;
 
-            // Retrieve the token
-            var token = TokenService.GetToken();
-            Console.WriteLine($"token: {token}");
-            if (!string.IsNullOrEmpty(token))
+            // Initialize token asynchronously
+            InitializeAsync();
+            }
+
+        private async Task InitializeAsync()
+            {
+            try
                 {
-                Email = JwtService.GetEmailFromToken(token);
+                // Retrieve the token
+                var token = await TokenService.GetTokenAsync();
+
+                if (!string.IsNullOrEmpty(token))
+                    {
+                    Email = JwtService.GetEmailFromToken(token);
+                    }
+                }
+            catch (Exception)
+                {
+
                 }
             }
 
@@ -78,11 +91,11 @@ namespace Cashnal.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Invalid or expired verification code.", "OK");
                 }
             }
-            catch (HttpRequestException ex)
+            catch (HttpRequestException)
             {
                 await _alertService.ShowAlertAsync("Network Error", "Try again later", "OK");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
             }

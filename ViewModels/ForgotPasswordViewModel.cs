@@ -46,15 +46,18 @@ namespace Cashnal.ViewModels
                 }
                 IsBusy = true; // show the spinner
 
-                var response = await _httpClient.PostAsJsonAsync("api/password-reset/send-code", Email);
+                var response = await _httpClient.PostAsJsonAsync("api/password-reset/send-code", new { email = Email });
+
 
                 if (response.IsSuccessStatusCode)
                 {
                     IsBusy = false;
-                    var verificationCode = await response.Content.ReadAsStringAsync(); // Assuming the code is returned as plain text
+                    var responseContent = await response.Content.ReadFromJsonAsync<PasswordResetResponse>();
+                    var verificationCode = responseContent?.VerificationCode; // Get the verification code from the response
+
 
                     // Log the verification code
-                //   System.Diagnostics.Debug.WriteLine($"Verification Code: {verificationCode}");
+                    System.Diagnostics.Debug.WriteLine($"Verification Code: {verificationCode}");
 
                     await _alertService.ShowAlertAsync("Code sent successfully", $"Your verification code is: {verificationCode}", "OK");
 
@@ -70,7 +73,7 @@ namespace Cashnal.ViewModels
                     await _alertService.ShowAlertAsync("Error", "Not sent,Check if your email is correct", "OK");
                 }
             }
-            catch (HttpRequestException httpEx)
+            catch (HttpRequestException)
             {
                 // Handle HTTP request exceptions
                 //   System.Diagnostics.Debug.WriteLine($"HttpRequestException: {httpEx.Message}");
@@ -88,4 +91,11 @@ namespace Cashnal.ViewModels
             }
         }
     }
-}
+
+    // Define a model class for the expected API response
+    public class PasswordResetResponse
+        {
+        public string? Message { get; set; }
+        public string? VerificationCode { get; set; }
+        }
+    }

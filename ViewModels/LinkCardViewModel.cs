@@ -56,8 +56,6 @@ namespace Cashnal.ViewModels
 
                 var response = await _httpClientService.PostAsync("api/card-link", JsonContent.Create(cardLink));
                 var responseContent = await response.Content.ReadAsStringAsync();
-            //    Console.WriteLine($"Response Status Code: {response.StatusCode}");
-             //   Console.WriteLine($"Response Content: {responseContent}");
 
                 if (response.IsSuccessStatusCode)
                     {
@@ -72,14 +70,11 @@ namespace Cashnal.ViewModels
                 }
             catch (HttpRequestException)
                 {
-                //   Console.WriteLine($"Error : {ex.Message}");
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again", "OK");
 
                 }
             catch (Exception)
-                {
-                //   Console.WriteLine($"Error : {ex.Message}");
-             
+                {            
                 await _alertService.ShowAlertAsync("Error", "An error occurred, try again later", "OK");
                 }
             finally

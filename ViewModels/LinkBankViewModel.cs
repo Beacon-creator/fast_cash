@@ -60,7 +60,7 @@ namespace Cashnal.ViewModels
                     // Send verification code
                     var verificationResponse = await SendVerificationCode();
                     var verificationContent = await verificationResponse.Content.ReadAsStringAsync();
-                    Console.WriteLine($"Full verification response content: {verificationContent}");
+                  
 
                     if (verificationResponse.IsSuccessStatusCode)
                         {
@@ -69,7 +69,7 @@ namespace Cashnal.ViewModels
                         if (verificationResult["code"] != null)
                             {
                             var verificationCode = verificationResult["code"]?.ToString();
-                            Console.WriteLine($"Verification code: {verificationCode}");
+                        
 
                             await _alertService.ShowAlertAsync("Verification", $"Verification code sent successfully. Your code is: {verificationCode}", "OK");
                             await Shell.Current.GoToAsync("//BankVerificationPage");
@@ -94,9 +94,9 @@ namespace Cashnal.ViewModels
                 {
                 await _alertService.ShowAlertAsync("Network error", "Check network connection and try again.", "OK");
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
-                Console.WriteLine($"Error in LinkBankAccount: {ex.Message}");
+               
                 await _alertService.ShowAlertAsync("Error", "An error occurred. Please try again later.", "OK");
                 }
             finally
@@ -112,7 +112,7 @@ namespace Cashnal.ViewModels
                 var requestUri = $"api/bank-link/send-verification-code";
                 return await _httpClientService.PostAsync(requestUri, null);
                 }
-            catch (Exception ex)
+            catch (Exception)
                 {
                 await _alertService.ShowAlertAsync("Error", "Failed to send verification code, please try again", "OK");
                 throw;
