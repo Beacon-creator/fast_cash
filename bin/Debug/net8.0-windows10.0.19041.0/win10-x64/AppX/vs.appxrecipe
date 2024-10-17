@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-07-24T09:33:26.776</Modified>
+      <Modified>2024-10-17T09:05:03.263</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-07-24T09:33:25.851</Modified>
+      <Modified>2024-10-17T09:05:01.831</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.runtimeconfig.json">
       <PackagePath>Fast_Cash.runtimeconfig.json</PackagePath>
-      <Modified>2024-07-24T09:33:25.162</Modified>
+      <Modified>2024-10-17T08:59:44.604</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.dll">
       <PackagePath>Fast_Cash.dll</PackagePath>
-      <Modified>2024-07-24T09:33:19.620</Modified>
+      <Modified>2024-10-17T09:04:56.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Fast_Cash.exe</PackagePath>
-      <Modified>2024-07-24T09:33:19.759</Modified>
+      <Modified>2024-10-17T09:04:56.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -59,23 +59,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-100.png">
       <PackagePath>cashsplashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:31:54.755</Modified>
+      <Modified>2024-10-17T08:58:46.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-125.png">
       <PackagePath>cashsplashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:31:54.781</Modified>
+      <Modified>2024-10-17T08:58:46.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-150.png">
       <PackagePath>cashsplashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:31:54.827</Modified>
+      <Modified>2024-10-17T08:58:46.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-200.png">
       <PackagePath>cashsplashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:31:54.887</Modified>
+      <Modified>2024-10-17T08:58:47.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\cashsplashSplashScreen.scale-400.png">
       <PackagePath>cashsplashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:31:55.129</Modified>
+      <Modified>2024-10-17T08:58:48.358</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Lato-Black.ttf">
       <PackagePath>Lato-Black.ttf</PackagePath>
@@ -131,1111 +131,1111 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\acc.scale-100.png">
       <PackagePath>acc.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.967</Modified>
+      <Modified>2024-10-17T08:59:26.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\airplane.scale-100.png">
       <PackagePath>airplane.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.962</Modified>
+      <Modified>2024-10-17T08:59:26.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\airplane.scale-125.png">
       <PackagePath>airplane.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.962</Modified>
+      <Modified>2024-10-17T08:59:26.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\airplane.scale-150.png">
       <PackagePath>airplane.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.961</Modified>
+      <Modified>2024-10-17T08:59:26.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\airplane.scale-200.png">
       <PackagePath>airplane.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.961</Modified>
+      <Modified>2024-10-17T08:59:26.462</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\airplane.scale-400.png">
       <PackagePath>airplane.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.960</Modified>
+      <Modified>2024-10-17T08:59:26.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\american_ex.scale-100.png">
       <PackagePath>american_ex.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.009</Modified>
+      <Modified>2024-10-17T08:59:26.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\american_ex.scale-125.png">
       <PackagePath>american_ex.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.009</Modified>
+      <Modified>2024-10-17T08:59:26.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\american_ex.scale-150.png">
       <PackagePath>american_ex.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.007</Modified>
+      <Modified>2024-10-17T08:59:26.547</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\american_ex.scale-200.png">
       <PackagePath>american_ex.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.007</Modified>
+      <Modified>2024-10-17T08:59:26.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\american_ex.scale-400.png">
       <PackagePath>american_ex.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.007</Modified>
+      <Modified>2024-10-17T08:59:26.546</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2024-07-24T09:32:02.943</Modified>
+      <Modified>2024-10-17T08:59:26.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.930</Modified>
+      <Modified>2024-10-17T08:59:26.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.930</Modified>
+      <Modified>2024-10-17T08:59:26.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.930</Modified>
+      <Modified>2024-10-17T08:59:26.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.929</Modified>
+      <Modified>2024-10-17T08:59:26.418</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.929</Modified>
+      <Modified>2024-10-17T08:59:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.938</Modified>
+      <Modified>2024-10-17T08:59:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.937</Modified>
+      <Modified>2024-10-17T08:59:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.937</Modified>
+      <Modified>2024-10-17T08:59:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.937</Modified>
+      <Modified>2024-10-17T08:59:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.937</Modified>
+      <Modified>2024-10-17T08:59:26.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.939</Modified>
+      <Modified>2024-10-17T08:59:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.939</Modified>
+      <Modified>2024-10-17T08:59:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.938</Modified>
+      <Modified>2024-10-17T08:59:26.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.938</Modified>
+      <Modified>2024-10-17T08:59:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.938</Modified>
+      <Modified>2024-10-17T08:59:26.439</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.942</Modified>
+      <Modified>2024-10-17T08:59:26.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.942</Modified>
+      <Modified>2024-10-17T08:59:26.443</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.942</Modified>
+      <Modified>2024-10-17T08:59:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.941</Modified>
+      <Modified>2024-10-17T08:59:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.941</Modified>
+      <Modified>2024-10-17T08:59:26.442</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.941</Modified>
+      <Modified>2024-10-17T08:59:26.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.940</Modified>
+      <Modified>2024-10-17T08:59:26.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.940</Modified>
+      <Modified>2024-10-17T08:59:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.940</Modified>
+      <Modified>2024-10-17T08:59:26.441</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.940</Modified>
+      <Modified>2024-10-17T08:59:26.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.934</Modified>
+      <Modified>2024-10-17T08:59:26.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.932</Modified>
+      <Modified>2024-10-17T08:59:26.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.932</Modified>
+      <Modified>2024-10-17T08:59:26.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.932</Modified>
+      <Modified>2024-10-17T08:59:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.932</Modified>
+      <Modified>2024-10-17T08:59:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.935</Modified>
+      <Modified>2024-10-17T08:59:26.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.935</Modified>
+      <Modified>2024-10-17T08:59:26.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.934</Modified>
+      <Modified>2024-10-17T08:59:26.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.934</Modified>
+      <Modified>2024-10-17T08:59:26.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.934</Modified>
+      <Modified>2024-10-17T08:59:26.433</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.936</Modified>
+      <Modified>2024-10-17T08:59:26.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.936</Modified>
+      <Modified>2024-10-17T08:59:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.936</Modified>
+      <Modified>2024-10-17T08:59:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.936</Modified>
+      <Modified>2024-10-17T08:59:26.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.935</Modified>
+      <Modified>2024-10-17T08:59:26.434</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.931</Modified>
+      <Modified>2024-10-17T08:59:26.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.931</Modified>
+      <Modified>2024-10-17T08:59:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.931</Modified>
+      <Modified>2024-10-17T08:59:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.930</Modified>
+      <Modified>2024-10-17T08:59:26.430</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.930</Modified>
+      <Modified>2024-10-17T08:59:26.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowdown.scale-100.png">
       <PackagePath>arrowdown.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.950</Modified>
+      <Modified>2024-10-17T08:59:26.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowdown.scale-125.png">
       <PackagePath>arrowdown.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.950</Modified>
+      <Modified>2024-10-17T08:59:26.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowdown.scale-150.png">
       <PackagePath>arrowdown.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.950</Modified>
+      <Modified>2024-10-17T08:59:26.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowdown.scale-200.png">
       <PackagePath>arrowdown.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.949</Modified>
+      <Modified>2024-10-17T08:59:26.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrowdown.scale-400.png">
       <PackagePath>arrowdown.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.949</Modified>
+      <Modified>2024-10-17T08:59:26.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backicon.scale-100.png">
       <PackagePath>backicon.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.918</Modified>
+      <Modified>2024-10-17T08:59:26.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backicon.scale-125.png">
       <PackagePath>backicon.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.917</Modified>
+      <Modified>2024-10-17T08:59:26.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backicon.scale-150.png">
       <PackagePath>backicon.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.917</Modified>
+      <Modified>2024-10-17T08:59:26.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backicon.scale-200.png">
       <PackagePath>backicon.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.917</Modified>
+      <Modified>2024-10-17T08:59:26.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backicon.scale-400.png">
       <PackagePath>backicon.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.916</Modified>
+      <Modified>2024-10-17T08:59:26.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ban_logo.scale-100.png">
       <PackagePath>ban_logo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.919</Modified>
+      <Modified>2024-10-17T08:59:26.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ban_logo.scale-125.png">
       <PackagePath>ban_logo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.919</Modified>
+      <Modified>2024-10-17T08:59:26.402</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ban_logo.scale-150.png">
       <PackagePath>ban_logo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.919</Modified>
+      <Modified>2024-10-17T08:59:26.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ban_logo.scale-200.png">
       <PackagePath>ban_logo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.919</Modified>
+      <Modified>2024-10-17T08:59:26.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ban_logo.scale-400.png">
       <PackagePath>ban_logo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.919</Modified>
+      <Modified>2024-10-17T08:59:26.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bus.scale-100.png">
       <PackagePath>bus.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bus.scale-125.png">
       <PackagePath>bus.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bus.scale-150.png">
       <PackagePath>bus.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bus.scale-200.png">
       <PackagePath>bus.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.393</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\bus.scale-400.png">
       <PackagePath>bus.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-100.png">
       <PackagePath>calendar.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.963</Modified>
+      <Modified>2024-10-17T08:59:26.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-125.png">
       <PackagePath>calendar.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.963</Modified>
+      <Modified>2024-10-17T08:59:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-150.png">
       <PackagePath>calendar.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.963</Modified>
+      <Modified>2024-10-17T08:59:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-200.png">
       <PackagePath>calendar.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.963</Modified>
+      <Modified>2024-10-17T08:59:26.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar.scale-400.png">
       <PackagePath>calendar.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.962</Modified>
+      <Modified>2024-10-17T08:59:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-100.png">
       <PackagePath>car.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.968</Modified>
+      <Modified>2024-10-17T08:59:26.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-125.png">
       <PackagePath>car.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.968</Modified>
+      <Modified>2024-10-17T08:59:26.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-150.png">
       <PackagePath>car.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.967</Modified>
+      <Modified>2024-10-17T08:59:26.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-200.png">
       <PackagePath>car.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.967</Modified>
+      <Modified>2024-10-17T08:59:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\car.scale-400.png">
       <PackagePath>car.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.967</Modified>
+      <Modified>2024-10-17T08:59:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-100.png">
       <PackagePath>cashlogo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.945</Modified>
+      <Modified>2024-10-17T08:59:26.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-125.png">
       <PackagePath>cashlogo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.945</Modified>
+      <Modified>2024-10-17T08:59:26.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-150.png">
       <PackagePath>cashlogo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.943</Modified>
+      <Modified>2024-10-17T08:59:26.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-200.png">
       <PackagePath>cashlogo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.943</Modified>
+      <Modified>2024-10-17T08:59:26.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashlogo.scale-400.png">
       <PackagePath>cashlogo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.943</Modified>
+      <Modified>2024-10-17T08:59:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-100.png">
       <PackagePath>cashnallogo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.011</Modified>
+      <Modified>2024-10-17T08:59:26.466</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-125.png">
       <PackagePath>cashnallogo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.011</Modified>
+      <Modified>2024-10-17T08:59:26.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-150.png">
       <PackagePath>cashnallogo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.010</Modified>
+      <Modified>2024-10-17T08:59:26.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-200.png">
       <PackagePath>cashnallogo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.010</Modified>
+      <Modified>2024-10-17T08:59:26.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cashnallogo.scale-400.png">
       <PackagePath>cashnallogo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.010</Modified>
+      <Modified>2024-10-17T08:59:26.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-100.png">
       <PackagePath>chain.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.986</Modified>
+      <Modified>2024-10-17T08:59:26.399</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-125.png">
       <PackagePath>chain.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.985</Modified>
+      <Modified>2024-10-17T08:59:26.399</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-150.png">
       <PackagePath>chain.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.985</Modified>
+      <Modified>2024-10-17T08:59:26.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-200.png">
       <PackagePath>chain.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.985</Modified>
+      <Modified>2024-10-17T08:59:26.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\chain.scale-400.png">
       <PackagePath>chain.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.985</Modified>
+      <Modified>2024-10-17T08:59:26.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\closeeyes.scale-100.png">
       <PackagePath>closeeyes.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.953</Modified>
+      <Modified>2024-10-17T08:59:26.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\credit_card.scale-100.png">
       <PackagePath>credit_card.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.981</Modified>
+      <Modified>2024-10-17T08:59:26.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\credit_card.scale-125.png">
       <PackagePath>credit_card.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.981</Modified>
+      <Modified>2024-10-17T08:59:26.544</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\credit_card.scale-150.png">
       <PackagePath>credit_card.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.980</Modified>
+      <Modified>2024-10-17T08:59:26.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\credit_card.scale-200.png">
       <PackagePath>credit_card.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.980</Modified>
+      <Modified>2024-10-17T08:59:26.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\credit_card.scale-400.png">
       <PackagePath>credit_card.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.980</Modified>
+      <Modified>2024-10-17T08:59:26.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-100.png">
       <PackagePath>cross.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.926</Modified>
+      <Modified>2024-10-17T08:59:26.413</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-125.png">
       <PackagePath>cross.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.925</Modified>
+      <Modified>2024-10-17T08:59:26.412</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-150.png">
       <PackagePath>cross.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.925</Modified>
+      <Modified>2024-10-17T08:59:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-200.png">
       <PackagePath>cross.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.925</Modified>
+      <Modified>2024-10-17T08:59:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cross.scale-400.png">
       <PackagePath>cross.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.925</Modified>
+      <Modified>2024-10-17T08:59:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.000</Modified>
+      <Modified>2024-10-17T08:59:26.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.000</Modified>
+      <Modified>2024-10-17T08:59:26.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.999</Modified>
+      <Modified>2024-10-17T08:59:26.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.999</Modified>
+      <Modified>2024-10-17T08:59:26.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.999</Modified>
+      <Modified>2024-10-17T08:59:26.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_folder.scale-100.png">
       <PackagePath>empty_folder.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.982</Modified>
+      <Modified>2024-10-17T08:59:26.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_folder.scale-125.png">
       <PackagePath>empty_folder.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.982</Modified>
+      <Modified>2024-10-17T08:59:26.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_folder.scale-150.png">
       <PackagePath>empty_folder.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.982</Modified>
+      <Modified>2024-10-17T08:59:26.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_folder.scale-200.png">
       <PackagePath>empty_folder.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.981</Modified>
+      <Modified>2024-10-17T08:59:26.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\empty_folder.scale-400.png">
       <PackagePath>empty_folder.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.981</Modified>
+      <Modified>2024-10-17T08:59:26.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-100.png">
       <PackagePath>exchange.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.925</Modified>
+      <Modified>2024-10-17T08:59:26.461</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-125.png">
       <PackagePath>exchange.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.924</Modified>
+      <Modified>2024-10-17T08:59:26.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-150.png">
       <PackagePath>exchange.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.924</Modified>
+      <Modified>2024-10-17T08:59:26.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-200.png">
       <PackagePath>exchange.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.924</Modified>
+      <Modified>2024-10-17T08:59:26.458</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\exchange.scale-400.png">
       <PackagePath>exchange.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.924</Modified>
+      <Modified>2024-10-17T08:59:26.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-100.png">
       <PackagePath>fastlogo.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.983</Modified>
+      <Modified>2024-10-17T08:59:26.455</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-125.png">
       <PackagePath>fastlogo.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.983</Modified>
+      <Modified>2024-10-17T08:59:26.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-150.png">
       <PackagePath>fastlogo.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.983</Modified>
+      <Modified>2024-10-17T08:59:26.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-200.png">
       <PackagePath>fastlogo.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.983</Modified>
+      <Modified>2024-10-17T08:59:26.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fastlogo.scale-400.png">
       <PackagePath>fastlogo.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.982</Modified>
+      <Modified>2024-10-17T08:59:26.453</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-100.png">
       <PackagePath>forward_arrow.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.947</Modified>
+      <Modified>2024-10-17T08:59:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-125.png">
       <PackagePath>forward_arrow.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.947</Modified>
+      <Modified>2024-10-17T08:59:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-150.png">
       <PackagePath>forward_arrow.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.947</Modified>
+      <Modified>2024-10-17T08:59:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-200.png">
       <PackagePath>forward_arrow.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.947</Modified>
+      <Modified>2024-10-17T08:59:26.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\forward_arrow.scale-400.png">
       <PackagePath>forward_arrow.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.946</Modified>
+      <Modified>2024-10-17T08:59:26.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\front_arrow.scale-100.png">
       <PackagePath>front_arrow.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.974</Modified>
+      <Modified>2024-10-17T08:59:26.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\front_arrow.scale-125.png">
       <PackagePath>front_arrow.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.974</Modified>
+      <Modified>2024-10-17T08:59:26.508</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\front_arrow.scale-150.png">
       <PackagePath>front_arrow.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.974</Modified>
+      <Modified>2024-10-17T08:59:26.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\front_arrow.scale-200.png">
       <PackagePath>front_arrow.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.973</Modified>
+      <Modified>2024-10-17T08:59:26.507</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\front_arrow.scale-400.png">
       <PackagePath>front_arrow.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.973</Modified>
+      <Modified>2024-10-17T08:59:26.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gift.scale-100.png">
       <PackagePath>gift.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.929</Modified>
+      <Modified>2024-10-17T08:59:26.506</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gift.scale-125.png">
       <PackagePath>gift.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.929</Modified>
+      <Modified>2024-10-17T08:59:26.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gift.scale-150.png">
       <PackagePath>gift.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.929</Modified>
+      <Modified>2024-10-17T08:59:26.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gift.scale-200.png">
       <PackagePath>gift.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.928</Modified>
+      <Modified>2024-10-17T08:59:26.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\gift.scale-400.png">
       <PackagePath>gift.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.928</Modified>
+      <Modified>2024-10-17T08:59:26.501</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-100.png">
       <PackagePath>google.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.989</Modified>
+      <Modified>2024-10-17T08:59:26.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-125.png">
       <PackagePath>google.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.989</Modified>
+      <Modified>2024-10-17T08:59:26.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-150.png">
       <PackagePath>google.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.989</Modified>
+      <Modified>2024-10-17T08:59:26.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-200.png">
       <PackagePath>google.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.988</Modified>
+      <Modified>2024-10-17T08:59:26.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\google.scale-400.png">
       <PackagePath>google.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.988</Modified>
+      <Modified>2024-10-17T08:59:26.540</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group507.scale-100.png">
       <PackagePath>group507.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.998</Modified>
+      <Modified>2024-10-17T08:59:26.539</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group507.scale-125.png">
       <PackagePath>group507.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.998</Modified>
+      <Modified>2024-10-17T08:59:26.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group507.scale-150.png">
       <PackagePath>group507.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.998</Modified>
+      <Modified>2024-10-17T08:59:26.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group507.scale-200.png">
       <PackagePath>group507.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.998</Modified>
+      <Modified>2024-10-17T08:59:26.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group507.scale-400.png">
       <PackagePath>group507.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.998</Modified>
+      <Modified>2024-10-17T08:59:26.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group603.scale-100.png">
       <PackagePath>group603.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.003</Modified>
+      <Modified>2024-10-17T08:59:26.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group603.scale-125.png">
       <PackagePath>group603.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.003</Modified>
+      <Modified>2024-10-17T08:59:26.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group603.scale-150.png">
       <PackagePath>group603.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.002</Modified>
+      <Modified>2024-10-17T08:59:26.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group603.scale-200.png">
       <PackagePath>group603.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.002</Modified>
+      <Modified>2024-10-17T08:59:26.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group603.scale-400.png">
       <PackagePath>group603.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.002</Modified>
+      <Modified>2024-10-17T08:59:26.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group608.scale-100.png">
       <PackagePath>group608.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.007</Modified>
+      <Modified>2024-10-17T08:59:26.411</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group608.scale-125.png">
       <PackagePath>group608.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.006</Modified>
+      <Modified>2024-10-17T08:59:26.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group608.scale-150.png">
       <PackagePath>group608.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.005</Modified>
+      <Modified>2024-10-17T08:59:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group608.scale-200.png">
       <PackagePath>group608.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.004</Modified>
+      <Modified>2024-10-17T08:59:26.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group608.scale-400.png">
       <PackagePath>group608.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.003</Modified>
+      <Modified>2024-10-17T08:59:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group609.scale-100.png">
       <PackagePath>group609.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.953</Modified>
+      <Modified>2024-10-17T08:59:26.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group609.scale-125.png">
       <PackagePath>group609.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.953</Modified>
+      <Modified>2024-10-17T08:59:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group609.scale-150.png">
       <PackagePath>group609.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.953</Modified>
+      <Modified>2024-10-17T08:59:26.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group609.scale-200.png">
       <PackagePath>group609.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.952</Modified>
+      <Modified>2024-10-17T08:59:26.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group609.scale-400.png">
       <PackagePath>group609.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.952</Modified>
+      <Modified>2024-10-17T08:59:26.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group613.scale-100.png">
       <PackagePath>group613.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.980</Modified>
+      <Modified>2024-10-17T08:59:26.388</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group613.scale-125.png">
       <PackagePath>group613.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.979</Modified>
+      <Modified>2024-10-17T08:59:26.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group613.scale-150.png">
       <PackagePath>group613.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.979</Modified>
+      <Modified>2024-10-17T08:59:26.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group613.scale-200.png">
       <PackagePath>group613.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.979</Modified>
+      <Modified>2024-10-17T08:59:26.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group613.scale-400.png">
       <PackagePath>group613.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.979</Modified>
+      <Modified>2024-10-17T08:59:26.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group614.scale-100.png">
       <PackagePath>group614.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.995</Modified>
+      <Modified>2024-10-17T08:59:26.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group614.scale-125.png">
       <PackagePath>group614.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.995</Modified>
+      <Modified>2024-10-17T08:59:26.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group614.scale-150.png">
       <PackagePath>group614.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.995</Modified>
+      <Modified>2024-10-17T08:59:26.386</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group614.scale-200.png">
       <PackagePath>group614.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.995</Modified>
+      <Modified>2024-10-17T08:59:26.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\group614.scale-400.png">
       <PackagePath>group614.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.994</Modified>
+      <Modified>2024-10-17T08:59:26.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hand_card_coin.scale-100.png">
       <PackagePath>hand_card_coin.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.969</Modified>
+      <Modified>2024-10-17T08:59:26.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hand_card_coin.scale-125.png">
       <PackagePath>hand_card_coin.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.969</Modified>
+      <Modified>2024-10-17T08:59:26.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hand_card_coin.scale-150.png">
       <PackagePath>hand_card_coin.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.969</Modified>
+      <Modified>2024-10-17T08:59:26.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hand_card_coin.scale-200.png">
       <PackagePath>hand_card_coin.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.969</Modified>
+      <Modified>2024-10-17T08:59:26.449</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hand_card_coin.scale-400.png">
       <PackagePath>hand_card_coin.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.968</Modified>
+      <Modified>2024-10-17T08:59:26.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-100.png">
       <PackagePath>home.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.001</Modified>
+      <Modified>2024-10-17T08:59:26.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-125.png">
       <PackagePath>home.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.001</Modified>
+      <Modified>2024-10-17T08:59:26.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-150.png">
       <PackagePath>home.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.001</Modified>
+      <Modified>2024-10-17T08:59:26.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-200.png">
       <PackagePath>home.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.000</Modified>
+      <Modified>2024-10-17T08:59:26.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\home.scale-400.png">
       <PackagePath>home.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:03.000</Modified>
+      <Modified>2024-10-17T08:59:26.444</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_back.scale-100.png">
       <PackagePath>icn_back.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.991</Modified>
+      <Modified>2024-10-17T08:59:26.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_back.scale-125.png">
       <PackagePath>icn_back.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.991</Modified>
+      <Modified>2024-10-17T08:59:26.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_back.scale-150.png">
       <PackagePath>icn_back.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.990</Modified>
+      <Modified>2024-10-17T08:59:26.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_back.scale-200.png">
       <PackagePath>icn_back.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.990</Modified>
+      <Modified>2024-10-17T08:59:26.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_back.scale-400.png">
       <PackagePath>icn_back.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.990</Modified>
+      <Modified>2024-10-17T08:59:26.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_home_inactive.scale-100.png">
       <PackagePath>icn_home_inactive.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.994</Modified>
+      <Modified>2024-10-17T08:59:26.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_home_inactive.scale-125.png">
       <PackagePath>icn_home_inactive.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.994</Modified>
+      <Modified>2024-10-17T08:59:26.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_home_inactive.scale-150.png">
       <PackagePath>icn_home_inactive.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.994</Modified>
+      <Modified>2024-10-17T08:59:26.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_home_inactive.scale-200.png">
       <PackagePath>icn_home_inactive.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.994</Modified>
+      <Modified>2024-10-17T08:59:26.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icn_home_inactive.scale-400.png">
       <PackagePath>icn_home_inactive.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.992</Modified>
+      <Modified>2024-10-17T08:59:26.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\illustration.scale-100.png">
       <PackagePath>illustration.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.966</Modified>
+      <Modified>2024-10-17T08:59:26.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img1.scale-100.png">
       <PackagePath>img1.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.916</Modified>
+      <Modified>2024-10-17T08:59:26.535</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img2.scale-100.png">
       <PackagePath>img2.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.979</Modified>
+      <Modified>2024-10-17T08:59:26.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img3.scale-100.png">
       <PackagePath>img3.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.923</Modified>
+      <Modified>2024-10-17T08:59:26.534</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img5.scale-100.png">
       <PackagePath>img5.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.959</Modified>
+      <Modified>2024-10-17T08:59:26.496</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img603.scale-100.png">
       <PackagePath>img603.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.977</Modified>
+      <Modified>2024-10-17T08:59:26.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\img8.scale-100.png">
       <PackagePath>img8.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.923</Modified>
+      <Modified>2024-10-17T08:59:26.533</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\key.scale-100.png">
       <PackagePath>key.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.966</Modified>
+      <Modified>2024-10-17T08:59:26.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\leftarrow.scale-100.png">
       <PackagePath>leftarrow.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.996</Modified>
+      <Modified>2024-10-17T08:59:26.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\leftarrow.scale-125.png">
       <PackagePath>leftarrow.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.996</Modified>
+      <Modified>2024-10-17T08:59:26.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\leftarrow.scale-150.png">
       <PackagePath>leftarrow.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.996</Modified>
+      <Modified>2024-10-17T08:59:26.528</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\leftarrow.scale-200.png">
       <PackagePath>leftarrow.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.996</Modified>
+      <Modified>2024-10-17T08:59:26.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\leftarrow.scale-400.png">
       <PackagePath>leftarrow.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.995</Modified>
+      <Modified>2024-10-17T08:59:26.525</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mailicon.scale-100.png">
       <PackagePath>mailicon.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.992</Modified>
+      <Modified>2024-10-17T08:59:26.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\microsoft.scale-100.png">
       <PackagePath>microsoft.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.928</Modified>
+      <Modified>2024-10-17T08:59:26.494</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\microsoft.scale-125.png">
       <PackagePath>microsoft.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.928</Modified>
+      <Modified>2024-10-17T08:59:26.492</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\microsoft.scale-150.png">
       <PackagePath>microsoft.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.926</Modified>
+      <Modified>2024-10-17T08:59:26.490</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\microsoft.scale-200.png">
       <PackagePath>microsoft.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.926</Modified>
+      <Modified>2024-10-17T08:59:26.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\microsoft.scale-400.png">
       <PackagePath>microsoft.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.926</Modified>
+      <Modified>2024-10-17T08:59:26.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\openeyes.scale-100.png">
       <PackagePath>openeyes.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.966</Modified>
+      <Modified>2024-10-17T08:59:26.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-100.png">
       <PackagePath>password.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.965</Modified>
+      <Modified>2024-10-17T08:59:26.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-125.png">
       <PackagePath>password.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.965</Modified>
+      <Modified>2024-10-17T08:59:26.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-150.png">
       <PackagePath>password.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.964</Modified>
+      <Modified>2024-10-17T08:59:26.485</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-200.png">
       <PackagePath>password.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.964</Modified>
+      <Modified>2024-10-17T08:59:26.484</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-400.png">
       <PackagePath>password.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.964</Modified>
+      <Modified>2024-10-17T08:59:26.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pay.scale-100.png">
       <PackagePath>pay.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.977</Modified>
+      <Modified>2024-10-17T08:59:26.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pay.scale-125.png">
       <PackagePath>pay.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.977</Modified>
+      <Modified>2024-10-17T08:59:26.479</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pay.scale-150.png">
       <PackagePath>pay.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.976</Modified>
+      <Modified>2024-10-17T08:59:26.478</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pay.scale-200.png">
       <PackagePath>pay.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.976</Modified>
+      <Modified>2024-10-17T08:59:26.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pay.scale-400.png">
       <PackagePath>pay.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.976</Modified>
+      <Modified>2024-10-17T08:59:26.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-100.png">
       <PackagePath>person.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.976</Modified>
+      <Modified>2024-10-17T08:59:26.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-125.png">
       <PackagePath>person.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.975</Modified>
+      <Modified>2024-10-17T08:59:26.476</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-150.png">
       <PackagePath>person.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.975</Modified>
+      <Modified>2024-10-17T08:59:26.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-200.png">
       <PackagePath>person.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.975</Modified>
+      <Modified>2024-10-17T08:59:26.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\person.scale-400.png">
       <PackagePath>person.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.975</Modified>
+      <Modified>2024-10-17T08:59:26.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qr_code.scale-100.png">
       <PackagePath>qr_code.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.972</Modified>
+      <Modified>2024-10-17T08:59:26.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qr_code.scale-125.png">
       <PackagePath>qr_code.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.970</Modified>
+      <Modified>2024-10-17T08:59:26.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qr_code.scale-150.png">
       <PackagePath>qr_code.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.970</Modified>
+      <Modified>2024-10-17T08:59:26.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qr_code.scale-200.png">
       <PackagePath>qr_code.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.970</Modified>
+      <Modified>2024-10-17T08:59:26.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\qr_code.scale-400.png">
       <PackagePath>qr_code.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.970</Modified>
+      <Modified>2024-10-17T08:59:26.473</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receipt.scale-100.png">
       <PackagePath>receipt.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.923</Modified>
+      <Modified>2024-10-17T08:59:26.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receipt.scale-125.png">
       <PackagePath>receipt.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.923</Modified>
+      <Modified>2024-10-17T08:59:26.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receipt.scale-150.png">
       <PackagePath>receipt.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.921</Modified>
+      <Modified>2024-10-17T08:59:26.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receipt.scale-200.png">
       <PackagePath>receipt.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.921</Modified>
+      <Modified>2024-10-17T08:59:26.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receipt.scale-400.png">
       <PackagePath>receipt.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.921</Modified>
+      <Modified>2024-10-17T08:59:26.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-100.png">
       <PackagePath>search.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.921</Modified>
+      <Modified>2024-10-17T08:59:26.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-125.png">
       <PackagePath>search.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.920</Modified>
+      <Modified>2024-10-17T08:59:26.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-150.png">
       <PackagePath>search.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.920</Modified>
+      <Modified>2024-10-17T08:59:26.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-200.png">
       <PackagePath>search.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.920</Modified>
+      <Modified>2024-10-17T08:59:26.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\search.scale-400.png">
       <PackagePath>search.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.920</Modified>
+      <Modified>2024-10-17T08:59:26.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\seo_and_web.scale-100.png">
       <PackagePath>seo_and_web.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.952</Modified>
+      <Modified>2024-10-17T08:59:26.523</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\seo_and_web.scale-125.png">
       <PackagePath>seo_and_web.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.952</Modified>
+      <Modified>2024-10-17T08:59:26.522</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\seo_and_web.scale-150.png">
       <PackagePath>seo_and_web.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.952</Modified>
+      <Modified>2024-10-17T08:59:26.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\seo_and_web.scale-200.png">
       <PackagePath>seo_and_web.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.950</Modified>
+      <Modified>2024-10-17T08:59:26.520</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\seo_and_web.scale-400.png">
       <PackagePath>seo_and_web.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.950</Modified>
+      <Modified>2024-10-17T08:59:26.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopping_cart.scale-100.png">
       <PackagePath>shopping_cart.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.946</Modified>
+      <Modified>2024-10-17T08:59:26.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopping_cart.scale-125.png">
       <PackagePath>shopping_cart.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.946</Modified>
+      <Modified>2024-10-17T08:59:26.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopping_cart.scale-150.png">
       <PackagePath>shopping_cart.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.946</Modified>
+      <Modified>2024-10-17T08:59:26.518</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopping_cart.scale-200.png">
       <PackagePath>shopping_cart.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.945</Modified>
+      <Modified>2024-10-17T08:59:26.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\shopping_cart.scale-400.png">
       <PackagePath>shopping_cart.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.945</Modified>
+      <Modified>2024-10-17T08:59:26.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\train.scale-100.png">
       <PackagePath>train.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.992</Modified>
+      <Modified>2024-10-17T08:59:26.517</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\train.scale-125.png">
       <PackagePath>train.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.992</Modified>
+      <Modified>2024-10-17T08:59:26.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\train.scale-150.png">
       <PackagePath>train.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.991</Modified>
+      <Modified>2024-10-17T08:59:26.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\train.scale-200.png">
       <PackagePath>train.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.991</Modified>
+      <Modified>2024-10-17T08:59:26.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\train.scale-400.png">
       <PackagePath>train.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.991</Modified>
+      <Modified>2024-10-17T08:59:26.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\user.scale-100.png">
       <PackagePath>user.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.918</Modified>
+      <Modified>2024-10-17T08:59:26.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vertical_dots.scale-100.png">
       <PackagePath>vertical_dots.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.949</Modified>
+      <Modified>2024-10-17T08:59:26.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vertical_dots.scale-125.png">
       <PackagePath>vertical_dots.scale-125.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.949</Modified>
+      <Modified>2024-10-17T08:59:26.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vertical_dots.scale-150.png">
       <PackagePath>vertical_dots.scale-150.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.948</Modified>
+      <Modified>2024-10-17T08:59:26.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vertical_dots.scale-200.png">
       <PackagePath>vertical_dots.scale-200.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.948</Modified>
+      <Modified>2024-10-17T08:59:26.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\vertical_dots.scale-400.png">
       <PackagePath>vertical_dots.scale-400.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.948</Modified>
+      <Modified>2024-10-17T08:59:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\wallet.scale-100.png">
       <PackagePath>wallet.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.918</Modified>
+      <Modified>2024-10-17T08:59:26.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\walletred.scale-100.png">
       <PackagePath>walletred.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.953</Modified>
+      <Modified>2024-10-17T08:59:26.385</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\walletwhite.scale-100.png">
       <PackagePath>walletwhite.scale-100.png</PackagePath>
-      <Modified>2024-07-24T09:32:02.915</Modified>
+      <Modified>2024-10-17T08:59:26.384</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\tesseract\5.2.0\x86\leptonica-1.82.0.dll">
       <PackagePath>x86\leptonica-1.82.0.dll</PackagePath>
@@ -1255,15 +1255,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\OneDrive\Documents\MobileApps\Fast_Cash\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Fast_Cash.deps.json">
       <PackagePath>Fast_Cash.deps.json</PackagePath>
-      <Modified>2024-07-24T09:33:24.806</Modified>
+      <Modified>2024-10-17T09:05:01.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
-      <Modified>2023-10-16T19:41:08.000</Modified>
+      <Modified>2024-07-08T09:23:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\user\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
-      <Modified>2023-10-16T19:41:06.000</Modified>
+      <Modified>2024-07-08T09:23:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\user\.nuget\packages\azure.core\1.40.0\lib\net6.0\Azure.Core.dll">
       <PackagePath>Azure.Core.dll</PackagePath>
